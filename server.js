@@ -1,4 +1,4 @@
-// Updated server.js with file size threshold for handler selection
+// Updated server.js with support for Fire Cause Analysis
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
@@ -12,6 +12,208 @@ const uploadsDir = path.join(__dirname, 'uploads');
 // Directory where pre-processed statistics are stored
 const STATS_DIR = path.join(__dirname, 'processed_stats');
 
+// Function to merge statistics from multiple files
+const mergeStatistics = async (statsData, newStatsData) => {
+  // Merge yearly data
+  const combinedYearlyData = [...statsData.yearlyData];
+  
+  // Add any new years from the new data
+  newStatsData.yearlyData.forEach(newYearData => {
+    const existingYearIndex = combinedYearlyData.findIndex(year => year.year === newYearData.year);
+    if (existingYearIndex === -1) {
+      // Year doesn't exist in original data, add it
+      combinedYearlyData.push(newYearData);
+    } else {
+      // Year exists, update with combined statistics
+      combinedYearlyData[existingYearIndex].fires += newYearData.fires;
+      combinedYearlyData[existingYearIndex].acres += newYearData.acres;
+    }
+  });
+  
+  // Sort by year
+  combinedYearlyData.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+  
+  // Merge years array
+  const combinedYears = Array.from(
+    new Set([...statsData.years, ...newStatsData.years])
+  ).sort();
+  
+  // Merge monthly data by year
+  const combinedMonthlyData = { ...statsData.monthlyDataByYear };
+  
+  Object.entries(newStatsData.monthlyDataByYear).forEach(([year, monthlyData]) => {
+    if (!combinedMonthlyData[year]) {
+      // Year doesn't exist in original data, add all months
+      combinedMonthlyData[year] = monthlyData;
+    } else {
+      // Year exists, combine monthly data
+      monthlyData.forEach((newMonthData, index) => {
+        combinedMonthlyData[year][index].fires += newMonthData.fires;
+        combinedMonthlyData[year][index].acres += newMonthData.acres;
+      });
+    }
+  });
+  
+  // Merge causes data by year
+  const combinedCausesData = { ...(statsData.causesDataByYear || {}) };
+  
+  if (newStatsData.causesDataByYear) {
+    Object.entries(newStatsData.causesDataByYear).forEach(([year, causesData]) => {
+      if (!combinedCausesData[year]) {
+        // Year doesn't exist in original data, add all causes data
+        combinedCausesData[year] = causesData;
+      } else {
+        // Year exists, combine causes data
+        // Merge causes array
+        const existingCauses = combinedCausesData[year].causes || [];
+        const newCauses = causesData.causes || [];
+        
+        // Create a map of existing causes for easy access
+        const causesMap = new Map();
+        existingCauses.forEach(cause => {
+          causesMap.set(cause.causeId, cause);
+        });
+        
+        // Add or update causes
+        newCauses.forEach(newCause => {
+          if (causesMap.has(newCause.causeId)) {
+            // Update existing cause
+            const existingCause = causesMap.get(newCause.causeId);
+            existingCause.fires += newCause.fires;
+            existingCause.acres += newCause.acres;
+          } else {
+            // Add new cause
+            existingCauses.push(newCause);
+          }
+        });
+        
+        // Sort by fires in descending order
+        existingCauses.sort((a, b) => b.fires - a.fires);
+        
+        // Update the causes array
+        combinedCausesData[year].causes = existingCauses;
+        
+        // Merge monthly breakdown
+        if (!combinedCausesData[year].monthlyBreakdown) {
+          combinedCausesData[year].monthlyBreakdown = causesData.monthlyBreakdown || {};
+        } else if (causesData.monthlyBreakdown) {
+          Object.entries(causesData.monthlyBreakdown).forEach(([month, causes]) => {
+            if (!combinedCausesData[year].monthlyBreakdown[month]) {
+              // Month doesn't exist, add all causes
+              combinedCausesData[year].monthlyBreakdown[month] = causes;
+            } else {
+              // Month exists, merge causes
+              const existingMonthCauses = combinedCausesData[year].monthlyBreakdown[month];
+              const monthCausesMap = new Map();
+              
+              existingMonthCauses.forEach(cause => {
+                monthCausesMap.set(cause.causeId, cause);
+              });
+              
+              causes.forEach(newCause => {
+                if (monthCausesMap.has(newCause.causeId)) {
+                  // Update existing cause
+                  const existingCause = monthCausesMap.get(newCause.causeId);
+                  existingCause.fires += newCause.fires;
+                  existingCause.acres += newCause.acres;
+                } else {
+                  // Add new cause
+                  existingMonthCauses.push(newCause);
+                }
+              });
+              
+              // Sort by fires in descending order
+              existingMonthCauses.sort((a, b) => b.fires - a.fires);
+            }
+          });
+        }
+      }
+    });
+  }
+  
+  // Combine top causes across all data
+  const combinedTopCauses = [];
+  const causeMap = new Map();
+  
+  // Add existing top causes to the map
+  if (statsData.topCauses) {
+    statsData.topCauses.forEach(cause => {
+      causeMap.set(cause.causeId, cause);
+    });
+  }
+  
+  // Add or update with new top causes
+  if (newStatsData.topCauses) {
+    newStatsData.topCauses.forEach(newCause => {
+      if (causeMap.has(newCause.causeId)) {
+        // Update existing cause
+        const existingCause = causeMap.get(newCause.causeId);
+        existingCause.fires += newCause.fires;
+        existingCause.acres += newCause.acres;
+      } else {
+        // Add new cause
+        causeMap.set(newCause.causeId, { ...newCause });
+      }
+    });
+  }
+  
+  // Convert map back to array
+  causeMap.forEach(cause => {
+    combinedTopCauses.push(cause);
+  });
+  
+  // Sort by fires in descending order
+  combinedTopCauses.sort((a, b) => b.fires - a.fires);
+  
+  // Recalculate percentages
+  const totalFiresTopCauses = combinedTopCauses.reduce((sum, cause) => sum + cause.fires, 0);
+  combinedTopCauses.forEach(cause => {
+    cause.percentage = Math.round((cause.fires / totalFiresTopCauses) * 1000) / 10;
+  });
+  
+  // Combine cause definitions
+  const combinedCauseDefinitions = {
+    ...(statsData.causeDefinitions || {}),
+    ...(newStatsData.causeDefinitions || {})
+  };
+  
+  // Recalculate summary statistics
+  const totalFires = combinedYearlyData.reduce((sum, year) => sum + year.fires, 0);
+  const totalAcres = combinedYearlyData.reduce((sum, year) => sum + year.acres, 0);
+  
+  // Find worst year
+  let worstYear = null;
+  let maxAcres = 0;
+  
+  combinedYearlyData.forEach(yearData => {
+    if (yearData.acres > maxAcres) {
+      maxAcres = yearData.acres;
+      worstYear = yearData.year;
+    }
+  });
+  
+  return {
+    yearlyData: combinedYearlyData,
+    years: combinedYears,
+    monthlyDataByYear: combinedMonthlyData,
+    causesDataByYear: combinedCausesData,
+    topCauses: combinedTopCauses,
+    causeDefinitions: combinedCauseDefinitions,
+    summary: {
+      totalFires,
+      totalAcres,
+      worstYear,
+      worstYearAcres: maxAcres
+    },
+    metadata: {
+      processedAt: new Date().toISOString(),
+      combinedFrom: [
+        statsData.metadata?.sourceFile || 'unknown',
+        newStatsData.metadata?.sourceFile || 'unknown'
+      ]
+    }
+  };
+};
 
 // Debugging info for directory
 console.log('Current directory:', __dirname);
@@ -328,7 +530,7 @@ app.get('/api/styling/options', (req, res) => {
     });
 });
 
-
+// UPDATED: API endpoint to get yearly statistics with support for Fire Cause Analysis
 app.get('/api/stats/yearly', async (req, res) => {
   try {
     const datasetId = req.query.dataset || 'firep23_1';
@@ -349,11 +551,34 @@ app.get('/api/stats/yearly', async (req, res) => {
       // Read the pre-processed statistics file
       const statsData = JSON.parse(fs.readFileSync(statsFilePath, 'utf8'));
       
-      // Return yearly statistics
+      // Check if there are any supplementary statistics files (e.g., for 2024-2025 data)
+      const supplementFiles = fs.readdirSync(STATS_DIR)
+        .filter(file => file.startsWith(`${datasetId}-supplement-`) && file.endsWith('-stats.json'));
+      
+      let combinedStats = statsData;
+      
+      // If we have supplement files, merge them with the main statistics
+      if (supplementFiles.length > 0) {
+        console.log(`Found ${supplementFiles.length} supplementary statistics files`);
+        
+        for (const supplementFile of supplementFiles) {
+          const supplementPath = path.join(STATS_DIR, supplementFile);
+          const supplementData = JSON.parse(fs.readFileSync(supplementPath, 'utf8'));
+          
+          // Merge the supplement data with our combined stats
+          combinedStats = await mergeStatistics(combinedStats, supplementData);
+        }
+      }
+      
+      // Return yearly statistics with cause data
       res.json({
-        yearlyData: statsData.yearlyData,
-        years: statsData.years,
-        summary: statsData.summary
+        yearlyData: combinedStats.yearlyData,
+        years: combinedStats.years,
+        summary: combinedStats.summary,
+        // Include cause data:
+        causesDataByYear: combinedStats.causesDataByYear || {},
+        topCauses: combinedStats.topCauses || [],
+        causeDefinitions: combinedStats.causeDefinitions || {}
       });
       
     } catch (err) {
@@ -369,7 +594,7 @@ app.get('/api/stats/yearly', async (req, res) => {
   }
 });
 
-// Endpoint to get monthly statistics for a specific year
+// UPDATED: API endpoint to get monthly statistics with support for supplementary files
 app.get('/api/stats/monthly', async (req, res) => {
   try {
     const datasetId = req.query.dataset || 'firep23_1';
@@ -395,8 +620,27 @@ app.get('/api/stats/monthly', async (req, res) => {
       // Read the pre-processed statistics file
       const statsData = JSON.parse(fs.readFileSync(statsFilePath, 'utf8'));
       
+      // Check if there are any supplementary statistics files (e.g., for 2024-2025 data)
+      const supplementFiles = fs.readdirSync(STATS_DIR)
+        .filter(file => file.startsWith(`${datasetId}-supplement-`) && file.endsWith('-stats.json'));
+      
+      let combinedStats = statsData;
+      
+      // If we have supplement files, merge them with the main statistics
+      if (supplementFiles.length > 0) {
+        console.log(`Found ${supplementFiles.length} supplementary statistics files`);
+        
+        for (const supplementFile of supplementFiles) {
+          const supplementPath = path.join(STATS_DIR, supplementFile);
+          const supplementData = JSON.parse(fs.readFileSync(supplementPath, 'utf8'));
+          
+          // Merge the supplement data with our combined stats
+          combinedStats = await mergeStatistics(combinedStats, supplementData);
+        }
+      }
+      
       // Get monthly data for the requested year
-      const monthlyData = statsData.monthlyDataByYear[year] || [];
+      const monthlyData = combinedStats.monthlyDataByYear[year] || [];
       
       // If no data for this year, return empty results
       if (monthlyData.length === 0) {

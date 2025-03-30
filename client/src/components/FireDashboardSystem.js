@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { MainDashboard } from './MainDashboard';
 import { YearlyAnalysisDashboard } from './YearlyAnalysisDashboard';
+import { FireCauseAnalysisDashboard } from './FireCauseAnalysisDashboard';
 import './FireDashboard.css';
 
 const FireDashboardSystem = ({ containerId }) => {
@@ -8,6 +9,9 @@ const FireDashboardSystem = ({ containerId }) => {
   const [activeTab, setActiveTab] = useState('main');
   const [yearlyData, setYearlyData] = useState([]);
   const [monthlyData, setMonthlyData] = useState([]);
+  const [causesData, setCausesData] = useState({});
+  const [topCauses, setTopCauses] = useState([]);
+  const [causeDefinitions, setCauseDefinitions] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
@@ -58,6 +62,19 @@ const FireDashboardSystem = ({ containerId }) => {
       
       setYearlyData(data.yearlyData);
       setAvailableYears(data.years);
+      
+      // Set fire cause data if available
+      if (data.causesDataByYear) {
+        setCausesData(data.causesDataByYear);
+      }
+      
+      if (data.topCauses) {
+        setTopCauses(data.topCauses);
+      }
+      
+      if (data.causeDefinitions) {
+        setCauseDefinitions(data.causeDefinitions);
+      }
       
       // Calculate additional statistics
       const sortedYears = [...data.yearlyData].sort((a, b) => parseInt(b.year) - parseInt(a.year));
@@ -155,6 +172,8 @@ const FireDashboardSystem = ({ containerId }) => {
     setYearlyData([]);
     setAvailableYears([]);
     setSelectedYear(null);
+    setCausesData({});
+    setTopCauses([]);
     setError(errorMessage || "Failed to load fire data. Please run the preprocessor script first.");
     setLoading(false);
   };
@@ -250,6 +269,15 @@ const FireDashboardSystem = ({ containerId }) => {
           Yearly Analysis
         </button>
         <button 
+          className={`dashboard-tab ${activeTab === 'causes' ? 'active' : ''}`} 
+          onClick={() => handleTabChange('causes')}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
+          </svg>
+          Fire Causes
+        </button>
+        <button 
           className={`dashboard-tab ${activeTab === 'map' ? 'active' : ''}`} 
           onClick={() => handleTabChange('map')}
         >
@@ -278,6 +306,19 @@ const FireDashboardSystem = ({ containerId }) => {
               selectedYear={selectedYear}
               availableYears={availableYears}
               summaryStats={summaryStats}
+              onYearChange={handleYearChange}
+              onRefresh={fetchYearlyData}
+            />
+          )}
+        </div>
+        <div id="causes-dashboard" className={`dashboard-tab-content ${activeTab === 'causes' ? 'active' : ''}`}>
+          {activeTab === 'causes' && (
+            <FireCauseAnalysisDashboard
+              causesData={causesData}
+              topCauses={topCauses}
+              causeDefinitions={causeDefinitions}
+              selectedYear={selectedYear}
+              availableYears={availableYears}
               onYearChange={handleYearChange}
               onRefresh={fetchYearlyData}
             />

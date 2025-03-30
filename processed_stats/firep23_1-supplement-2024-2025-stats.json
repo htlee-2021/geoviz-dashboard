@@ -1,0 +1,156 @@
+{
+  "yearlyData": [
+    {
+      "year": "2024",
+      "fires": 154,
+      "acres": 420582.33
+    },
+    {
+      "year": "2025",
+      "fires": 4,
+      "acres": 35348.19
+    }
+  ],
+  "years": [
+    "2024",
+    "2025"
+  ],
+  "monthlyDataByYear": {
+    "2024": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 18.21
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 0.1
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 0.25
+      },
+      {
+        "month": "May",
+        "fires": 35,
+        "acres": 1371.66
+      },
+      {
+        "month": "June",
+        "fires": 63,
+        "acres": 84848
+      },
+      {
+        "month": "July",
+        "fires": 25,
+        "acres": 201279.18
+      },
+      {
+        "month": "August",
+        "fires": 11,
+        "acres": 39236.94
+      },
+      {
+        "month": "September",
+        "fires": 9,
+        "acres": 88894.77
+      },
+      {
+        "month": "October",
+        "fires": 5,
+        "acres": 4930.58
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 2.64
+      }
+    ],
+    "2025": [
+      {
+        "month": "January",
+        "fires": 3,
+        "acres": 35339.2
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 8.99
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "August",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "September",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ]
+  },
+  "summary": {
+    "totalFires": 158,
+    "totalAcres": 455930.52,
+    "worstYear": "2024",
+    "worstYearAcres": 420582.33
+  },
+  "metadata": {
+    "sourceFile": "CA_Perimeters_CAL_FIRE.geojson",
+    "processedAt": "2025-03-30T10:02:14.174Z",
+    "supplementFor": "firep23_1",
+    "yearRange": "2024-2025"
+  }
+}

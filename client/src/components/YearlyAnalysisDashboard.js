@@ -456,7 +456,7 @@ export const YearlyAnalysisDashboard = ({
         </div>
       </div>
       
-      {/* Data Source Info */}
+      {/* Data Source Info - Updated to reflect new data through 2025 */}
       <div className="data-source-container">
         <h3 className="data-source-title">
           <svg xmlns="http://www.w3.org/2000/svg" className="data-source-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -466,8 +466,8 @@ export const YearlyAnalysisDashboard = ({
         </h3>
         <div className="data-source-content">
           <p>
-            This visualization shows detailed monthly data for the selected year from the firep23_1.geojson file.
-            The monthly breakdown helps identify fire patterns throughout the year and peak fire season.
+            This visualization shows detailed monthly data for the selected year from the California wildfire records.
+            The dashboard includes data through 2025, with the monthly breakdown helping to identify fire patterns throughout the year and peak fire season.
           </p>
           <p className="data-source-note">
             Return to the "Dashboard Overview" tab to see trends across multiple years.
