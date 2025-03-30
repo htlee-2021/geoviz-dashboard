@@ -1,0 +1,8215 @@
+{
+  "yearlyData": [
+    {
+      "year": "1878",
+      "fires": 1,
+      "acres": 59468.88
+    },
+    {
+      "year": "1895",
+      "fires": 1,
+      "acres": 628.11
+    },
+    {
+      "year": "1896",
+      "fires": 1,
+      "acres": 7531.72
+    },
+    {
+      "year": "1898",
+      "fires": 5,
+      "acres": 28244.2
+    },
+    {
+      "year": "1900",
+      "fires": 12,
+      "acres": 24528.51
+    },
+    {
+      "year": "1902",
+      "fires": 1,
+      "acres": 731.48
+    },
+    {
+      "year": "1903",
+      "fires": 2,
+      "acres": 3649.34
+    },
+    {
+      "year": "1905",
+      "fires": 1,
+      "acres": 214.29
+    },
+    {
+      "year": "1906",
+      "fires": 4,
+      "acres": 3964.89
+    },
+    {
+      "year": "1907",
+      "fires": 10,
+      "acres": 1328.69
+    },
+    {
+      "year": "1908",
+      "fires": 16,
+      "acres": 19751.94
+    },
+    {
+      "year": "1909",
+      "fires": 24,
+      "acres": 34955.33
+    },
+    {
+      "year": "1910",
+      "fires": 90,
+      "acres": 254816.95
+    },
+    {
+      "year": "1911",
+      "fires": 166,
+      "acres": 123472.2
+    },
+    {
+      "year": "1912",
+      "fires": 56,
+      "acres": 40419.08
+    },
+    {
+      "year": "1913",
+      "fires": 84,
+      "acres": 161725.44
+    },
+    {
+      "year": "1914",
+      "fires": 105,
+      "acres": 73658.27
+    },
+    {
+      "year": "1915",
+      "fires": 132,
+      "acres": 55185.43
+    },
+    {
+      "year": "1916",
+      "fires": 131,
+      "acres": 88528.91
+    },
+    {
+      "year": "1917",
+      "fires": 266,
+      "acres": 439018.26
+    },
+    {
+      "year": "1918",
+      "fires": 129,
+      "acres": 190458.53
+    },
+    {
+      "year": "1919",
+      "fires": 165,
+      "acres": 244409.44
+    },
+    {
+      "year": "1920",
+      "fires": 131,
+      "acres": 139029.81
+    },
+    {
+      "year": "1921",
+      "fires": 160,
+      "acres": 245682.31
+    },
+    {
+      "year": "1922",
+      "fires": 116,
+      "acres": 342731.43
+    },
+    {
+      "year": "1923",
+      "fires": 125,
+      "acres": 272381.8
+    },
+    {
+      "year": "1924",
+      "fires": 248,
+      "acres": 610545.22
+    },
+    {
+      "year": "1925",
+      "fires": 91,
+      "acres": 78507.23
+    },
+    {
+      "year": "1926",
+      "fires": 188,
+      "acres": 255028.6
+    },
+    {
+      "year": "1927",
+      "fires": 99,
+      "acres": 178417.72
+    },
+    {
+      "year": "1928",
+      "fires": 167,
+      "acres": 550886.8
+    },
+    {
+      "year": "1929",
+      "fires": 154,
+      "acres": 252561.17
+    },
+    {
+      "year": "1930",
+      "fires": 107,
+      "acres": 61643.72
+    },
+    {
+      "year": "1931",
+      "fires": 215,
+      "acres": 349465.87
+    },
+    {
+      "year": "1932",
+      "fires": 116,
+      "acres": 326915.95
+    },
+    {
+      "year": "1933",
+      "fires": 73,
+      "acres": 92087.91
+    },
+    {
+      "year": "1934",
+      "fires": 132,
+      "acres": 112191.75
+    },
+    {
+      "year": "1935",
+      "fires": 81,
+      "acres": 65151.67
+    },
+    {
+      "year": "1936",
+      "fires": 123,
+      "acres": 213582.82
+    },
+    {
+      "year": "1937",
+      "fires": 59,
+      "acres": 21699.54
+    },
+    {
+      "year": "1938",
+      "fires": 100,
+      "acres": 119209.36
+    },
+    {
+      "year": "1939",
+      "fires": 151,
+      "acres": 243282.98
+    },
+    {
+      "year": "1940",
+      "fires": 88,
+      "acres": 128464.76
+    },
+    {
+      "year": "1941",
+      "fires": 111,
+      "acres": 87476.86
+    },
+    {
+      "year": "1942",
+      "fires": 101,
+      "acres": 262391.77
+    },
+    {
+      "year": "1943",
+      "fires": 114,
+      "acres": 248991.41
+    },
+    {
+      "year": "1944",
+      "fires": 135,
+      "acres": 343786.75
+    },
+    {
+      "year": "1945",
+      "fires": 148,
+      "acres": 248390.8
+    },
+    {
+      "year": "1946",
+      "fires": 102,
+      "acres": 106279.24
+    },
+    {
+      "year": "1947",
+      "fires": 121,
+      "acres": 150451.67
+    },
+    {
+      "year": "1948",
+      "fires": 65,
+      "acres": 176047.74
+    },
+    {
+      "year": "1949",
+      "fires": 170,
+      "acres": 206849.35
+    },
+    {
+      "year": "1950",
+      "fires": 226,
+      "acres": 536003.01
+    },
+    {
+      "year": "1951",
+      "fires": 219,
+      "acres": 303257.82
+    },
+    {
+      "year": "1952",
+      "fires": 172,
+      "acres": 133399.29
+    },
+    {
+      "year": "1953",
+      "fires": 217,
+      "acres": 335875.49
+    },
+    {
+      "year": "1954",
+      "fires": 157,
+      "acres": 218268.98
+    },
+    {
+      "year": "1955",
+      "fires": 171,
+      "acres": 386041.67
+    },
+    {
+      "year": "1956",
+      "fires": 133,
+      "acres": 178798.54
+    },
+    {
+      "year": "1957",
+      "fires": 153,
+      "acres": 202933.12
+    },
+    {
+      "year": "1958",
+      "fires": 167,
+      "acres": 252308.88
+    },
+    {
+      "year": "1959",
+      "fires": 204,
+      "acres": 298094.59
+    },
+    {
+      "year": "1960",
+      "fires": 142,
+      "acres": 346191.03
+    },
+    {
+      "year": "1961",
+      "fires": 167,
+      "acres": 363230.44
+    },
+    {
+      "year": "1962",
+      "fires": 109,
+      "acres": 132534.61
+    },
+    {
+      "year": "1963",
+      "fires": 78,
+      "acres": 32155.59
+    },
+    {
+      "year": "1964",
+      "fires": 137,
+      "acres": 296775.19
+    },
+    {
+      "year": "1965",
+      "fires": 59,
+      "acres": 82528.09
+    },
+    {
+      "year": "1966",
+      "fires": 132,
+      "acres": 265318.66
+    },
+    {
+      "year": "1967",
+      "fires": 111,
+      "acres": 237117.12
+    },
+    {
+      "year": "1968",
+      "fires": 210,
+      "acres": 222086.25
+    },
+    {
+      "year": "1969",
+      "fires": 131,
+      "acres": 97125.55
+    },
+    {
+      "year": "1970",
+      "fires": 233,
+      "acres": 676019.52
+    },
+    {
+      "year": "1971",
+      "fires": 109,
+      "acres": 60060.32
+    },
+    {
+      "year": "1972",
+      "fires": 154,
+      "acres": 92264
+    },
+    {
+      "year": "1973",
+      "fires": 150,
+      "acres": 257044.74
+    },
+    {
+      "year": "1974",
+      "fires": 206,
+      "acres": 137296.7
+    },
+    {
+      "year": "1975",
+      "fires": 210,
+      "acres": 215591.67
+    },
+    {
+      "year": "1976",
+      "fires": 133,
+      "acres": 199015.02
+    },
+    {
+      "year": "1977",
+      "fires": 167,
+      "acres": 465615.28
+    },
+    {
+      "year": "1978",
+      "fires": 152,
+      "acres": 126263.88
+    },
+    {
+      "year": "1979",
+      "fires": 365,
+      "acres": 377123.25
+    },
+    {
+      "year": "1980",
+      "fires": 318,
+      "acres": 380101.17
+    },
+    {
+      "year": "1981",
+      "fires": 272,
+      "acres": 302033.17
+    },
+    {
+      "year": "1982",
+      "fires": 145,
+      "acres": 142577.74
+    },
+    {
+      "year": "1983",
+      "fires": 159,
+      "acres": 85898.31
+    },
+    {
+      "year": "1984",
+      "fires": 212,
+      "acres": 206511.53
+    },
+    {
+      "year": "1985",
+      "fires": 210,
+      "acres": 566026.35
+    },
+    {
+      "year": "1986",
+      "fires": 172,
+      "acres": 109078.95
+    },
+    {
+      "year": "1987",
+      "fires": 285,
+      "acres": 851816.47
+    },
+    {
+      "year": "1988",
+      "fires": 256,
+      "acres": 301179.5
+    },
+    {
+      "year": "1989",
+      "fires": 179,
+      "acres": 135295.26
+    },
+    {
+      "year": "1990",
+      "fires": 174,
+      "acres": 371773.86
+    },
+    {
+      "year": "1991",
+      "fires": 87,
+      "acres": 39935.72
+    },
+    {
+      "year": "1992",
+      "fires": 195,
+      "acres": 224134.7
+    },
+    {
+      "year": "1993",
+      "fires": 172,
+      "acres": 324398.27
+    },
+    {
+      "year": "1994",
+      "fires": 216,
+      "acres": 343085.02
+    },
+    {
+      "year": "1995",
+      "fires": 207,
+      "acres": 198309.01
+    },
+    {
+      "year": "1996",
+      "fires": 317,
+      "acres": 663595.23
+    },
+    {
+      "year": "1997",
+      "fires": 187,
+      "acres": 217847.45
+    },
+    {
+      "year": "1998",
+      "fires": 163,
+      "acres": 165354.68
+    },
+    {
+      "year": "1999",
+      "fires": 274,
+      "acres": 800410.03
+    },
+    {
+      "year": "2000",
+      "fires": 181,
+      "acres": 245246.43
+    },
+    {
+      "year": "2001",
+      "fires": 206,
+      "acres": 246924.66
+    },
+    {
+      "year": "2002",
+      "fires": 243,
+      "acres": 963898.51
+    },
+    {
+      "year": "2003",
+      "fires": 339,
+      "acres": 968696.83
+    },
+    {
+      "year": "2004",
+      "fires": 277,
+      "acres": 274638.56
+    },
+    {
+      "year": "2005",
+      "fires": 304,
+      "acres": 231112.47
+    },
+    {
+      "year": "2006",
+      "fires": 314,
+      "acres": 748169.74
+    },
+    {
+      "year": "2007",
+      "fires": 348,
+      "acres": 1031803.25
+    },
+    {
+      "year": "2008",
+      "fires": 439,
+      "acres": 1382709.74
+    },
+    {
+      "year": "2009",
+      "fires": 254,
+      "acres": 435825.44
+    },
+    {
+      "year": "2010",
+      "fires": 207,
+      "acres": 101056.03
+    },
+    {
+      "year": "2011",
+      "fires": 316,
+      "acres": 202422.67
+    },
+    {
+      "year": "2012",
+      "fires": 352,
+      "acres": 848691.62
+    },
+    {
+      "year": "2013",
+      "fires": 297,
+      "acres": 569422.08
+    },
+    {
+      "year": "2014",
+      "fires": 236,
+      "acres": 554656.14
+    },
+    {
+      "year": "2015",
+      "fires": 317,
+      "acres": 789221.8
+    },
+    {
+      "year": "2016",
+      "fires": 361,
+      "acres": 546250.14
+    },
+    {
+      "year": "2017",
+      "fires": 608,
+      "acres": 1424583.07
+    },
+    {
+      "year": "2018",
+      "fires": 416,
+      "acres": 1581916.79
+    },
+    {
+      "year": "2019",
+      "fires": 319,
+      "acres": 280727.59
+    },
+    {
+      "year": "2020",
+      "fires": 505,
+      "acres": 4182335.01
+    },
+    {
+      "year": "2021",
+      "fires": 388,
+      "acres": 2512610.91
+    },
+    {
+      "year": "2022",
+      "fires": 306,
+      "acres": 322528
+    },
+    {
+      "year": "2023",
+      "fires": 284,
+      "acres": 342033.38
+    }
+  ],
+  "years": [
+    "1878",
+    "1895",
+    "1896",
+    "1898",
+    "1900",
+    "1902",
+    "1903",
+    "1905",
+    "1906",
+    "1907",
+    "1908",
+    "1909",
+    "1910",
+    "1911",
+    "1912",
+    "1913",
+    "1914",
+    "1915",
+    "1916",
+    "1917",
+    "1918",
+    "1919",
+    "1920",
+    "1921",
+    "1922",
+    "1923",
+    "1924",
+    "1925",
+    "1926",
+    "1927",
+    "1928",
+    "1929",
+    "1930",
+    "1931",
+    "1932",
+    "1933",
+    "1934",
+    "1935",
+    "1936",
+    "1937",
+    "1938",
+    "1939",
+    "1940",
+    "1941",
+    "1942",
+    "1943",
+    "1944",
+    "1945",
+    "1946",
+    "1947",
+    "1948",
+    "1949",
+    "1950",
+    "1951",
+    "1952",
+    "1953",
+    "1954",
+    "1955",
+    "1956",
+    "1957",
+    "1958",
+    "1959",
+    "1960",
+    "1961",
+    "1962",
+    "1963",
+    "1964",
+    "1965",
+    "1966",
+    "1967",
+    "1968",
+    "1969",
+    "1970",
+    "1971",
+    "1972",
+    "1973",
+    "1974",
+    "1975",
+    "1976",
+    "1977",
+    "1978",
+    "1979",
+    "1980",
+    "1981",
+    "1982",
+    "1983",
+    "1984",
+    "1985",
+    "1986",
+    "1987",
+    "1988",
+    "1989",
+    "1990",
+    "1991",
+    "1992",
+    "1993",
+    "1994",
+    "1995",
+    "1996",
+    "1997",
+    "1998",
+    "1999",
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+  ],
+  "monthlyDataByYear": {
+    "1898": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 2641.12
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "August",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "September",
+        "fires": 2,
+        "acres": 23514.53
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1902": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "August",
+        "fires": 1,
+        "acres": 731.48
+      },
+      {
+        "month": "September",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1903": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "August",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "September",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 380.26
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1907": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 239.09
+      },
+      {
+        "month": "July",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "August",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "September",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1908": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 1,
+        "acres": 859.35
+      },
+      {
+        "month": "August",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "September",
+        "fires": 1,
+        "acres": 7433.9
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1909": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 59.74
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "August",
+        "fires": 1,
+        "acres": 450.53
+      },
+      {
+        "month": "September",
+        "fires": 1,
+        "acres": 3174.51
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1910": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 4,
+        "acres": 158512.5
+      },
+      {
+        "month": "August",
+        "fires": 6,
+        "acres": 1819.41
+      },
+      {
+        "month": "September",
+        "fires": 5,
+        "acres": 1633.05
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 81.21
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1911": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 8,
+        "acres": 376.72
+      },
+      {
+        "month": "August",
+        "fires": 8,
+        "acres": 2116.54
+      },
+      {
+        "month": "September",
+        "fires": 2,
+        "acres": 108.95
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 9.96
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 4.48
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1912": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 197.04
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 1,
+        "acres": 2.49
+      },
+      {
+        "month": "August",
+        "fires": 1,
+        "acres": 3297.1
+      },
+      {
+        "month": "September",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 84.23
+      }
+    ],
+    "1913": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 712.66
+      },
+      {
+        "month": "July",
+        "fires": 1,
+        "acres": 2.99
+      },
+      {
+        "month": "August",
+        "fires": 3,
+        "acres": 205.65
+      },
+      {
+        "month": "September",
+        "fires": 1,
+        "acres": 7016.84
+      },
+      {
+        "month": "October",
+        "fires": 6,
+        "acres": 2123.15
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1914": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 29.87
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 2,
+        "acres": 14.94
+      },
+      {
+        "month": "August",
+        "fires": 6,
+        "acres": 83.05
+      },
+      {
+        "month": "September",
+        "fires": 2,
+        "acres": 13.63
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 43.81
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1915": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 532.83
+      },
+      {
+        "month": "July",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "August",
+        "fires": 11,
+        "acres": 871.65
+      },
+      {
+        "month": "September",
+        "fires": 11,
+        "acres": 1958.64
+      },
+      {
+        "month": "October",
+        "fires": 6,
+        "acres": 234.15
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1916": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 109.16
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 5,
+        "acres": 287.03
+      },
+      {
+        "month": "July",
+        "fires": 2,
+        "acres": 302.45
+      },
+      {
+        "month": "August",
+        "fires": 9,
+        "acres": 867.73
+      },
+      {
+        "month": "September",
+        "fires": 8,
+        "acres": 4494.82
+      },
+      {
+        "month": "October",
+        "fires": 5,
+        "acres": 69.78
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 257.61
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1917": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 99.57
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 5,
+        "acres": 29814.94
+      },
+      {
+        "month": "July",
+        "fires": 7,
+        "acres": 3047.36
+      },
+      {
+        "month": "August",
+        "fires": 28,
+        "acres": 13119.08
+      },
+      {
+        "month": "September",
+        "fires": 11,
+        "acres": 5635.77
+      },
+      {
+        "month": "October",
+        "fires": 10,
+        "acres": 4183.39
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1918": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 12.51
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 12,
+        "acres": 8000.29
+      },
+      {
+        "month": "July",
+        "fires": 3,
+        "acres": 283.49
+      },
+      {
+        "month": "August",
+        "fires": 4,
+        "acres": 263.78
+      },
+      {
+        "month": "September",
+        "fires": 2,
+        "acres": 151.01
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 282.76
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1919": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 10.47
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 62.82
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 307.35
+      },
+      {
+        "month": "July",
+        "fires": 7,
+        "acres": 155.86
+      },
+      {
+        "month": "August",
+        "fires": 9,
+        "acres": 766.77
+      },
+      {
+        "month": "September",
+        "fires": 9,
+        "acres": 57954.01
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 70796.41
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1920": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 3,
+        "acres": 1687.32
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 7,
+        "acres": 758.49
+      },
+      {
+        "month": "August",
+        "fires": 7,
+        "acres": 388.38
+      },
+      {
+        "month": "September",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 34.98
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1921": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 1,
+        "acres": 1551.47
+      },
+      {
+        "month": "August",
+        "fires": 3,
+        "acres": 10319.94
+      },
+      {
+        "month": "September",
+        "fires": 4,
+        "acres": 9912.76
+      },
+      {
+        "month": "October",
+        "fires": 3,
+        "acres": 485.16
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1922": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 120.22
+      },
+      {
+        "month": "July",
+        "fires": 8,
+        "acres": 2711.59
+      },
+      {
+        "month": "August",
+        "fires": 10,
+        "acres": 1801.7
+      },
+      {
+        "month": "September",
+        "fires": 6,
+        "acres": 24268.48
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1923": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 571.31
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 16.35
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 39.82
+      },
+      {
+        "month": "July",
+        "fires": 2,
+        "acres": 1653.43
+      },
+      {
+        "month": "August",
+        "fires": 7,
+        "acres": 309.08
+      },
+      {
+        "month": "September",
+        "fires": 4,
+        "acres": 487.28
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 48.06
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 162.09
+      }
+    ],
+    "1924": [
+      {
+        "month": "January",
+        "fires": 2,
+        "acres": 382.91
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 482.03
+      },
+      {
+        "month": "May",
+        "fires": 5,
+        "acres": 460.06
+      },
+      {
+        "month": "June",
+        "fires": 5,
+        "acres": 2900.31
+      },
+      {
+        "month": "July",
+        "fires": 12,
+        "acres": 10985.81
+      },
+      {
+        "month": "August",
+        "fires": 13,
+        "acres": 66727.47
+      },
+      {
+        "month": "September",
+        "fires": 17,
+        "acres": 8320.08
+      },
+      {
+        "month": "October",
+        "fires": 3,
+        "acres": 37.34
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1925": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 450.12
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 20.25
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 47.91
+      },
+      {
+        "month": "July",
+        "fires": 4,
+        "acres": 3586.2
+      },
+      {
+        "month": "August",
+        "fires": 3,
+        "acres": 2152.38
+      },
+      {
+        "month": "September",
+        "fires": 1,
+        "acres": 5730.61
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 42.72
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 532.39
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1926": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 14.94
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 8,
+        "acres": 307.57
+      },
+      {
+        "month": "July",
+        "fires": 9,
+        "acres": 15302.07
+      },
+      {
+        "month": "August",
+        "fires": 3,
+        "acres": 39050.75
+      },
+      {
+        "month": "September",
+        "fires": 6,
+        "acres": 1991.04
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 31.99
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 522.08
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1927": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 1130.88
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 239.98
+      },
+      {
+        "month": "June",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "July",
+        "fires": 13,
+        "acres": 9115.78
+      },
+      {
+        "month": "August",
+        "fires": 6,
+        "acres": 28316.91
+      },
+      {
+        "month": "September",
+        "fires": 2,
+        "acres": 399.09
+      },
+      {
+        "month": "October",
+        "fires": 3,
+        "acres": 3196.97
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 87.46
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 6519.47
+      }
+    ],
+    "1928": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 343.16
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 77.24
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 50.92
+      },
+      {
+        "month": "May",
+        "fires": 5,
+        "acres": 1996.95
+      },
+      {
+        "month": "June",
+        "fires": 5,
+        "acres": 984.94
+      },
+      {
+        "month": "July",
+        "fires": 14,
+        "acres": 3279.9
+      },
+      {
+        "month": "August",
+        "fires": 12,
+        "acres": 23526.19
+      },
+      {
+        "month": "September",
+        "fires": 6,
+        "acres": 45666.1
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 6.97
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 1496.22
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1929": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 259.69
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 196.7
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 1630.72
+      },
+      {
+        "month": "July",
+        "fires": 5,
+        "acres": 9873.12
+      },
+      {
+        "month": "August",
+        "fires": 22,
+        "acres": 9945
+      },
+      {
+        "month": "September",
+        "fires": 10,
+        "acres": 39699.12
+      },
+      {
+        "month": "October",
+        "fires": 4,
+        "acres": 689.06
+      },
+      {
+        "month": "November",
+        "fires": 6,
+        "acres": 14260.32
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 557.22
+      }
+    ],
+    "1930": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 5.48
+      },
+      {
+        "month": "July",
+        "fires": 7,
+        "acres": 1708.84
+      },
+      {
+        "month": "August",
+        "fires": 9,
+        "acres": 1834.84
+      },
+      {
+        "month": "September",
+        "fires": 1,
+        "acres": 515.15
+      },
+      {
+        "month": "October",
+        "fires": 4,
+        "acres": 21.91
+      },
+      {
+        "month": "November",
+        "fires": 6,
+        "acres": 20606.08
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1931": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 407.19
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "June",
+        "fires": 6,
+        "acres": 2632.8
+      },
+      {
+        "month": "July",
+        "fires": 11,
+        "acres": 3423.48
+      },
+      {
+        "month": "August",
+        "fires": 15,
+        "acres": 18957.06
+      },
+      {
+        "month": "September",
+        "fires": 5,
+        "acres": 34023.7
+      },
+      {
+        "month": "October",
+        "fires": 3,
+        "acres": 203.89
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 11.17
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1932": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 98.46
+      },
+      {
+        "month": "July",
+        "fires": 2,
+        "acres": 47.24
+      },
+      {
+        "month": "August",
+        "fires": 9,
+        "acres": 818.51
+      },
+      {
+        "month": "September",
+        "fires": 11,
+        "acres": 221763.74
+      },
+      {
+        "month": "October",
+        "fires": 17,
+        "acres": 3612.42
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 171.38
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1933": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 314.94
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 25.72
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 37.3
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 117.47
+      },
+      {
+        "month": "July",
+        "fires": 2,
+        "acres": 150.57
+      },
+      {
+        "month": "August",
+        "fires": 8,
+        "acres": 39984.06
+      },
+      {
+        "month": "September",
+        "fires": 7,
+        "acres": 324.66
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 47.11
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 5094.77
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1934": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 525.24
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 30.06
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 82.13
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 52.3
+      },
+      {
+        "month": "July",
+        "fires": 8,
+        "acres": 10126.44
+      },
+      {
+        "month": "August",
+        "fires": 17,
+        "acres": 1137.12
+      },
+      {
+        "month": "September",
+        "fires": 11,
+        "acres": 2594.32
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 20.01
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1935": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 16.45
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 176.13
+      },
+      {
+        "month": "July",
+        "fires": 9,
+        "acres": 561.11
+      },
+      {
+        "month": "August",
+        "fires": 12,
+        "acres": 1589.23
+      },
+      {
+        "month": "September",
+        "fires": 11,
+        "acres": 929.7
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 34662.16
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1936": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 1031.56
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 279.63
+      },
+      {
+        "month": "June",
+        "fires": 4,
+        "acres": 467.8
+      },
+      {
+        "month": "July",
+        "fires": 7,
+        "acres": 965.01
+      },
+      {
+        "month": "August",
+        "fires": 13,
+        "acres": 26136.47
+      },
+      {
+        "month": "September",
+        "fires": 17,
+        "acres": 61919.37
+      },
+      {
+        "month": "October",
+        "fires": 7,
+        "acres": 1939.74
+      },
+      {
+        "month": "November",
+        "fires": 12,
+        "acres": 3877.91
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 58.7
+      }
+    ],
+    "1937": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 78.57
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 50.36
+      },
+      {
+        "month": "July",
+        "fires": 10,
+        "acres": 3599.99
+      },
+      {
+        "month": "August",
+        "fires": 5,
+        "acres": 201.03
+      },
+      {
+        "month": "September",
+        "fires": 4,
+        "acres": 215.17
+      },
+      {
+        "month": "October",
+        "fires": 1,
+        "acres": 54.77
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 166.31
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 375.88
+      }
+    ],
+    "1938": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 67.26
+      },
+      {
+        "month": "July",
+        "fires": 19,
+        "acres": 5244.76
+      },
+      {
+        "month": "August",
+        "fires": 6,
+        "acres": 29291.07
+      },
+      {
+        "month": "September",
+        "fires": 11,
+        "acres": 4208.45
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 192.36
+      },
+      {
+        "month": "November",
+        "fires": 8,
+        "acres": 20216.09
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1939": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 4,
+        "acres": 168.37
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 23.3
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 528.15
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 413.04
+      },
+      {
+        "month": "July",
+        "fires": 9,
+        "acres": 14874.21
+      },
+      {
+        "month": "August",
+        "fires": 21,
+        "acres": 13115.13
+      },
+      {
+        "month": "September",
+        "fires": 13,
+        "acres": 6529.36
+      },
+      {
+        "month": "October",
+        "fires": 4,
+        "acres": 996.13
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 4956.22
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1940": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 129.2
+      },
+      {
+        "month": "July",
+        "fires": 9,
+        "acres": 11624.49
+      },
+      {
+        "month": "August",
+        "fires": 20,
+        "acres": 30721.06
+      },
+      {
+        "month": "September",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "October",
+        "fires": 3,
+        "acres": 1463.17
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1941": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 5679.15
+      },
+      {
+        "month": "July",
+        "fires": 14,
+        "acres": 18959.56
+      },
+      {
+        "month": "August",
+        "fires": 6,
+        "acres": 2393.02
+      },
+      {
+        "month": "September",
+        "fires": 5,
+        "acres": 846.05
+      },
+      {
+        "month": "October",
+        "fires": 5,
+        "acres": 5339.93
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 307.28
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1942": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 1011.2
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 483.55
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 3189.56
+      },
+      {
+        "month": "July",
+        "fires": 6,
+        "acres": 2124.63
+      },
+      {
+        "month": "August",
+        "fires": 9,
+        "acres": 6435.24
+      },
+      {
+        "month": "September",
+        "fires": 4,
+        "acres": 1268.49
+      },
+      {
+        "month": "October",
+        "fires": 4,
+        "acres": 7317.24
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 2510.76
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1943": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 5.96
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 3,
+        "acres": 1364.46
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 9308.16
+      },
+      {
+        "month": "July",
+        "fires": 16,
+        "acres": 47549.96
+      },
+      {
+        "month": "August",
+        "fires": 7,
+        "acres": 3593.93
+      },
+      {
+        "month": "September",
+        "fires": 18,
+        "acres": 30985.02
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 2997.25
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 19232.84
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1944": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 55.06
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 150.26
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 541.25
+      },
+      {
+        "month": "June",
+        "fires": 7,
+        "acres": 4510.68
+      },
+      {
+        "month": "July",
+        "fires": 5,
+        "acres": 6473.71
+      },
+      {
+        "month": "August",
+        "fires": 13,
+        "acres": 17586.66
+      },
+      {
+        "month": "September",
+        "fires": 21,
+        "acres": 33834.75
+      },
+      {
+        "month": "October",
+        "fires": 4,
+        "acres": 383.26
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1945": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 503.23
+      },
+      {
+        "month": "July",
+        "fires": 17,
+        "acres": 2451.78
+      },
+      {
+        "month": "August",
+        "fires": 22,
+        "acres": 50580.37
+      },
+      {
+        "month": "September",
+        "fires": 20,
+        "acres": 47912.96
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 8481.69
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1946": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 28.63
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 79.29
+      },
+      {
+        "month": "June",
+        "fires": 5,
+        "acres": 3921.61
+      },
+      {
+        "month": "July",
+        "fires": 11,
+        "acres": 2309.03
+      },
+      {
+        "month": "August",
+        "fires": 10,
+        "acres": 4721.63
+      },
+      {
+        "month": "September",
+        "fires": 14,
+        "acres": 7973.82
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 637.05
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 21481.55
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1947": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 313.62
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 483.99
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 1250.53
+      },
+      {
+        "month": "July",
+        "fires": 12,
+        "acres": 5306.75
+      },
+      {
+        "month": "August",
+        "fires": 14,
+        "acres": 9456.49
+      },
+      {
+        "month": "September",
+        "fires": 8,
+        "acres": 3020.04
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 521.61
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1948": [
+      {
+        "month": "January",
+        "fires": 2,
+        "acres": 496.88
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 6.97
+      },
+      {
+        "month": "July",
+        "fires": 3,
+        "acres": 103.67
+      },
+      {
+        "month": "August",
+        "fires": 7,
+        "acres": 9886.78
+      },
+      {
+        "month": "September",
+        "fires": 4,
+        "acres": 34184.15
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 4653.52
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 40.98
+      }
+    ],
+    "1949": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 5,
+        "acres": 543.65
+      },
+      {
+        "month": "May",
+        "fires": 6,
+        "acres": 317.88
+      },
+      {
+        "month": "June",
+        "fires": 9,
+        "acres": 1961.35
+      },
+      {
+        "month": "July",
+        "fires": 13,
+        "acres": 3368.71
+      },
+      {
+        "month": "August",
+        "fires": 17,
+        "acres": 7310.13
+      },
+      {
+        "month": "September",
+        "fires": 29,
+        "acres": 11691.1
+      },
+      {
+        "month": "October",
+        "fires": 4,
+        "acres": 29990.11
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 10052.71
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1950": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 3,
+        "acres": 2640.38
+      },
+      {
+        "month": "June",
+        "fires": 15,
+        "acres": 27130.89
+      },
+      {
+        "month": "July",
+        "fires": 40,
+        "acres": 69872.8
+      },
+      {
+        "month": "August",
+        "fires": 59,
+        "acres": 179645.9
+      },
+      {
+        "month": "September",
+        "fires": 41,
+        "acres": 151493.09
+      },
+      {
+        "month": "October",
+        "fires": 14,
+        "acres": 20368.43
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 14819.61
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 3671.09
+      }
+    ],
+    "1951": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 5,
+        "acres": 812.55
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 387.54
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 496.29
+      },
+      {
+        "month": "June",
+        "fires": 15,
+        "acres": 10194.17
+      },
+      {
+        "month": "July",
+        "fires": 34,
+        "acres": 55615.08
+      },
+      {
+        "month": "August",
+        "fires": 54,
+        "acres": 116473.46
+      },
+      {
+        "month": "September",
+        "fires": 41,
+        "acres": 86839.38
+      },
+      {
+        "month": "October",
+        "fires": 3,
+        "acres": 478.23
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 3852.37
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 436.07
+      }
+    ],
+    "1952": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 641.29
+      },
+      {
+        "month": "May",
+        "fires": 3,
+        "acres": 956.37
+      },
+      {
+        "month": "June",
+        "fires": 10,
+        "acres": 5773.29
+      },
+      {
+        "month": "July",
+        "fires": 22,
+        "acres": 17514.71
+      },
+      {
+        "month": "August",
+        "fires": 37,
+        "acres": 31527.49
+      },
+      {
+        "month": "September",
+        "fires": 43,
+        "acres": 30409.93
+      },
+      {
+        "month": "October",
+        "fires": 15,
+        "acres": 24609.85
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 6167.71
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1953": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 4,
+        "acres": 1346.35
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 4.98
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 6.86
+      },
+      {
+        "month": "May",
+        "fires": 10,
+        "acres": 2481.78
+      },
+      {
+        "month": "June",
+        "fires": 20,
+        "acres": 13131.38
+      },
+      {
+        "month": "July",
+        "fires": 35,
+        "acres": 179892.54
+      },
+      {
+        "month": "August",
+        "fires": 44,
+        "acres": 11201.96
+      },
+      {
+        "month": "September",
+        "fires": 23,
+        "acres": 35534.33
+      },
+      {
+        "month": "October",
+        "fires": 24,
+        "acres": 40488.66
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 5,
+        "acres": 21582.15
+      }
+    ],
+    "1954": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 1069.88
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 226.12
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 37.2
+      },
+      {
+        "month": "May",
+        "fires": 5,
+        "acres": 1236.52
+      },
+      {
+        "month": "June",
+        "fires": 13,
+        "acres": 11217.27
+      },
+      {
+        "month": "July",
+        "fires": 57,
+        "acres": 76178.24
+      },
+      {
+        "month": "August",
+        "fires": 23,
+        "acres": 30905.92
+      },
+      {
+        "month": "September",
+        "fires": 18,
+        "acres": 22638.49
+      },
+      {
+        "month": "October",
+        "fires": 4,
+        "acres": 16865.24
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 4389.91
+      },
+      {
+        "month": "December",
+        "fires": 3,
+        "acres": 20874.47
+      }
+    ],
+    "1955": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 488.64
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 53.84
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 59.65
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 157.72
+      },
+      {
+        "month": "June",
+        "fires": 9,
+        "acres": 3234.72
+      },
+      {
+        "month": "July",
+        "fires": 19,
+        "acres": 11867.19
+      },
+      {
+        "month": "August",
+        "fires": 46,
+        "acres": 18775.63
+      },
+      {
+        "month": "September",
+        "fires": 59,
+        "acres": 297953.34
+      },
+      {
+        "month": "October",
+        "fires": 6,
+        "acres": 2682.02
+      },
+      {
+        "month": "November",
+        "fires": 5,
+        "acres": 19989.08
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1956": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 47.46
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 37.45
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 4,
+        "acres": 1004.49
+      },
+      {
+        "month": "July",
+        "fires": 14,
+        "acres": 2028.37
+      },
+      {
+        "month": "August",
+        "fires": 30,
+        "acres": 24585.03
+      },
+      {
+        "month": "September",
+        "fires": 23,
+        "acres": 34006.37
+      },
+      {
+        "month": "October",
+        "fires": 5,
+        "acres": 2005.18
+      },
+      {
+        "month": "November",
+        "fires": 18,
+        "acres": 65514.93
+      },
+      {
+        "month": "December",
+        "fires": 11,
+        "acres": 42424.78
+      }
+    ],
+    "1957": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 43.49
+      },
+      {
+        "month": "June",
+        "fires": 25,
+        "acres": 22729.13
+      },
+      {
+        "month": "July",
+        "fires": 26,
+        "acres": 35235.09
+      },
+      {
+        "month": "August",
+        "fires": 33,
+        "acres": 36903.37
+      },
+      {
+        "month": "September",
+        "fires": 33,
+        "acres": 55037.82
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 641.55
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 24708.08
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 94.89
+      }
+    ],
+    "1958": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 79.68
+      },
+      {
+        "month": "May",
+        "fires": 6,
+        "acres": 3058.46
+      },
+      {
+        "month": "June",
+        "fires": 3,
+        "acres": 779.67
+      },
+      {
+        "month": "July",
+        "fires": 40,
+        "acres": 21530.55
+      },
+      {
+        "month": "August",
+        "fires": 20,
+        "acres": 12631.89
+      },
+      {
+        "month": "September",
+        "fires": 40,
+        "acres": 43834.79
+      },
+      {
+        "month": "October",
+        "fires": 16,
+        "acres": 48240.71
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 6508.44
+      },
+      {
+        "month": "December",
+        "fires": 9,
+        "acres": 29006.27
+      }
+    ],
+    "1959": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 5.36
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 82.57
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 1256.57
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 368.61
+      },
+      {
+        "month": "June",
+        "fires": 25,
+        "acres": 17375.17
+      },
+      {
+        "month": "July",
+        "fires": 47,
+        "acres": 42464.51
+      },
+      {
+        "month": "August",
+        "fires": 38,
+        "acres": 63924.95
+      },
+      {
+        "month": "September",
+        "fires": 10,
+        "acres": 5698.48
+      },
+      {
+        "month": "October",
+        "fires": 28,
+        "acres": 59015.82
+      },
+      {
+        "month": "November",
+        "fires": 12,
+        "acres": 6628.02
+      },
+      {
+        "month": "December",
+        "fires": 5,
+        "acres": 3606
+      }
+    ],
+    "1960": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 23.4
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 16.88
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 1790.62
+      },
+      {
+        "month": "June",
+        "fires": 10,
+        "acres": 12770.55
+      },
+      {
+        "month": "July",
+        "fires": 25,
+        "acres": 137239.9
+      },
+      {
+        "month": "August",
+        "fires": 21,
+        "acres": 112317.6
+      },
+      {
+        "month": "September",
+        "fires": 16,
+        "acres": 6306.91
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 10507.72
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 70.31
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 257.68
+      }
+    ],
+    "1961": [
+      {
+        "month": "January",
+        "fires": 5,
+        "acres": 7669.5
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 855.44
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 470.57
+      },
+      {
+        "month": "May",
+        "fires": 2,
+        "acres": 900.39
+      },
+      {
+        "month": "June",
+        "fires": 21,
+        "acres": 17020.71
+      },
+      {
+        "month": "July",
+        "fires": 31,
+        "acres": 105284.96
+      },
+      {
+        "month": "August",
+        "fires": 27,
+        "acres": 33958.59
+      },
+      {
+        "month": "September",
+        "fires": 35,
+        "acres": 134225.88
+      },
+      {
+        "month": "October",
+        "fires": 10,
+        "acres": 5938.81
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 17187.74
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1962": [
+      {
+        "month": "January",
+        "fires": 4,
+        "acres": 5104.83
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 2274.36
+      },
+      {
+        "month": "May",
+        "fires": 3,
+        "acres": 726.47
+      },
+      {
+        "month": "June",
+        "fires": 9,
+        "acres": 4312.67
+      },
+      {
+        "month": "July",
+        "fires": 21,
+        "acres": 12841.35
+      },
+      {
+        "month": "August",
+        "fires": 27,
+        "acres": 64315.44
+      },
+      {
+        "month": "September",
+        "fires": 13,
+        "acres": 8150.16
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 361.35
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 10.12
+      },
+      {
+        "month": "December",
+        "fires": 3,
+        "acres": 8022.62
+      }
+    ],
+    "1963": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 1389.38
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 45.29
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 4,
+        "acres": 1552.82
+      },
+      {
+        "month": "July",
+        "fires": 15,
+        "acres": 5664.45
+      },
+      {
+        "month": "August",
+        "fires": 23,
+        "acres": 13450.15
+      },
+      {
+        "month": "September",
+        "fires": 12,
+        "acres": 2505.58
+      },
+      {
+        "month": "October",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 53.52
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 68.22
+      }
+    ],
+    "1964": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 624.2
+      },
+      {
+        "month": "March",
+        "fires": 5,
+        "acres": 12685.32
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 890.55
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 717.7
+      },
+      {
+        "month": "June",
+        "fires": 12,
+        "acres": 8147.63
+      },
+      {
+        "month": "July",
+        "fires": 34,
+        "acres": 49751.08
+      },
+      {
+        "month": "August",
+        "fires": 20,
+        "acres": 33431.63
+      },
+      {
+        "month": "September",
+        "fires": 25,
+        "acres": 173884.46
+      },
+      {
+        "month": "October",
+        "fires": 7,
+        "acres": 3572.62
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 4.78
+      }
+    ],
+    "1965": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 1,
+        "acres": 13707.68
+      },
+      {
+        "month": "July",
+        "fires": 5,
+        "acres": 650.57
+      },
+      {
+        "month": "August",
+        "fires": 10,
+        "acres": 3280.06
+      },
+      {
+        "month": "September",
+        "fires": 16,
+        "acres": 44412.98
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 7325.53
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 1147.1
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1966": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 476.15
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 899.57
+      },
+      {
+        "month": "May",
+        "fires": 9,
+        "acres": 17429.89
+      },
+      {
+        "month": "June",
+        "fires": 19,
+        "acres": 35328.21
+      },
+      {
+        "month": "July",
+        "fires": 14,
+        "acres": 10657.65
+      },
+      {
+        "month": "August",
+        "fires": 19,
+        "acres": 39434.81
+      },
+      {
+        "month": "September",
+        "fires": 13,
+        "acres": 19421.49
+      },
+      {
+        "month": "October",
+        "fires": 10,
+        "acres": 8057.18
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 3223.22
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1967": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 472.42
+      },
+      {
+        "month": "June",
+        "fires": 6,
+        "acres": 6388.45
+      },
+      {
+        "month": "July",
+        "fires": 17,
+        "acres": 13802.51
+      },
+      {
+        "month": "August",
+        "fires": 24,
+        "acres": 29376.25
+      },
+      {
+        "month": "September",
+        "fires": 7,
+        "acres": 3937.25
+      },
+      {
+        "month": "October",
+        "fires": 22,
+        "acres": 63957.54
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 299.89
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1968": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 974.71
+      },
+      {
+        "month": "May",
+        "fires": 6,
+        "acres": 4327.95
+      },
+      {
+        "month": "June",
+        "fires": 31,
+        "acres": 68187.44
+      },
+      {
+        "month": "July",
+        "fires": 46,
+        "acres": 28985.17
+      },
+      {
+        "month": "August",
+        "fires": 33,
+        "acres": 33816.76
+      },
+      {
+        "month": "September",
+        "fires": 29,
+        "acres": 38793.11
+      },
+      {
+        "month": "October",
+        "fires": 6,
+        "acres": 4162.67
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 18.87
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 17.32
+      }
+    ],
+    "1969": [
+      {
+        "month": "January",
+        "fires": 2,
+        "acres": 2655.38
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 1382.29
+      },
+      {
+        "month": "June",
+        "fires": 8,
+        "acres": 3951.98
+      },
+      {
+        "month": "July",
+        "fires": 29,
+        "acres": 6146.67
+      },
+      {
+        "month": "August",
+        "fires": 21,
+        "acres": 16738.85
+      },
+      {
+        "month": "September",
+        "fires": 19,
+        "acres": 12686.68
+      },
+      {
+        "month": "October",
+        "fires": 18,
+        "acres": 7653.32
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 2204.32
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1970": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 125.45
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 210.1
+      },
+      {
+        "month": "May",
+        "fires": 27,
+        "acres": 14330.25
+      },
+      {
+        "month": "June",
+        "fires": 31,
+        "acres": 14120.99
+      },
+      {
+        "month": "July",
+        "fires": 38,
+        "acres": 21690.29
+      },
+      {
+        "month": "August",
+        "fires": 30,
+        "acres": 9711.47
+      },
+      {
+        "month": "September",
+        "fires": 56,
+        "acres": 543339.23
+      },
+      {
+        "month": "October",
+        "fires": 7,
+        "acres": 5572.27
+      },
+      {
+        "month": "November",
+        "fires": 8,
+        "acres": 61028.48
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1971": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 82.46
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 190.71
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 8,
+        "acres": 3625.24
+      },
+      {
+        "month": "July",
+        "fires": 19,
+        "acres": 5818.26
+      },
+      {
+        "month": "August",
+        "fires": 28,
+        "acres": 15840.43
+      },
+      {
+        "month": "September",
+        "fires": 19,
+        "acres": 7279.43
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 22307.83
+      },
+      {
+        "month": "November",
+        "fires": 6,
+        "acres": 538.38
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 2831.46
+      }
+    ],
+    "1972": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 104.26
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 16.63
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 294.73
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 187.15
+      },
+      {
+        "month": "May",
+        "fires": 10,
+        "acres": 5745.62
+      },
+      {
+        "month": "June",
+        "fires": 12,
+        "acres": 4886.68
+      },
+      {
+        "month": "July",
+        "fires": 36,
+        "acres": 24056.07
+      },
+      {
+        "month": "August",
+        "fires": 40,
+        "acres": 46614.77
+      },
+      {
+        "month": "September",
+        "fires": 21,
+        "acres": 3806.6
+      },
+      {
+        "month": "October",
+        "fires": 12,
+        "acres": 563.97
+      },
+      {
+        "month": "November",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1973": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 47.68
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 6,
+        "acres": 984.79
+      },
+      {
+        "month": "June",
+        "fires": 27,
+        "acres": 37283.44
+      },
+      {
+        "month": "July",
+        "fires": 32,
+        "acres": 22396.96
+      },
+      {
+        "month": "August",
+        "fires": 29,
+        "acres": 75824.77
+      },
+      {
+        "month": "September",
+        "fires": 18,
+        "acres": 70909.52
+      },
+      {
+        "month": "October",
+        "fires": 15,
+        "acres": 13583.28
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 189.32
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1974": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 666.73
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 2204.08
+      },
+      {
+        "month": "May",
+        "fires": 17,
+        "acres": 15969.17
+      },
+      {
+        "month": "June",
+        "fires": 38,
+        "acres": 21314.63
+      },
+      {
+        "month": "July",
+        "fires": 45,
+        "acres": 29583.66
+      },
+      {
+        "month": "August",
+        "fires": 38,
+        "acres": 33990.2
+      },
+      {
+        "month": "September",
+        "fires": 25,
+        "acres": 23116.01
+      },
+      {
+        "month": "October",
+        "fires": 7,
+        "acres": 1053.61
+      },
+      {
+        "month": "November",
+        "fires": 6,
+        "acres": 2204.22
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 33.54
+      }
+    ],
+    "1975": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 14.91
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 8,
+        "acres": 3479.25
+      },
+      {
+        "month": "June",
+        "fires": 24,
+        "acres": 11411.38
+      },
+      {
+        "month": "July",
+        "fires": 42,
+        "acres": 30419.12
+      },
+      {
+        "month": "August",
+        "fires": 33,
+        "acres": 40614.26
+      },
+      {
+        "month": "September",
+        "fires": 31,
+        "acres": 28513.41
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 851.09
+      },
+      {
+        "month": "November",
+        "fires": 12,
+        "acres": 67577.04
+      },
+      {
+        "month": "December",
+        "fires": 5,
+        "acres": 4572.37
+      }
+    ],
+    "1976": [
+      {
+        "month": "January",
+        "fires": 9,
+        "acres": 4003.46
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 56.7
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 290.29
+      },
+      {
+        "month": "May",
+        "fires": 7,
+        "acres": 10264.23
+      },
+      {
+        "month": "June",
+        "fires": 37,
+        "acres": 155339.06
+      },
+      {
+        "month": "July",
+        "fires": 21,
+        "acres": 10179.01
+      },
+      {
+        "month": "August",
+        "fires": 10,
+        "acres": 3336.89
+      },
+      {
+        "month": "September",
+        "fires": 6,
+        "acres": 7398.62
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 29.45
+      },
+      {
+        "month": "November",
+        "fires": 12,
+        "acres": 2216.01
+      },
+      {
+        "month": "December",
+        "fires": 4,
+        "acres": 298.03
+      }
+    ],
+    "1977": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 7,
+        "acres": 1106.5
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 4089.66
+      },
+      {
+        "month": "April",
+        "fires": 7,
+        "acres": 318.27
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 1.46
+      },
+      {
+        "month": "June",
+        "fires": 14,
+        "acres": 15299.37
+      },
+      {
+        "month": "July",
+        "fires": 41,
+        "acres": 20759.93
+      },
+      {
+        "month": "August",
+        "fires": 60,
+        "acres": 403671.61
+      },
+      {
+        "month": "September",
+        "fires": 6,
+        "acres": 284.18
+      },
+      {
+        "month": "October",
+        "fires": 2,
+        "acres": 55.64
+      },
+      {
+        "month": "November",
+        "fires": 5,
+        "acres": 2824.53
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 9263.85
+      }
+    ],
+    "1978": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 129.62
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 5,
+        "acres": 1543.8
+      },
+      {
+        "month": "June",
+        "fires": 14,
+        "acres": 2392.04
+      },
+      {
+        "month": "July",
+        "fires": 34,
+        "acres": 12683.4
+      },
+      {
+        "month": "August",
+        "fires": 39,
+        "acres": 43461.87
+      },
+      {
+        "month": "September",
+        "fires": 16,
+        "acres": 11945.88
+      },
+      {
+        "month": "October",
+        "fires": 14,
+        "acres": 41103.62
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 18.11
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1979": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 492.61
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 2805.49
+      },
+      {
+        "month": "May",
+        "fires": 14,
+        "acres": 5720.7
+      },
+      {
+        "month": "June",
+        "fires": 69,
+        "acres": 125873.73
+      },
+      {
+        "month": "July",
+        "fires": 67,
+        "acres": 53611.45
+      },
+      {
+        "month": "August",
+        "fires": 29,
+        "acres": 12859.18
+      },
+      {
+        "month": "September",
+        "fires": 51,
+        "acres": 118885.06
+      },
+      {
+        "month": "October",
+        "fires": 8,
+        "acres": 942.55
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 1141.4
+      },
+      {
+        "month": "December",
+        "fires": 8,
+        "acres": 1796.93
+      }
+    ],
+    "1980": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 5.63
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 76.98
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 903.72
+      },
+      {
+        "month": "April",
+        "fires": 5,
+        "acres": 4309.17
+      },
+      {
+        "month": "May",
+        "fires": 6,
+        "acres": 959.99
+      },
+      {
+        "month": "June",
+        "fires": 25,
+        "acres": 5762.94
+      },
+      {
+        "month": "July",
+        "fires": 74,
+        "acres": 69906.17
+      },
+      {
+        "month": "August",
+        "fires": 42,
+        "acres": 57790.12
+      },
+      {
+        "month": "September",
+        "fires": 26,
+        "acres": 25442.99
+      },
+      {
+        "month": "October",
+        "fires": 45,
+        "acres": 25581.37
+      },
+      {
+        "month": "November",
+        "fires": 29,
+        "acres": 136435.02
+      },
+      {
+        "month": "December",
+        "fires": 6,
+        "acres": 1029.4
+      }
+    ],
+    "1981": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 8.46
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 1306.92
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 745.95
+      },
+      {
+        "month": "May",
+        "fires": 7,
+        "acres": 3218.88
+      },
+      {
+        "month": "June",
+        "fires": 59,
+        "acres": 131035.43
+      },
+      {
+        "month": "July",
+        "fires": 56,
+        "acres": 27687.69
+      },
+      {
+        "month": "August",
+        "fires": 59,
+        "acres": 74404.11
+      },
+      {
+        "month": "September",
+        "fires": 33,
+        "acres": 27487.4
+      },
+      {
+        "month": "October",
+        "fires": 10,
+        "acres": 21584.41
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 289.94
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 556.57
+      }
+    ],
+    "1982": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 878.73
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 51.49
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 8,
+        "acres": 3823.12
+      },
+      {
+        "month": "June",
+        "fires": 12,
+        "acres": 7599.63
+      },
+      {
+        "month": "July",
+        "fires": 28,
+        "acres": 15133.81
+      },
+      {
+        "month": "August",
+        "fires": 36,
+        "acres": 15605.44
+      },
+      {
+        "month": "September",
+        "fires": 27,
+        "acres": 15815.3
+      },
+      {
+        "month": "October",
+        "fires": 16,
+        "acres": 74909.14
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 435.2
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1983": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 8,
+        "acres": 5982.29
+      },
+      {
+        "month": "June",
+        "fires": 24,
+        "acres": 14947.71
+      },
+      {
+        "month": "July",
+        "fires": 61,
+        "acres": 35637.97
+      },
+      {
+        "month": "August",
+        "fires": 28,
+        "acres": 16772.38
+      },
+      {
+        "month": "September",
+        "fires": 15,
+        "acres": 8435.97
+      },
+      {
+        "month": "October",
+        "fires": 10,
+        "acres": 644.39
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 12.68
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1984": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 605.78
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 1978.29
+      },
+      {
+        "month": "April",
+        "fires": 10,
+        "acres": 4239.43
+      },
+      {
+        "month": "May",
+        "fires": 46,
+        "acres": 51143.59
+      },
+      {
+        "month": "June",
+        "fires": 25,
+        "acres": 41466.34
+      },
+      {
+        "month": "July",
+        "fires": 42,
+        "acres": 47830.99
+      },
+      {
+        "month": "August",
+        "fires": 31,
+        "acres": 24750.89
+      },
+      {
+        "month": "September",
+        "fires": 22,
+        "acres": 11171.36
+      },
+      {
+        "month": "October",
+        "fires": 7,
+        "acres": 9924.93
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 285.14
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1985": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 721.98
+      },
+      {
+        "month": "May",
+        "fires": 5,
+        "acres": 3141.95
+      },
+      {
+        "month": "June",
+        "fires": 31,
+        "acres": 65769.88
+      },
+      {
+        "month": "July",
+        "fires": 79,
+        "acres": 375733.89
+      },
+      {
+        "month": "August",
+        "fires": 37,
+        "acres": 17307.46
+      },
+      {
+        "month": "September",
+        "fires": 6,
+        "acres": 1647.94
+      },
+      {
+        "month": "October",
+        "fires": 19,
+        "acres": 69227.73
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 14.23
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 431.2
+      }
+    ],
+    "1986": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 3422.46
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 12139.81
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 1285.61
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 4725.55
+      },
+      {
+        "month": "June",
+        "fires": 29,
+        "acres": 10681.67
+      },
+      {
+        "month": "July",
+        "fires": 42,
+        "acres": 21933.82
+      },
+      {
+        "month": "August",
+        "fires": 43,
+        "acres": 9569.15
+      },
+      {
+        "month": "September",
+        "fires": 13,
+        "acres": 17011.15
+      },
+      {
+        "month": "October",
+        "fires": 7,
+        "acres": 1578.22
+      },
+      {
+        "month": "November",
+        "fires": 8,
+        "acres": 18140.99
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 199
+      }
+    ],
+    "1987": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 3,
+        "acres": 346.33
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 599.92
+      },
+      {
+        "month": "April",
+        "fires": 8,
+        "acres": 8289.34
+      },
+      {
+        "month": "May",
+        "fires": 20,
+        "acres": 18712.75
+      },
+      {
+        "month": "June",
+        "fires": 23,
+        "acres": 13259.77
+      },
+      {
+        "month": "July",
+        "fires": 36,
+        "acres": 21540.23
+      },
+      {
+        "month": "August",
+        "fires": 110,
+        "acres": 619661.18
+      },
+      {
+        "month": "September",
+        "fires": 36,
+        "acres": 124438.44
+      },
+      {
+        "month": "October",
+        "fires": 11,
+        "acres": 27800.5
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 1116.78
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1988": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 364.28
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 27.75
+      },
+      {
+        "month": "March",
+        "fires": 8,
+        "acres": 1475.85
+      },
+      {
+        "month": "April",
+        "fires": 5,
+        "acres": 1867.62
+      },
+      {
+        "month": "May",
+        "fires": 13,
+        "acres": 2398.74
+      },
+      {
+        "month": "June",
+        "fires": 35,
+        "acres": 28578.09
+      },
+      {
+        "month": "July",
+        "fires": 49,
+        "acres": 40340.37
+      },
+      {
+        "month": "August",
+        "fires": 43,
+        "acres": 25068.31
+      },
+      {
+        "month": "September",
+        "fires": 34,
+        "acres": 145914.94
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 7762.5
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 785.42
+      },
+      {
+        "month": "December",
+        "fires": 17,
+        "acres": 10666.29
+      }
+    ],
+    "1989": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 123.96
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 6,
+        "acres": 571.39
+      },
+      {
+        "month": "May",
+        "fires": 8,
+        "acres": 1827.64
+      },
+      {
+        "month": "June",
+        "fires": 28,
+        "acres": 18514.73
+      },
+      {
+        "month": "July",
+        "fires": 31,
+        "acres": 55140.59
+      },
+      {
+        "month": "August",
+        "fires": 23,
+        "acres": 13950.34
+      },
+      {
+        "month": "September",
+        "fires": 19,
+        "acres": 8800.87
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 17141.69
+      },
+      {
+        "month": "November",
+        "fires": 15,
+        "acres": 4057.74
+      },
+      {
+        "month": "December",
+        "fires": 10,
+        "acres": 332.12
+      }
+    ],
+    "1990": [
+      {
+        "month": "January",
+        "fires": 4,
+        "acres": 119.95
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 4,
+        "acres": 363.75
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 2656.23
+      },
+      {
+        "month": "May",
+        "fires": 4,
+        "acres": 220.63
+      },
+      {
+        "month": "June",
+        "fires": 22,
+        "acres": 20831.9
+      },
+      {
+        "month": "July",
+        "fires": 15,
+        "acres": 11969.4
+      },
+      {
+        "month": "August",
+        "fires": 49,
+        "acres": 257376.9
+      },
+      {
+        "month": "September",
+        "fires": 9,
+        "acres": 31130.27
+      },
+      {
+        "month": "October",
+        "fires": 18,
+        "acres": 7424.63
+      },
+      {
+        "month": "November",
+        "fires": 5,
+        "acres": 120.55
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 49.76
+      }
+    ],
+    "1991": [
+      {
+        "month": "January",
+        "fires": 10,
+        "acres": 2431.59
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 11.85
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 619.52
+      },
+      {
+        "month": "May",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "June",
+        "fires": 2,
+        "acres": 1631.04
+      },
+      {
+        "month": "July",
+        "fires": 9,
+        "acres": 772.35
+      },
+      {
+        "month": "August",
+        "fires": 10,
+        "acres": 4909.55
+      },
+      {
+        "month": "September",
+        "fires": 21,
+        "acres": 12652.4
+      },
+      {
+        "month": "October",
+        "fires": 10,
+        "acres": 11355.7
+      },
+      {
+        "month": "November",
+        "fires": 5,
+        "acres": 1176.03
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1992": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 422.56
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 13.82
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 10,
+        "acres": 4705.66
+      },
+      {
+        "month": "June",
+        "fires": 35,
+        "acres": 11719.07
+      },
+      {
+        "month": "July",
+        "fires": 28,
+        "acres": 13057.41
+      },
+      {
+        "month": "August",
+        "fires": 37,
+        "acres": 118360.59
+      },
+      {
+        "month": "September",
+        "fires": 24,
+        "acres": 46131.81
+      },
+      {
+        "month": "October",
+        "fires": 7,
+        "acres": 1240.33
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 2305.55
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1993": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 22,
+        "acres": 22380.71
+      },
+      {
+        "month": "June",
+        "fires": 36,
+        "acres": 36473.36
+      },
+      {
+        "month": "July",
+        "fires": 17,
+        "acres": 5161.57
+      },
+      {
+        "month": "August",
+        "fires": 17,
+        "acres": 9265.28
+      },
+      {
+        "month": "September",
+        "fires": 25,
+        "acres": 48948.84
+      },
+      {
+        "month": "October",
+        "fires": 17,
+        "acres": 162868.97
+      },
+      {
+        "month": "November",
+        "fires": 10,
+        "acres": 23868.08
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1994": [
+      {
+        "month": "January",
+        "fires": 3,
+        "acres": 3256.72
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 113.15
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 29.63
+      },
+      {
+        "month": "May",
+        "fires": 8,
+        "acres": 3115.9
+      },
+      {
+        "month": "June",
+        "fires": 45,
+        "acres": 45521.22
+      },
+      {
+        "month": "July",
+        "fires": 55,
+        "acres": 75142.5
+      },
+      {
+        "month": "August",
+        "fires": 44,
+        "acres": 131063.52
+      },
+      {
+        "month": "September",
+        "fires": 21,
+        "acres": 57938.41
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 7948.63
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 716.92
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 223.26
+      }
+    ],
+    "1995": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 8,
+        "acres": 4125.35
+      },
+      {
+        "month": "June",
+        "fires": 13,
+        "acres": 26130.54
+      },
+      {
+        "month": "July",
+        "fires": 54,
+        "acres": 42560.49
+      },
+      {
+        "month": "August",
+        "fires": 40,
+        "acres": 68638.48
+      },
+      {
+        "month": "September",
+        "fires": 31,
+        "acres": 7975.09
+      },
+      {
+        "month": "October",
+        "fires": 17,
+        "acres": 28372.36
+      },
+      {
+        "month": "November",
+        "fires": 9,
+        "acres": 3973.05
+      },
+      {
+        "month": "December",
+        "fires": 5,
+        "acres": 1235.86
+      }
+    ],
+    "1996": [
+      {
+        "month": "January",
+        "fires": 4,
+        "acres": 3767.9
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 13,
+        "acres": 33529.74
+      },
+      {
+        "month": "May",
+        "fires": 22,
+        "acres": 13377.81
+      },
+      {
+        "month": "June",
+        "fires": 60,
+        "acres": 43751.82
+      },
+      {
+        "month": "July",
+        "fires": 54,
+        "acres": 49360.78
+      },
+      {
+        "month": "August",
+        "fires": 89,
+        "acres": 397596.58
+      },
+      {
+        "month": "September",
+        "fires": 16,
+        "acres": 6124.32
+      },
+      {
+        "month": "October",
+        "fires": 20,
+        "acres": 77372.49
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 630.87
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1997": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 344.6
+      },
+      {
+        "month": "April",
+        "fires": 7,
+        "acres": 1093.19
+      },
+      {
+        "month": "May",
+        "fires": 35,
+        "acres": 18212.46
+      },
+      {
+        "month": "June",
+        "fires": 10,
+        "acres": 9845.37
+      },
+      {
+        "month": "July",
+        "fires": 28,
+        "acres": 13571.93
+      },
+      {
+        "month": "August",
+        "fires": 33,
+        "acres": 132159.21
+      },
+      {
+        "month": "September",
+        "fires": 33,
+        "acres": 26458.6
+      },
+      {
+        "month": "October",
+        "fires": 15,
+        "acres": 8418.96
+      },
+      {
+        "month": "November",
+        "fires": 3,
+        "acres": 520.36
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "1998": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 8.93
+      },
+      {
+        "month": "May",
+        "fires": 1,
+        "acres": 377.73
+      },
+      {
+        "month": "June",
+        "fires": 9,
+        "acres": 2403.05
+      },
+      {
+        "month": "July",
+        "fires": 29,
+        "acres": 19001.7
+      },
+      {
+        "month": "August",
+        "fires": 40,
+        "acres": 36923.62
+      },
+      {
+        "month": "September",
+        "fires": 17,
+        "acres": 12933.05
+      },
+      {
+        "month": "October",
+        "fires": 44,
+        "acres": 80878.24
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 116.99
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 110.24
+      }
+    ],
+    "1999": [
+      {
+        "month": "January",
+        "fires": 2,
+        "acres": 21.58
+      },
+      {
+        "month": "February",
+        "fires": 3,
+        "acres": 96.46
+      },
+      {
+        "month": "March",
+        "fires": 4,
+        "acres": 6626.49
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 1516.26
+      },
+      {
+        "month": "May",
+        "fires": 11,
+        "acres": 16373.69
+      },
+      {
+        "month": "June",
+        "fires": 20,
+        "acres": 6482.81
+      },
+      {
+        "month": "July",
+        "fires": 50,
+        "acres": 42469.17
+      },
+      {
+        "month": "August",
+        "fires": 91,
+        "acres": 438303.92
+      },
+      {
+        "month": "September",
+        "fires": 29,
+        "acres": 162677.46
+      },
+      {
+        "month": "October",
+        "fires": 21,
+        "acres": 92700.45
+      },
+      {
+        "month": "November",
+        "fires": 6,
+        "acres": 433.16
+      },
+      {
+        "month": "December",
+        "fires": 13,
+        "acres": 8801.09
+      }
+    ],
+    "2000": [
+      {
+        "month": "January",
+        "fires": 3,
+        "acres": 54.45
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 171.89
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 2626.82
+      },
+      {
+        "month": "April",
+        "fires": 6,
+        "acres": 206.84
+      },
+      {
+        "month": "May",
+        "fires": 5,
+        "acres": 813.63
+      },
+      {
+        "month": "June",
+        "fires": 28,
+        "acres": 10774.68
+      },
+      {
+        "month": "July",
+        "fires": 45,
+        "acres": 114970.49
+      },
+      {
+        "month": "August",
+        "fires": 38,
+        "acres": 77879.5
+      },
+      {
+        "month": "September",
+        "fires": 24,
+        "acres": 26426.47
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 1353.28
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 3981.07
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 51.69
+      }
+    ],
+    "2001": [
+      {
+        "month": "January",
+        "fires": 2,
+        "acres": 10447.98
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 9.84
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 33.54
+      },
+      {
+        "month": "May",
+        "fires": 22,
+        "acres": 9310.11
+      },
+      {
+        "month": "June",
+        "fires": 50,
+        "acres": 27887.62
+      },
+      {
+        "month": "July",
+        "fires": 44,
+        "acres": 26090.79
+      },
+      {
+        "month": "August",
+        "fires": 51,
+        "acres": 120889.75
+      },
+      {
+        "month": "September",
+        "fires": 21,
+        "acres": 33863.67
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 9443.66
+      },
+      {
+        "month": "November",
+        "fires": 1,
+        "acres": 142.28
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 1409.17
+      }
+    ],
+    "2002": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 74.33
+      },
+      {
+        "month": "February",
+        "fires": 5,
+        "acres": 8192.2
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 443.36
+      },
+      {
+        "month": "April",
+        "fires": 8,
+        "acres": 1556.67
+      },
+      {
+        "month": "May",
+        "fires": 18,
+        "acres": 12036.6
+      },
+      {
+        "month": "June",
+        "fires": 49,
+        "acres": 108172.72
+      },
+      {
+        "month": "July",
+        "fires": 53,
+        "acres": 743174.07
+      },
+      {
+        "month": "August",
+        "fires": 25,
+        "acres": 6377.55
+      },
+      {
+        "month": "September",
+        "fires": 34,
+        "acres": 75017.66
+      },
+      {
+        "month": "October",
+        "fires": 14,
+        "acres": 2510.1
+      },
+      {
+        "month": "November",
+        "fires": 33,
+        "acres": 6343.25
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2003": [
+      {
+        "month": "January",
+        "fires": 3,
+        "acres": 957.66
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 2.78
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 77.32
+      },
+      {
+        "month": "April",
+        "fires": 2,
+        "acres": 1030.57
+      },
+      {
+        "month": "May",
+        "fires": 5,
+        "acres": 1343.05
+      },
+      {
+        "month": "June",
+        "fires": 39,
+        "acres": 19441.81
+      },
+      {
+        "month": "July",
+        "fires": 101,
+        "acres": 91266.21
+      },
+      {
+        "month": "August",
+        "fires": 54,
+        "acres": 62995.51
+      },
+      {
+        "month": "September",
+        "fires": 94,
+        "acres": 59284.97
+      },
+      {
+        "month": "October",
+        "fires": 33,
+        "acres": 728631.61
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 921.74
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 29.67
+      }
+    ],
+    "2004": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 512.9
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 16.44
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 71.52
+      },
+      {
+        "month": "April",
+        "fires": 12,
+        "acres": 3743.09
+      },
+      {
+        "month": "May",
+        "fires": 43,
+        "acres": 33223.44
+      },
+      {
+        "month": "June",
+        "fires": 44,
+        "acres": 24335.46
+      },
+      {
+        "month": "July",
+        "fires": 56,
+        "acres": 69134.03
+      },
+      {
+        "month": "August",
+        "fires": 62,
+        "acres": 44201.26
+      },
+      {
+        "month": "September",
+        "fires": 37,
+        "acres": 23174.54
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 66151.91
+      },
+      {
+        "month": "November",
+        "fires": 6,
+        "acres": 285.02
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2005": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 104.13
+      },
+      {
+        "month": "April",
+        "fires": 3,
+        "acres": 281.8
+      },
+      {
+        "month": "May",
+        "fires": 17,
+        "acres": 1828.49
+      },
+      {
+        "month": "June",
+        "fires": 44,
+        "acres": 87075.38
+      },
+      {
+        "month": "July",
+        "fires": 96,
+        "acres": 53685.22
+      },
+      {
+        "month": "August",
+        "fires": 55,
+        "acres": 24398.41
+      },
+      {
+        "month": "September",
+        "fires": 58,
+        "acres": 45756.04
+      },
+      {
+        "month": "October",
+        "fires": 18,
+        "acres": 12673.23
+      },
+      {
+        "month": "November",
+        "fires": 11,
+        "acres": 5309.77
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2006": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 477.11
+      },
+      {
+        "month": "February",
+        "fires": 6,
+        "acres": 13697.42
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 6.95
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 12,
+        "acres": 5675.34
+      },
+      {
+        "month": "June",
+        "fires": 51,
+        "acres": 39349.94
+      },
+      {
+        "month": "July",
+        "fires": 131,
+        "acres": 374423.62
+      },
+      {
+        "month": "August",
+        "fires": 51,
+        "acres": 16994.89
+      },
+      {
+        "month": "September",
+        "fires": 33,
+        "acres": 235541.07
+      },
+      {
+        "month": "October",
+        "fires": 13,
+        "acres": 42600.44
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 896.7
+      },
+      {
+        "month": "December",
+        "fires": 8,
+        "acres": 18506.27
+      }
+    ],
+    "2007": [
+      {
+        "month": "January",
+        "fires": 9,
+        "acres": 730.3
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 168.82
+      },
+      {
+        "month": "March",
+        "fires": 10,
+        "acres": 7780.67
+      },
+      {
+        "month": "April",
+        "fires": 16,
+        "acres": 3889.3
+      },
+      {
+        "month": "May",
+        "fires": 28,
+        "acres": 13050.04
+      },
+      {
+        "month": "June",
+        "fires": 44,
+        "acres": 29087.04
+      },
+      {
+        "month": "July",
+        "fires": 81,
+        "acres": 335439.38
+      },
+      {
+        "month": "August",
+        "fires": 65,
+        "acres": 16568.14
+      },
+      {
+        "month": "September",
+        "fires": 35,
+        "acres": 133602.06
+      },
+      {
+        "month": "October",
+        "fires": 46,
+        "acres": 484584.54
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 5883.88
+      },
+      {
+        "month": "December",
+        "fires": 3,
+        "acres": 139.72
+      }
+    ],
+    "2008": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 0.09
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 4,
+        "acres": 906.54
+      },
+      {
+        "month": "April",
+        "fires": 10,
+        "acres": 2217.14
+      },
+      {
+        "month": "May",
+        "fires": 24,
+        "acres": 24292.84
+      },
+      {
+        "month": "June",
+        "fires": 233,
+        "acres": 1066328.26
+      },
+      {
+        "month": "July",
+        "fires": 61,
+        "acres": 181452.6
+      },
+      {
+        "month": "August",
+        "fires": 36,
+        "acres": 12658.33
+      },
+      {
+        "month": "September",
+        "fires": 31,
+        "acres": 26786.24
+      },
+      {
+        "month": "October",
+        "fires": 20,
+        "acres": 21489.55
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 43639.41
+      },
+      {
+        "month": "December",
+        "fires": 2,
+        "acres": 15.75
+      }
+    ],
+    "2009": [
+      {
+        "month": "January",
+        "fires": 6,
+        "acres": 248.95
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 943.45
+      },
+      {
+        "month": "March",
+        "fires": 4,
+        "acres": 255.62
+      },
+      {
+        "month": "April",
+        "fires": 8,
+        "acres": 553.63
+      },
+      {
+        "month": "May",
+        "fires": 30,
+        "acres": 15482.98
+      },
+      {
+        "month": "June",
+        "fires": 39,
+        "acres": 11450.15
+      },
+      {
+        "month": "July",
+        "fires": 59,
+        "acres": 27211.88
+      },
+      {
+        "month": "August",
+        "fires": 60,
+        "acres": 345463.85
+      },
+      {
+        "month": "September",
+        "fires": 28,
+        "acres": 22198.27
+      },
+      {
+        "month": "October",
+        "fires": 15,
+        "acres": 11620.95
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 395.72
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2010": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 109.52
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 127.8
+      },
+      {
+        "month": "April",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "May",
+        "fires": 17,
+        "acres": 5679.71
+      },
+      {
+        "month": "June",
+        "fires": 35,
+        "acres": 5161.39
+      },
+      {
+        "month": "July",
+        "fires": 74,
+        "acres": 64493.83
+      },
+      {
+        "month": "August",
+        "fires": 46,
+        "acres": 11640.19
+      },
+      {
+        "month": "September",
+        "fires": 18,
+        "acres": 11243.66
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 2354.59
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 245.34
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2011": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 0.09
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 17.94
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 1349.14
+      },
+      {
+        "month": "April",
+        "fires": 1,
+        "acres": 14.39
+      },
+      {
+        "month": "May",
+        "fires": 24,
+        "acres": 5246.36
+      },
+      {
+        "month": "June",
+        "fires": 33,
+        "acres": 14358.66
+      },
+      {
+        "month": "July",
+        "fires": 60,
+        "acres": 45053.76
+      },
+      {
+        "month": "August",
+        "fires": 67,
+        "acres": 18249.51
+      },
+      {
+        "month": "September",
+        "fires": 80,
+        "acres": 113784.12
+      },
+      {
+        "month": "October",
+        "fires": 15,
+        "acres": 2379.88
+      },
+      {
+        "month": "November",
+        "fires": 8,
+        "acres": 311.41
+      },
+      {
+        "month": "December",
+        "fires": 23,
+        "acres": 1657.4
+      }
+    ],
+    "2012": [
+      {
+        "month": "January",
+        "fires": 10,
+        "acres": 88.05
+      },
+      {
+        "month": "February",
+        "fires": 8,
+        "acres": 260.4
+      },
+      {
+        "month": "March",
+        "fires": 9,
+        "acres": 70.54
+      },
+      {
+        "month": "April",
+        "fires": 8,
+        "acres": 142
+      },
+      {
+        "month": "May",
+        "fires": 23,
+        "acres": 8130.83
+      },
+      {
+        "month": "June",
+        "fires": 75,
+        "acres": 53606.64
+      },
+      {
+        "month": "July",
+        "fires": 64,
+        "acres": 156754.83
+      },
+      {
+        "month": "August",
+        "fires": 87,
+        "acres": 582184.83
+      },
+      {
+        "month": "September",
+        "fires": 38,
+        "acres": 45973.06
+      },
+      {
+        "month": "October",
+        "fires": 22,
+        "acres": 952.28
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 521.21
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2013": [
+      {
+        "month": "January",
+        "fires": 3,
+        "acres": 342.7
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 769.08
+      },
+      {
+        "month": "March",
+        "fires": 6,
+        "acres": 101.04
+      },
+      {
+        "month": "April",
+        "fires": 14,
+        "acres": 734.94
+      },
+      {
+        "month": "May",
+        "fires": 53,
+        "acres": 78782.92
+      },
+      {
+        "month": "June",
+        "fires": 35,
+        "acres": 8682.29
+      },
+      {
+        "month": "July",
+        "fires": 53,
+        "acres": 104577.94
+      },
+      {
+        "month": "August",
+        "fires": 69,
+        "acres": 353631.17
+      },
+      {
+        "month": "September",
+        "fires": 35,
+        "acres": 13375.42
+      },
+      {
+        "month": "October",
+        "fires": 12,
+        "acres": 3074.31
+      },
+      {
+        "month": "November",
+        "fires": 11,
+        "acres": 4358.86
+      },
+      {
+        "month": "December",
+        "fires": 4,
+        "acres": 991.41
+      }
+    ],
+    "2014": [
+      {
+        "month": "January",
+        "fires": 17,
+        "acres": 4879.69
+      },
+      {
+        "month": "February",
+        "fires": 2,
+        "acres": 39.25
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 577.52
+      },
+      {
+        "month": "April",
+        "fires": 8,
+        "acres": 2566.14
+      },
+      {
+        "month": "May",
+        "fires": 21,
+        "acres": 27804.56
+      },
+      {
+        "month": "June",
+        "fires": 21,
+        "acres": 3079.85
+      },
+      {
+        "month": "July",
+        "fires": 83,
+        "acres": 272172.6
+      },
+      {
+        "month": "August",
+        "fires": 34,
+        "acres": 139628.17
+      },
+      {
+        "month": "September",
+        "fires": 33,
+        "acres": 103123.55
+      },
+      {
+        "month": "October",
+        "fires": 9,
+        "acres": 783.56
+      },
+      {
+        "month": "November",
+        "fires": 5,
+        "acres": 1.25
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2015": [
+      {
+        "month": "January",
+        "fires": 2,
+        "acres": 79.83
+      },
+      {
+        "month": "February",
+        "fires": 7,
+        "acres": 7312.69
+      },
+      {
+        "month": "March",
+        "fires": 5,
+        "acres": 25
+      },
+      {
+        "month": "April",
+        "fires": 12,
+        "acres": 1212.78
+      },
+      {
+        "month": "May",
+        "fires": 13,
+        "acres": 243.1
+      },
+      {
+        "month": "June",
+        "fires": 44,
+        "acres": 70799.26
+      },
+      {
+        "month": "July",
+        "fires": 124,
+        "acres": 479806.88
+      },
+      {
+        "month": "August",
+        "fires": 50,
+        "acres": 75765.35
+      },
+      {
+        "month": "September",
+        "fires": 29,
+        "acres": 150597.29
+      },
+      {
+        "month": "October",
+        "fires": 14,
+        "acres": 1944.96
+      },
+      {
+        "month": "November",
+        "fires": 7,
+        "acres": 89.05
+      },
+      {
+        "month": "December",
+        "fires": 5,
+        "acres": 1315.06
+      }
+    ],
+    "2016": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 3,
+        "acres": 13.52
+      },
+      {
+        "month": "March",
+        "fires": 2,
+        "acres": 26.04
+      },
+      {
+        "month": "April",
+        "fires": 15,
+        "acres": 598.89
+      },
+      {
+        "month": "May",
+        "fires": 31,
+        "acres": 6230.35
+      },
+      {
+        "month": "June",
+        "fires": 82,
+        "acres": 91782.61
+      },
+      {
+        "month": "July",
+        "fires": 79,
+        "acres": 184855.64
+      },
+      {
+        "month": "August",
+        "fires": 65,
+        "acres": 212589.52
+      },
+      {
+        "month": "September",
+        "fires": 52,
+        "acres": 21511.23
+      },
+      {
+        "month": "October",
+        "fires": 16,
+        "acres": 14075.83
+      },
+      {
+        "month": "November",
+        "fires": 8,
+        "acres": 204.15
+      },
+      {
+        "month": "December",
+        "fires": 3,
+        "acres": 46.21
+      }
+    ],
+    "2017": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 1,
+        "acres": 16.05
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 153.71
+      },
+      {
+        "month": "April",
+        "fires": 14,
+        "acres": 6312.41
+      },
+      {
+        "month": "May",
+        "fires": 38,
+        "acres": 16232.4
+      },
+      {
+        "month": "June",
+        "fires": 98,
+        "acres": 37069.73
+      },
+      {
+        "month": "July",
+        "fires": 152,
+        "acres": 395118.68
+      },
+      {
+        "month": "August",
+        "fires": 129,
+        "acres": 364032.18
+      },
+      {
+        "month": "September",
+        "fires": 91,
+        "acres": 57045.26
+      },
+      {
+        "month": "October",
+        "fires": 56,
+        "acres": 240166.81
+      },
+      {
+        "month": "November",
+        "fires": 9,
+        "acres": 383.18
+      },
+      {
+        "month": "December",
+        "fires": 16,
+        "acres": 308052.65
+      }
+    ],
+    "2018": [
+      {
+        "month": "January",
+        "fires": 12,
+        "acres": 6.95
+      },
+      {
+        "month": "February",
+        "fires": 14,
+        "acres": 2135.54
+      },
+      {
+        "month": "March",
+        "fires": 7,
+        "acres": 285.9
+      },
+      {
+        "month": "April",
+        "fires": 9,
+        "acres": 1588.84
+      },
+      {
+        "month": "May",
+        "fires": 27,
+        "acres": 3911.66
+      },
+      {
+        "month": "June",
+        "fires": 89,
+        "acres": 153928.75
+      },
+      {
+        "month": "July",
+        "fires": 103,
+        "acres": 856071.92
+      },
+      {
+        "month": "August",
+        "fires": 55,
+        "acres": 178757.26
+      },
+      {
+        "month": "September",
+        "fires": 45,
+        "acres": 86412.52
+      },
+      {
+        "month": "October",
+        "fires": 28,
+        "acres": 50668.05
+      },
+      {
+        "month": "November",
+        "fires": 22,
+        "acres": 247865.2
+      },
+      {
+        "month": "December",
+        "fires": 4,
+        "acres": 2.59
+      }
+    ],
+    "2019": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 3,
+        "acres": 617.25
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 100.1
+      },
+      {
+        "month": "May",
+        "fires": 22,
+        "acres": 5669.85
+      },
+      {
+        "month": "June",
+        "fires": 58,
+        "acres": 13817.71
+      },
+      {
+        "month": "July",
+        "fires": 51,
+        "acres": 28350.81
+      },
+      {
+        "month": "August",
+        "fires": 46,
+        "acres": 12196.28
+      },
+      {
+        "month": "September",
+        "fires": 68,
+        "acres": 95623.72
+      },
+      {
+        "month": "October",
+        "fires": 45,
+        "acres": 118513.29
+      },
+      {
+        "month": "November",
+        "fires": 16,
+        "acres": 5515.12
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 12.63
+      }
+    ],
+    "2020": [
+      {
+        "month": "January",
+        "fires": 1,
+        "acres": 100.55
+      },
+      {
+        "month": "February",
+        "fires": 11,
+        "acres": 606.95
+      },
+      {
+        "month": "March",
+        "fires": 6,
+        "acres": 284.72
+      },
+      {
+        "month": "April",
+        "fires": 5,
+        "acres": 128.22
+      },
+      {
+        "month": "May",
+        "fires": 30,
+        "acres": 1948.45
+      },
+      {
+        "month": "June",
+        "fires": 108,
+        "acres": 25727.06
+      },
+      {
+        "month": "July",
+        "fires": 116,
+        "acres": 362194.7
+      },
+      {
+        "month": "August",
+        "fires": 125,
+        "acres": 2877355.82
+      },
+      {
+        "month": "September",
+        "fires": 45,
+        "acres": 839072.51
+      },
+      {
+        "month": "October",
+        "fires": 32,
+        "acres": 38564.83
+      },
+      {
+        "month": "November",
+        "fires": 11,
+        "acres": 23277.98
+      },
+      {
+        "month": "December",
+        "fires": 15,
+        "acres": 13073.22
+      }
+    ],
+    "2021": [
+      {
+        "month": "January",
+        "fires": 28,
+        "acres": 2377.81
+      },
+      {
+        "month": "February",
+        "fires": 5,
+        "acres": 148.21
+      },
+      {
+        "month": "March",
+        "fires": 9,
+        "acres": 1276
+      },
+      {
+        "month": "April",
+        "fires": 38,
+        "acres": 1587.84
+      },
+      {
+        "month": "May",
+        "fires": 48,
+        "acres": 11356.32
+      },
+      {
+        "month": "June",
+        "fires": 89,
+        "acres": 67784.98
+      },
+      {
+        "month": "July",
+        "fires": 71,
+        "acres": 1704910.97
+      },
+      {
+        "month": "August",
+        "fires": 58,
+        "acres": 508966.52
+      },
+      {
+        "month": "September",
+        "fires": 25,
+        "acres": 196288.97
+      },
+      {
+        "month": "October",
+        "fires": 14,
+        "acres": 17741.66
+      },
+      {
+        "month": "November",
+        "fires": 2,
+        "acres": 139.93
+      },
+      {
+        "month": "December",
+        "fires": 1,
+        "acres": 31.7
+      }
+    ],
+    "2022": [
+      {
+        "month": "January",
+        "fires": 2,
+        "acres": 687.49
+      },
+      {
+        "month": "February",
+        "fires": 3,
+        "acres": 4298.42
+      },
+      {
+        "month": "March",
+        "fires": 14,
+        "acres": 1010.78
+      },
+      {
+        "month": "April",
+        "fires": 10,
+        "acres": 302.7
+      },
+      {
+        "month": "May",
+        "fires": 33,
+        "acres": 8523
+      },
+      {
+        "month": "June",
+        "fires": 67,
+        "acres": 9905.84
+      },
+      {
+        "month": "July",
+        "fires": 69,
+        "acres": 99825.81
+      },
+      {
+        "month": "August",
+        "fires": 44,
+        "acres": 65871.68
+      },
+      {
+        "month": "September",
+        "fires": 43,
+        "acres": 131609.26
+      },
+      {
+        "month": "October",
+        "fires": 17,
+        "acres": 457.4
+      },
+      {
+        "month": "November",
+        "fires": 4,
+        "acres": 35.62
+      },
+      {
+        "month": "December",
+        "fires": 0,
+        "acres": 0
+      }
+    ],
+    "2023": [
+      {
+        "month": "January",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "February",
+        "fires": 0,
+        "acres": 0
+      },
+      {
+        "month": "March",
+        "fires": 1,
+        "acres": 15.25
+      },
+      {
+        "month": "April",
+        "fires": 4,
+        "acres": 364.35
+      },
+      {
+        "month": "May",
+        "fires": 23,
+        "acres": 1365.28
+      },
+      {
+        "month": "June",
+        "fires": 43,
+        "acres": 4524.76
+      },
+      {
+        "month": "July",
+        "fires": 60,
+        "acres": 109235.62
+      },
+      {
+        "month": "August",
+        "fires": 79,
+        "acres": 206768.27
+      },
+      {
+        "month": "September",
+        "fires": 27,
+        "acres": 12719.27
+      },
+      {
+        "month": "October",
+        "fires": 24,
+        "acres": 3569.39
+      },
+      {
+        "month": "November",
+        "fires": 14,
+        "acres": 511.62
+      },
+      {
+        "month": "December",
+        "fires": 9,
+        "acres": 2959.55
+      }
+    ]
+  },
+  "summary": {
+    "totalFires": 22184,
+    "totalAcres": 43090005.50198466,
+    "worstYear": "2020",
+    "worstYearAcres": 4182335.0075809015
+  },
+  "metadata": {
+    "sourceFile": "firep23_1.geojson",
+    "processedAt": "2025-03-30T07:28:20.042Z",
+    "featureCount": 22261
+  }
+}

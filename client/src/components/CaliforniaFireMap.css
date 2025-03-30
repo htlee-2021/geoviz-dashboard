@@ -1,0 +1,109 @@
+.ca-map-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ca-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.map-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.dataset-selector {
+  margin: 10px 0;
+}
+
+.dataset-dropdown {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  margin-left: 10px;
+  min-width: 250px;
+}
+
+.data-status {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.using-dataset {
+  color: #2c7c2c;
+}
+
+.using-sample {
+  color: #8a6d3b;
+}
+
+.map-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.loading-container,
+.error-container {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}
+
+.error-container {
+  color: #d9534f;
+}
+
+.county {
+  transition: fill 0.3s ease;
+}
+
+.county:hover {
+  stroke: #333;
+  stroke-width: 1.5;
+}
+
+.fire-perimeter {
+  pointer-events: all;
+}
+
+.geojson-info {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border-left: 4px solid #4682B4;
+}
+
+.geojson-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.dataset-description {
+  margin: 5px 0 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.no-files-message {
+  color: #d9534f;
+  font-style: italic;
+}
