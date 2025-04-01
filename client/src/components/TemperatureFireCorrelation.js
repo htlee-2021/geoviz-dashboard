@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import Papa from 'papaparse';
 
 export const TemperatureFireCorrelation = ({ onRefresh }) => {
   const [data, setData] = useState([]);
@@ -272,51 +271,68 @@ export const TemperatureFireCorrelation = ({ onRefresh }) => {
     // Clear previous chart
     d3.select(heatmapRef.current).selectAll("*").remove();
     
-    // Group data by temperature range and count frequency of fires in each range
-    const tempMin = d3.min(data, d => d.tempValue);
-    const tempMax = d3.max(data, d => d.tempValue);
-    const fireMin = d3.min(data, d => d.fireCount);
-    const fireMax = d3.max(data, d => d.fireCount);
+    // Get min and max values - use the same ranges as the scatterplot for consistency
+    const xExtent = d3.extent(data, d => d.tempValue);
+    const yExtent = d3.extent(data, d => d.fireCount);
+    
+    const tempMin = xExtent[0];
+    const tempMax = xExtent[1];
+    const fireMin = yExtent[0];
+    const fireMax = yExtent[1];
+    
+    // Add some padding to the domains, matching the scatterplot
+    const xPadding = (tempMax - tempMin) * 0.1;
+    const yPadding = (fireMax - fireMin) * 0.1;
     
     // Create bins for temperature and fire counts
-    const tempBinCount = 6;
-    const fireBinCount = 6;
+    const tempBinCount = 10;
+    const fireBinCount = 10;
     
-    const tempStep = (tempMax - tempMin) / tempBinCount;
-    const fireStep = (fireMax - fireMin) / fireBinCount;
+    const tempStep = ((tempMax + xPadding) - (tempMin - xPadding)) / tempBinCount;
+    const fireStep = ((fireMax + yPadding) - (fireMin - yPadding)) / fireBinCount;
     
     // Create bin ranges
     const tempBins = Array.from({ length: tempBinCount }, (_, i) => ({
-      min: tempMin + i * tempStep,
-      max: tempMin + (i + 1) * tempStep
+      min: (tempMin - xPadding) + i * tempStep,
+      max: (tempMin - xPadding) + (i + 1) * tempStep
     }));
     
     const fireBins = Array.from({ length: fireBinCount }, (_, i) => ({
-      min: fireMin + i * fireStep,
-      max: fireMin + (i + 1) * fireStep
+      min: (fireMin - yPadding) + i * fireStep,
+      max: (fireMin - yPadding) + (i + 1) * fireStep
     }));
     
-    // Create heatmap data
+    console.log("Bins created:", { tempBins, fireBins });
+    
+    // Create heatmap data with proper indexing
     const heatmapData = [];
     
-    for (let i = 0; i < tempBins.length; i++) {
-      for (let j = 0; j < fireBins.length; j++) {
-        // Count number of data points in this bin
-        const count = data.filter(d => 
+    for (let i = 0; i < tempBinCount; i++) {
+      for (let j = 0; j < fireBinCount; j++) {
+        // Find all data points in this bin
+        const pointsInBin = data.filter(d => 
           d.tempValue >= tempBins[i].min && 
           d.tempValue < tempBins[i].max && 
           d.fireCount >= fireBins[j].min && 
           d.fireCount < fireBins[j].max
-        ).length;
+        );
+        
+        const count = pointsInBin.length;
+        
+        // Add as a data point with y-index inverted to match scatterplot orientation
+        heatmapData.push({
+          tempIndex: i,
+          fireIndex: fireBinCount - 1 - j, // Invert to match scatterplot orientation
+          count: count,
+          tempMin: tempBins[i].min.toFixed(2),
+          tempMax: tempBins[i].max.toFixed(2),
+          fireMin: fireBins[j].min.toFixed(2),
+          fireMax: fireBins[j].max.toFixed(2),
+          points: pointsInBin
+        });
         
         if (count > 0) {
-          heatmapData.push({
-            tempIndex: i,
-            fireIndex: j,
-            count: count,
-            tempRange: `${tempBins[i].min.toFixed(1)} - ${tempBins[i].max.toFixed(1)}`,
-            fireRange: `${fireBins[j].min.toFixed(1)} - ${fireBins[j].max.toFixed(1)}`
-          });
+          console.log(`Bin [${i},${j}]: temp=${tempBins[i].min.toFixed(2)}-${tempBins[i].max.toFixed(2)}, fire=${fireBins[j].min.toFixed(2)}-${fireBins[j].max.toFixed(2)}, count=${count}`);
         }
       }
     }
@@ -339,7 +355,7 @@ export const TemperatureFireCorrelation = ({ onRefresh }) => {
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
     
-    // Color scale
+    // Color scale - use a sequential scale that shows intensity well
     const maxCount = d3.max(heatmapData, d => d.count) || 1;
     const colorScale = d3.scaleSequential()
       .domain([0, maxCount])
@@ -351,54 +367,111 @@ export const TemperatureFireCorrelation = ({ onRefresh }) => {
       .enter()
       .append("rect")
       .attr("x", d => d.tempIndex * cellWidth)
-      .attr("y", d => (fireBinCount - 1 - d.fireIndex) * cellHeight) // Invert y-axis
+      .attr("y", d => d.fireIndex * cellHeight)
       .attr("width", cellWidth)
       .attr("height", cellHeight)
-      .attr("fill", d => colorScale(d.count))
+      .attr("fill", d => d.count > 0 ? colorScale(d.count) : "#f9fafb")
       .attr("stroke", "#fff")
-      .attr("stroke-width", 1);
+      .attr("stroke-width", 1)
+      .append("title")
+      .text(d => `Temp: ${d.tempMin}-${d.tempMax}\nFires: ${d.fireMin}-${d.fireMax}\nCount: ${d.count}`);
     
     // Add text for counts
     svg.selectAll("text.cell-text")
-      .data(heatmapData)
+      .data(heatmapData.filter(d => d.count > 0))
       .enter()
       .append("text")
       .attr("class", "cell-text")
       .attr("x", d => d.tempIndex * cellWidth + cellWidth / 2)
-      .attr("y", d => (fireBinCount - 1 - d.fireIndex) * cellHeight + cellHeight / 2 + 4)
+      .attr("y", d => d.fireIndex * cellHeight + cellHeight / 2 + 4)
       .attr("text-anchor", "middle")
       .attr("fill", d => d.count > maxCount / 2 ? "#fff" : "#000")
       .attr("font-size", "10px")
       .text(d => d.count);
     
-    // Create axes
+    // Add diagonal correlation line to match the regression line in scatterplot
+    if (data.length > 2) {
+      // Get the same regression line parameters as used in scatterplot
+      const xSeries = data.map(d => d.tempValue);
+      const ySeries = data.map(d => d.fireCount);
+      
+      const xMean = d3.mean(xSeries);
+      const yMean = d3.mean(ySeries);
+      
+      let numerator = 0;
+      let denominator = 0;
+      
+      for (let i = 0; i < data.length; i++) {
+        numerator += (xSeries[i] - xMean) * (ySeries[i] - yMean);
+        denominator += Math.pow(xSeries[i] - xMean, 2);
+      }
+      
+      const slope = numerator / denominator;
+      const intercept = yMean - slope * xMean;
+      
+      // Function to calculate y-value for regression line
+      const regressionLine = x => slope * x + intercept;
+      
+      // Convert the regression line to heatmap coordinates
+      const heatmapX1 = 0;
+      const heatmapY1 = chartHeight - (chartHeight * (regressionLine(tempMin - xPadding) - (fireMin - yPadding)) / ((fireMax + yPadding) - (fireMin - yPadding)));
+      const heatmapX2 = chartWidth;
+      const heatmapY2 = chartHeight - (chartHeight * (regressionLine(tempMax + xPadding) - (fireMin - yPadding)) / ((fireMax + yPadding) - (fireMin - yPadding)));
+      
+      // Draw regression line
+      svg.append("line")
+        .attr("x1", heatmapX1)
+        .attr("y1", heatmapY1)
+        .attr("x2", heatmapX2)
+        .attr("y2", heatmapY2)
+        .attr("stroke", "#f43f5e")
+        .attr("stroke-width", 2)
+        .attr("stroke-dasharray", "5,5");
+    }
+    
+    // Create axes with correct labeling
+    // For x-axis (temperature), create labels at specific points for clarity
+    const tempTickValues = [];
+    for (let i = 0; i <= tempBinCount; i += 2) {
+      const value = (tempMin - xPadding) + (i * tempStep);
+      tempTickValues.push({
+        value: i,
+        label: value.toFixed(1)
+      });
+    }
+    
+    // For y-axis (fire count), create labels at specific points
+    const fireTickValues = [];
+    for (let i = 0; i <= fireBinCount; i += 2) {
+      const value = (fireMin - yPadding) + (i * fireStep);
+      fireTickValues.push({
+        value: fireBinCount - i, // Invert to match the visual layout
+        label: value.toFixed(1)
+      });
+    }
+    
+    // Create scale bands for the axes
     const xScale = d3.scaleBand()
-      .domain(tempBins.map((_, i) => i))
+      .domain(d3.range(tempBinCount + 1))
       .range([0, chartWidth]);
     
     const yScale = d3.scaleBand()
-      .domain(fireBins.map((_, i) => fireBinCount - 1 - i)) // Invert y-axis
+      .domain(d3.range(fireBinCount + 1).reverse()) // Reverse domain for correct orientation
       .range([0, chartHeight]);
-    
-    // Create custom tick values
-    const xAxisTicks = tempBins.map((bin, i) => ({
-      value: i,
-      label: bin.min.toFixed(1)
-    }));
-    
-    const yAxisTicks = fireBins.map((bin, i) => ({
-      value: fireBinCount - 1 - i,
-      label: bin.min.toFixed(1)
-    }));
     
     // Add axes
     const xAxis = d3.axisBottom(xScale)
-      .tickFormat((d, i) => i < xAxisTicks.length ? xAxisTicks[i].label : '');
+      .tickValues(tempTickValues.map(t => t.value))
+      .tickFormat((d, i) => {
+        const tick = tempTickValues.find(t => t.value === d);
+        return tick ? tick.label : '';
+      });
     
     const yAxis = d3.axisLeft(yScale)
+      .tickValues(fireTickValues.map(t => t.value))
       .tickFormat((d, i) => {
-        const index = yAxisTicks.findIndex(tick => tick.value === d);
-        return index >= 0 ? yAxisTicks[index].label : '';
+        const tick = fireTickValues.find(t => t.value === d);
+        return tick ? tick.label : '';
       });
     
     svg.append("g")
@@ -416,7 +489,7 @@ export const TemperatureFireCorrelation = ({ onRefresh }) => {
     // Add axis labels
     svg.append("text")
       .attr("x", chartWidth / 2)
-      .attr("y", chartHeight + 50)
+      .attr("y", chartHeight + 60)
       .attr("text-anchor", "middle")
       .attr("fill", "#4b5563")
       .text("Temperature (Normalized)");
@@ -432,11 +505,12 @@ export const TemperatureFireCorrelation = ({ onRefresh }) => {
     // Add title
     svg.append("text")
       .attr("x", chartWidth / 2)
-      .attr("y", -10)
+      .attr("y", -15)
       .attr("text-anchor", "middle")
-      .attr("font-size", "14px")
+      .attr("font-size", "16px")
       .attr("font-weight", "bold")
-      .text("Distribution of Temperature vs. Fire Count");
+      .text("Temperature vs. Fire Count Correlation");
+      
   };
   
   // Calculate the correlation interpretation

@@ -555,23 +555,8 @@ export const MainDashboard = ({ summaryStats, yearlyData, onRefresh }) => {
 
       {/* Two-column charts section */}
       <div className="two-column-chart-section">
-        <div className="chart-container half-width">
-          <h3 className="section-title">
-            <svg xmlns="http://www.w3.org/2000/svg" className="section-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
-              <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
-            </svg>
-            Fire Intensity (Acres per Fire)
-          </h3>
-          <div className="chart-description">
-            Comparison of acres burned per fire for the worst 5 years, indicating fire severity.
-          </div>
-          <div className="chart-canvas">
-            <svg ref={fireIntensityChartRef} width="100%" height="300"></svg>
-          </div>
-        </div>
 
-        <div className="chart-container half-width">
+        <div className="chart-container">
           <h3 className="section-title">
             <svg xmlns="http://www.w3.org/2000/svg" className="section-icon" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
