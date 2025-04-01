@@ -1,0 +1,115 @@
+/* Index.css - Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    width: 100%;
+    overflow-x: hidden;
+}
+  
+button {
+    cursor: pointer;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+/* California page styles */
+.california-page {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.california-page h1 {
+    font-size: 24px;
+    color: #2a3f5f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Dashboard system styles */
+.dashboard-system-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.dashboard-content {
+    width: 100%;
+    max-width: 100%;
+}
+
+.dashboard-tab-content {
+    width: 100%;
+}
+
+.dashboard-tab-content.active {
+    display: block;
+    width: 100%;
+}
+
+/* Chart container styles */
+.chart-container, 
+.year-selection-container,
+.key-stats-container,
+.fire-causes-dashboard {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* FireDashboardSystem component styles */
+#fire-dashboard-container {
+    width: 100%;
+}
+
+/* Application main content */
+.App, .App-main {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .app-nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .app-logo {
+        margin-bottom: 10px;
+    }
+    
+    .app-tabs {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .tab-button {
+        flex: 1;
+        text-align: center;
+    }
+
+    .app-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+  
+    .tab-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

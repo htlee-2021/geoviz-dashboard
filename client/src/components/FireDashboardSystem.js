@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { MainDashboard } from './MainDashboard';
 import { YearlyAnalysisDashboard } from './YearlyAnalysisDashboard';
 import { FireCauseAnalysisDashboard } from './FireCauseAnalysisDashboard';
+import { TemperatureFireCorrelation } from './TemperatureFireCorrelation';
 import './FireDashboard.css';
 
 const FireDashboardSystem = ({ containerId }) => {
@@ -31,6 +32,8 @@ const FireDashboardSystem = ({ containerId }) => {
   });
   
   const backendBaseUrl = 'http://localhost:8000';
+
+  
   
   useEffect(() => {
     setContainer(document.getElementById(containerId));
@@ -277,7 +280,7 @@ const FireDashboardSystem = ({ containerId }) => {
           </svg>
           Fire Causes
         </button>
-        <button 
+        {/* <button 
           className={`dashboard-tab ${activeTab === 'map' ? 'active' : ''}`} 
           onClick={() => handleTabChange('map')}
         >
@@ -285,6 +288,15 @@ const FireDashboardSystem = ({ containerId }) => {
             <path fillRule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clipRule="evenodd" />
           </svg>
           Fire Map
+        </button> */}
+        <button 
+          className={`dashboard-tab ${activeTab === 'temperature' ? 'active' : ''}`} 
+          onClick={() => handleTabChange('temperature')}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.168 1.168a4 4 0 01-8.214 0l1.168-1.168A3 3 0 009 8.172z" clipRule="evenodd" />
+          </svg>
+          Temperature-Fire Analysis
         </button>
       </div>
       
@@ -331,6 +343,13 @@ const FireDashboardSystem = ({ containerId }) => {
               <p>Map component would be loaded here.</p>
               <p>This tab would contain your existing CaliforniaFireMap component.</p>
             </div>
+          )}
+        </div>
+        <div id="temperature-dashboard" className={`dashboard-tab-content ${activeTab === 'temperature' ? 'active' : ''}`}>
+          {activeTab === 'temperature' && (
+            <TemperatureFireCorrelation
+              onRefresh={fetchYearlyData}
+            />
           )}
         </div>
       </div>

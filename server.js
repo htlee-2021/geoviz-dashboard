@@ -690,6 +690,29 @@ app.get('/api/stats/monthly', async (req, res) => {
   }
 });
 
+// API endpoint to get temperature-fire correlation data
+app.get('/api/temperature-fire', (req, res) => {
+    try {
+      const statsFilePath = path.join(STATS_DIR, 'temperature-fire-correlation.json');
+      
+      if (!fs.existsSync(statsFilePath)) {
+        return res.status(404).json({
+          error: 'Temperature-fire correlation data not found',
+          message: 'Please run the temperature-fire-processor.js script first'
+        });
+      }
+      
+      const statsData = JSON.parse(fs.readFileSync(statsFilePath, 'utf8'));
+      res.json(statsData);
+    } catch (err) {
+      console.error('Error retrieving temperature-fire correlation data:', err);
+      res.status(500).json({
+        error: 'Server error',
+        message: err.message
+      });
+    }
+  });
+
 // Start server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

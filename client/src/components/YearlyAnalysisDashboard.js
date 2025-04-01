@@ -58,6 +58,16 @@ export const YearlyAnalysisDashboard = ({
     
     return data;
   };
+
+  function getResponsiveWidth(svgElement) {
+    // Get the width of the container, not the SVG element itself
+    const containerWidth = svgElement.parentNode.clientWidth || 
+                           svgElement.parentNode.getBoundingClientRect().width || 
+                           window.innerWidth - 60;
+                           
+    // Return the container width with a little padding
+    return containerWidth - 40; // 20px padding on each side
+  }
   
   const createCharts = () => {
     createMonthlyAcresChart();
@@ -70,7 +80,7 @@ export const YearlyAnalysisDashboard = ({
     
     const margin = { top: 40, right: 30, bottom: 100, left: 60 };
     const svgElement = monthlyAcresChartRef.current;
-    const width = svgElement.clientWidth || 800;
+    const width = getResponsiveWidth(svgElement);
     const height = 400;
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
@@ -203,7 +213,7 @@ export const YearlyAnalysisDashboard = ({
     
     const margin = { top: 40, right: 30, bottom: 100, left: 60 };
     const svgElement = monthlyFiresChartRef.current;
-    const width = svgElement.clientWidth || 800;
+    const width = getResponsiveWidth(svgElement);
     const height = 400;
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;

@@ -21,6 +21,16 @@ export const MainDashboard = ({ summaryStats, yearlyData, onRefresh }) => {
     return value.toLocaleString();
   };
 
+  function getResponsiveWidth(svgElement) {
+    // Get the width of the container, not the SVG element itself
+    const containerWidth = svgElement.parentNode.clientWidth || 
+                           svgElement.parentNode.getBoundingClientRect().width || 
+                           window.innerWidth - 60;
+                           
+    // Return the container width with a little padding
+    return containerWidth - 40; // 20px padding on each side
+  }
+
   // Get data for the overview chart (last 10 years)
   const getRecentYearsData = () => {
     if (!yearlyData || yearlyData.length === 0) return [];
@@ -54,7 +64,7 @@ export const MainDashboard = ({ summaryStats, yearlyData, onRefresh }) => {
 
     const margin = { top: 40, right: 80, bottom: 60, left: 60 };
     const svgElement = recentYearsChartRef.current;
-    const width = svgElement.clientWidth || 800;
+    const width = getResponsiveWidth(svgElement);
     const height = 400;
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
@@ -228,7 +238,7 @@ export const MainDashboard = ({ summaryStats, yearlyData, onRefresh }) => {
     d3.select(fireIntensityChartRef.current).selectAll('*').remove();
 
     const svgElement = fireIntensityChartRef.current;
-    const width = svgElement.clientWidth || 500;
+    const width = getResponsiveWidth(svgElement);
     const height = 300;
     const radius = Math.min(width, height) / 2 - 40;
 
@@ -347,7 +357,7 @@ export const MainDashboard = ({ summaryStats, yearlyData, onRefresh }) => {
 
     const margin = { top: 40, right: 30, bottom: 50, left: 60 };
     const svgElement = topYearsChartRef.current;
-    const width = svgElement.clientWidth || 500;
+    const width = getResponsiveWidth(svgElement);
     const height = 300;
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;

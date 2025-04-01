@@ -1,0 +1,3548 @@
+{
+  "correlations": {
+    "temperatureToFires": {
+      "value": 0.683132198964052,
+      "interpretation": "Strong"
+    },
+    "temperatureToAcres": {
+      "value": 0.5403080280997887,
+      "interpretation": "Moderate"
+    },
+    "anomalyToFires": {
+      "value": 0.6831321989640518,
+      "interpretation": "Strong"
+    }
+  },
+  "mergedYearlyData": [
+    {
+      "year": 1895,
+      "avgTemp": 56.458333333333336,
+      "avgAnomaly": -0.9083333333333332,
+      "fires": 1,
+      "acres": 628.11,
+      "acresPerFire": 628.11
+    },
+    {
+      "year": 1896,
+      "avgTemp": 57.466666666666676,
+      "avgAnomaly": 0.10000000000000003,
+      "fires": 1,
+      "acres": 7531.72,
+      "acresPerFire": 7531.72
+    },
+    {
+      "year": 1898,
+      "avgTemp": 56.699999999999996,
+      "avgAnomaly": -0.6666666666666666,
+      "fires": 5,
+      "acres": 28244.2,
+      "acresPerFire": 5648.84
+    },
+    {
+      "year": 1900,
+      "avgTemp": 57.49166666666667,
+      "avgAnomaly": 0.12500000000000003,
+      "fires": 12,
+      "acres": 24528.51,
+      "acresPerFire": 2044.0424999999998
+    },
+    {
+      "year": 1902,
+      "avgTemp": 56.166666666666664,
+      "avgAnomaly": -1.2,
+      "fires": 1,
+      "acres": 731.48,
+      "acresPerFire": 731.48
+    },
+    {
+      "year": 1903,
+      "avgTemp": 56.208333333333336,
+      "avgAnomaly": -1.158333333333333,
+      "fires": 2,
+      "acres": 3649.34,
+      "acresPerFire": 1824.67
+    },
+    {
+      "year": 1905,
+      "avgTemp": 57.074999999999996,
+      "avgAnomaly": -0.2916666666666667,
+      "fires": 1,
+      "acres": 214.29,
+      "acresPerFire": 214.29
+    },
+    {
+      "year": 1906,
+      "avgTemp": 57.18333333333334,
+      "avgAnomaly": -0.18333333333333324,
+      "fires": 4,
+      "acres": 3964.89,
+      "acresPerFire": 991.2225
+    },
+    {
+      "year": 1907,
+      "avgTemp": 56.525,
+      "avgAnomaly": -0.8416666666666667,
+      "fires": 10,
+      "acres": 1328.69,
+      "acresPerFire": 132.869
+    },
+    {
+      "year": 1908,
+      "avgTemp": 56.23333333333334,
+      "avgAnomaly": -1.1333333333333333,
+      "fires": 16,
+      "acres": 19751.94,
+      "acresPerFire": 1234.49625
+    },
+    {
+      "year": 1909,
+      "avgTemp": 56.224999999999994,
+      "avgAnomaly": -1.1416666666666666,
+      "fires": 24,
+      "acres": 34955.33,
+      "acresPerFire": 1456.4720833333333
+    },
+    {
+      "year": 1910,
+      "avgTemp": 57.65833333333333,
+      "avgAnomaly": 0.2916666666666667,
+      "fires": 90,
+      "acres": 254816.95,
+      "acresPerFire": 2831.2994444444444
+    },
+    {
+      "year": 1911,
+      "avgTemp": 55.375,
+      "avgAnomaly": -1.9916666666666665,
+      "fires": 166,
+      "acres": 123472.2,
+      "acresPerFire": 743.8084337349397
+    },
+    {
+      "year": 1912,
+      "avgTemp": 55.541666666666664,
+      "avgAnomaly": -1.8250000000000002,
+      "fires": 56,
+      "acres": 40419.08,
+      "acresPerFire": 721.7692857142857
+    },
+    {
+      "year": 1913,
+      "avgTemp": 56.449999999999996,
+      "avgAnomaly": -0.9166666666666666,
+      "fires": 84,
+      "acres": 161725.44,
+      "acresPerFire": 1925.3028571428572
+    },
+    {
+      "year": 1914,
+      "avgTemp": 57.375,
+      "avgAnomaly": 0.00833333333333323,
+      "fires": 105,
+      "acres": 73658.27,
+      "acresPerFire": 701.5073333333333
+    },
+    {
+      "year": 1915,
+      "avgTemp": 56.741666666666674,
+      "avgAnomaly": -0.625,
+      "fires": 132,
+      "acres": 55185.43,
+      "acresPerFire": 418.0714393939394
+    },
+    {
+      "year": 1916,
+      "avgTemp": 55.58333333333332,
+      "avgAnomaly": -1.7833333333333334,
+      "fires": 131,
+      "acres": 88528.91,
+      "acresPerFire": 675.7932061068702
+    },
+    {
+      "year": 1917,
+      "avgTemp": 56.62500000000001,
+      "avgAnomaly": -0.741666666666667,
+      "fires": 266,
+      "acres": 439018.26,
+      "acresPerFire": 1650.4445864661654
+    },
+    {
+      "year": 1918,
+      "avgTemp": 56.84166666666667,
+      "avgAnomaly": -0.525,
+      "fires": 129,
+      "acres": 190458.53,
+      "acresPerFire": 1476.4227131782945
+    },
+    {
+      "year": 1919,
+      "avgTemp": 56.275000000000006,
+      "avgAnomaly": -1.0916666666666668,
+      "fires": 165,
+      "acres": 244409.44,
+      "acresPerFire": 1481.2693333333334
+    },
+    {
+      "year": 1920,
+      "avgTemp": 56.09166666666667,
+      "avgAnomaly": -1.275,
+      "fires": 131,
+      "acres": 139029.81,
+      "acresPerFire": 1061.2962595419847
+    },
+    {
+      "year": 1921,
+      "avgTemp": 57.30833333333333,
+      "avgAnomaly": -0.05833333333333338,
+      "fires": 160,
+      "acres": 245682.31,
+      "acresPerFire": 1535.5144375
+    },
+    {
+      "year": 1922,
+      "avgTemp": 56.05833333333333,
+      "avgAnomaly": -1.3083333333333333,
+      "fires": 116,
+      "acres": 342731.43,
+      "acresPerFire": 2954.5812931034484
+    },
+    {
+      "year": 1923,
+      "avgTemp": 56.36666666666665,
+      "avgAnomaly": -1,
+      "fires": 125,
+      "acres": 272381.8,
+      "acresPerFire": 2179.0544
+    },
+    {
+      "year": 1924,
+      "avgTemp": 57.150000000000006,
+      "avgAnomaly": -0.21666666666666656,
+      "fires": 248,
+      "acres": 610545.22,
+      "acresPerFire": 2461.875887096774
+    },
+    {
+      "year": 1925,
+      "avgTemp": 57.14166666666666,
+      "avgAnomaly": -0.22499999999999995,
+      "fires": 91,
+      "acres": 78507.23,
+      "acresPerFire": 862.7168131868132
+    },
+    {
+      "year": 1926,
+      "avgTemp": 58.791666666666664,
+      "avgAnomaly": 1.4249999999999998,
+      "fires": 188,
+      "acres": 255028.6,
+      "acresPerFire": 1356.5351063829787
+    },
+    {
+      "year": 1927,
+      "avgTemp": 56.875,
+      "avgAnomaly": -0.49166666666666664,
+      "fires": 99,
+      "acres": 178417.72,
+      "acresPerFire": 1802.199191919192
+    },
+    {
+      "year": 1928,
+      "avgTemp": 57.67499999999999,
+      "avgAnomaly": 0.3083333333333333,
+      "fires": 167,
+      "acres": 550886.8,
+      "acresPerFire": 3298.7233532934133
+    },
+    {
+      "year": 1929,
+      "avgTemp": 57.23333333333333,
+      "avgAnomaly": -0.13333333333333344,
+      "fires": 154,
+      "acres": 252561.17,
+      "acresPerFire": 1640.0075974025974
+    },
+    {
+      "year": 1930,
+      "avgTemp": 56.94166666666666,
+      "avgAnomaly": -0.425,
+      "fires": 107,
+      "acres": 61643.72,
+      "acresPerFire": 576.1095327102804
+    },
+    {
+      "year": 1931,
+      "avgTemp": 58.28333333333334,
+      "avgAnomaly": 0.9166666666666665,
+      "fires": 215,
+      "acres": 349465.87,
+      "acresPerFire": 1625.4226511627908
+    },
+    {
+      "year": 1932,
+      "avgTemp": 56.93333333333334,
+      "avgAnomaly": -0.4333333333333334,
+      "fires": 116,
+      "acres": 326915.95,
+      "acresPerFire": 2818.240948275862
+    },
+    {
+      "year": 1933,
+      "avgTemp": 56.725,
+      "avgAnomaly": -0.6416666666666665,
+      "fires": 73,
+      "acres": 92087.91,
+      "acresPerFire": 1261.4782191780823
+    },
+    {
+      "year": 1934,
+      "avgTemp": 59.70833333333334,
+      "avgAnomaly": 2.3416666666666663,
+      "fires": 132,
+      "acres": 112191.75,
+      "acresPerFire": 849.9375
+    },
+    {
+      "year": 1935,
+      "avgTemp": 56.84166666666667,
+      "avgAnomaly": -0.525,
+      "fires": 81,
+      "acres": 65151.67,
+      "acresPerFire": 804.3416049382715
+    },
+    {
+      "year": 1936,
+      "avgTemp": 58.616666666666674,
+      "avgAnomaly": 1.2499999999999998,
+      "fires": 123,
+      "acres": 213582.82,
+      "acresPerFire": 1736.4456910569106
+    },
+    {
+      "year": 1937,
+      "avgTemp": 57.15833333333333,
+      "avgAnomaly": -0.20833333333333315,
+      "fires": 59,
+      "acres": 21699.54,
+      "acresPerFire": 367.788813559322
+    },
+    {
+      "year": 1938,
+      "avgTemp": 57.25,
+      "avgAnomaly": -0.11666666666666665,
+      "fires": 100,
+      "acres": 119209.36,
+      "acresPerFire": 1192.0936
+    },
+    {
+      "year": 1939,
+      "avgTemp": 58.31666666666666,
+      "avgAnomaly": 0.9499999999999998,
+      "fires": 151,
+      "acres": 243282.98,
+      "acresPerFire": 1611.1455629139073
+    },
+    {
+      "year": 1940,
+      "avgTemp": 58.833333333333336,
+      "avgAnomaly": 1.4666666666666668,
+      "fires": 88,
+      "acres": 128464.76,
+      "acresPerFire": 1459.8268181818182
+    },
+    {
+      "year": 1941,
+      "avgTemp": 57.05833333333333,
+      "avgAnomaly": -0.3083333333333334,
+      "fires": 111,
+      "acres": 87476.86,
+      "acresPerFire": 788.0798198198198
+    },
+    {
+      "year": 1942,
+      "avgTemp": 57.050000000000004,
+      "avgAnomaly": -0.31666666666666665,
+      "fires": 101,
+      "acres": 262391.77,
+      "acresPerFire": 2597.9383168316836
+    },
+    {
+      "year": 1943,
+      "avgTemp": 57.83333333333332,
+      "avgAnomaly": 0.46666666666666673,
+      "fires": 114,
+      "acres": 248991.41,
+      "acresPerFire": 2184.1351754385964
+    },
+    {
+      "year": 1944,
+      "avgTemp": 56.225,
+      "avgAnomaly": -1.1416666666666668,
+      "fires": 135,
+      "acres": 343786.75,
+      "acresPerFire": 2546.5685185185184
+    },
+    {
+      "year": 1945,
+      "avgTemp": 57.09166666666666,
+      "avgAnomaly": -0.27500000000000013,
+      "fires": 148,
+      "acres": 248390.8,
+      "acresPerFire": 1678.3162162162162
+    },
+    {
+      "year": 1946,
+      "avgTemp": 56.71666666666667,
+      "avgAnomaly": -0.65,
+      "fires": 102,
+      "acres": 106279.24,
+      "acresPerFire": 1041.9533333333334
+    },
+    {
+      "year": 1947,
+      "avgTemp": 57.54999999999999,
+      "avgAnomaly": 0.18333333333333338,
+      "fires": 121,
+      "acres": 150451.67,
+      "acresPerFire": 1243.4022314049587
+    },
+    {
+      "year": 1948,
+      "avgTemp": 55.649999999999984,
+      "avgAnomaly": -1.7166666666666666,
+      "fires": 65,
+      "acres": 176047.74,
+      "acresPerFire": 2708.426769230769
+    },
+    {
+      "year": 1949,
+      "avgTemp": 56.216666666666676,
+      "avgAnomaly": -1.1500000000000001,
+      "fires": 170,
+      "acres": 206849.35,
+      "acresPerFire": 1216.7608823529413
+    },
+    {
+      "year": 1950,
+      "avgTemp": 58.12500000000001,
+      "avgAnomaly": 0.7583333333333332,
+      "fires": 226,
+      "acres": 536003.01,
+      "acresPerFire": 2371.6947345132744
+    },
+    {
+      "year": 1951,
+      "avgTemp": 57.225,
+      "avgAnomaly": -0.14166666666666664,
+      "fires": 219,
+      "acres": 303257.82,
+      "acresPerFire": 1384.7389041095892
+    },
+    {
+      "year": 1952,
+      "avgTemp": 56.75833333333335,
+      "avgAnomaly": -0.6083333333333335,
+      "fires": 172,
+      "acres": 133399.29,
+      "acresPerFire": 775.5772674418605
+    },
+    {
+      "year": 1953,
+      "avgTemp": 57.175000000000004,
+      "avgAnomaly": -0.19166666666666654,
+      "fires": 217,
+      "acres": 335875.49,
+      "acresPerFire": 1547.8133179723502
+    },
+    {
+      "year": 1954,
+      "avgTemp": 57.57499999999999,
+      "avgAnomaly": 0.20833333333333334,
+      "fires": 157,
+      "acres": 218268.98,
+      "acresPerFire": 1390.2482802547772
+    },
+    {
+      "year": 1955,
+      "avgTemp": 56.208333333333336,
+      "avgAnomaly": -1.1583333333333334,
+      "fires": 171,
+      "acres": 386041.67,
+      "acresPerFire": 2257.553625730994
+    },
+    {
+      "year": 1956,
+      "avgTemp": 56.96666666666666,
+      "avgAnomaly": -0.4000000000000001,
+      "fires": 133,
+      "acres": 178798.54,
+      "acresPerFire": 1344.3499248120302
+    },
+    {
+      "year": 1957,
+      "avgTemp": 57.09166666666667,
+      "avgAnomaly": -0.27499999999999997,
+      "fires": 154,
+      "acres": 203080.61,
+      "acresPerFire": 1318.7052597402596
+    },
+    {
+      "year": 1958,
+      "avgTemp": 58.89166666666667,
+      "avgAnomaly": 1.5250000000000001,
+      "fires": 166,
+      "acres": 252161.38,
+      "acresPerFire": 1519.0444578313254
+    },
+    {
+      "year": 1959,
+      "avgTemp": 58.95000000000001,
+      "avgAnomaly": 1.5833333333333333,
+      "fires": 204,
+      "acres": 298094.59,
+      "acresPerFire": 1461.2479901960785
+    },
+    {
+      "year": 1960,
+      "avgTemp": 58.04999999999999,
+      "avgAnomaly": 0.6833333333333335,
+      "fires": 142,
+      "acres": 346191.03,
+      "acresPerFire": 2437.965
+    },
+    {
+      "year": 1961,
+      "avgTemp": 57.80833333333334,
+      "avgAnomaly": 0.4416666666666665,
+      "fires": 167,
+      "acres": 363230.44,
+      "acresPerFire": 2175.0325748502996
+    },
+    {
+      "year": 1962,
+      "avgTemp": 57.375,
+      "avgAnomaly": 0.008333333333333267,
+      "fires": 109,
+      "acres": 132534.61,
+      "acresPerFire": 1215.9138532110092
+    },
+    {
+      "year": 1963,
+      "avgTemp": 57.08333333333334,
+      "avgAnomaly": -0.28333333333333327,
+      "fires": 78,
+      "acres": 32155.59,
+      "acresPerFire": 412.25115384615384
+    },
+    {
+      "year": 1964,
+      "avgTemp": 56.56666666666666,
+      "avgAnomaly": -0.7999999999999998,
+      "fires": 137,
+      "acres": 296775.19,
+      "acresPerFire": 2166.242262773723
+    },
+    {
+      "year": 1965,
+      "avgTemp": 56.70000000000001,
+      "avgAnomaly": -0.6666666666666666,
+      "fires": 59,
+      "acres": 82528.09,
+      "acresPerFire": 1398.7811864406779
+    },
+    {
+      "year": 1966,
+      "avgTemp": 58.00833333333333,
+      "avgAnomaly": 0.6416666666666667,
+      "fires": 132,
+      "acres": 265318.66,
+      "acresPerFire": 2009.9898484848484
+    },
+    {
+      "year": 1967,
+      "avgTemp": 57.49166666666667,
+      "avgAnomaly": 0.12499999999999993,
+      "fires": 111,
+      "acres": 237117.12,
+      "acresPerFire": 2136.19027027027
+    },
+    {
+      "year": 1968,
+      "avgTemp": 57.59166666666667,
+      "avgAnomaly": 0.22499999999999998,
+      "fires": 210,
+      "acres": 222086.25,
+      "acresPerFire": 1057.5535714285713
+    },
+    {
+      "year": 1969,
+      "avgTemp": 57.49166666666667,
+      "avgAnomaly": 0.12500000000000003,
+      "fires": 131,
+      "acres": 97125.55,
+      "acresPerFire": 741.4164122137405
+    },
+    {
+      "year": 1970,
+      "avgTemp": 57.81666666666667,
+      "avgAnomaly": 0.4499999999999999,
+      "fires": 233,
+      "acres": 676019.52,
+      "acresPerFire": 2901.371330472103
+    },
+    {
+      "year": 1971,
+      "avgTemp": 56.208333333333336,
+      "avgAnomaly": -1.1583333333333334,
+      "fires": 109,
+      "acres": 60060.32,
+      "acresPerFire": 551.0121100917431
+    },
+    {
+      "year": 1972,
+      "avgTemp": 57.25833333333333,
+      "avgAnomaly": -0.10833333333333324,
+      "fires": 154,
+      "acres": 92264,
+      "acresPerFire": 599.1168831168832
+    },
+    {
+      "year": 1973,
+      "avgTemp": 57.29999999999999,
+      "avgAnomaly": -0.06666666666666664,
+      "fires": 150,
+      "acres": 257044.74,
+      "acresPerFire": 1713.6316
+    },
+    {
+      "year": 1974,
+      "avgTemp": 57.633333333333326,
+      "avgAnomaly": 0.26666666666666666,
+      "fires": 206,
+      "acres": 137296.7,
+      "acresPerFire": 666.4888349514564
+    },
+    {
+      "year": 1975,
+      "avgTemp": 56.26666666666667,
+      "avgAnomaly": -1.1,
+      "fires": 210,
+      "acres": 215591.67,
+      "acresPerFire": 1026.627
+    },
+    {
+      "year": 1976,
+      "avgTemp": 57.475,
+      "avgAnomaly": 0.10833333333333334,
+      "fires": 133,
+      "acres": 199015.02,
+      "acresPerFire": 1496.3535338345864
+    },
+    {
+      "year": 1977,
+      "avgTemp": 57.974999999999994,
+      "avgAnomaly": 0.6083333333333333,
+      "fires": 167,
+      "acres": 465615.28,
+      "acresPerFire": 2788.1154491017965
+    },
+    {
+      "year": 1978,
+      "avgTemp": 57.60833333333335,
+      "avgAnomaly": 0.24166666666666672,
+      "fires": 151,
+      "acres": 126036.01,
+      "acresPerFire": 834.6755629139072
+    },
+    {
+      "year": 1979,
+      "avgTemp": 57.66666666666668,
+      "avgAnomaly": 0.30000000000000004,
+      "fires": 366,
+      "acres": 377351.13,
+      "acresPerFire": 1031.0140163934427
+    },
+    {
+      "year": 1980,
+      "avgTemp": 58.07500000000001,
+      "avgAnomaly": 0.7083333333333334,
+      "fires": 319,
+      "acres": 380629.76,
+      "acresPerFire": 1193.1967398119123
+    },
+    {
+      "year": 1981,
+      "avgTemp": 59.300000000000004,
+      "avgAnomaly": 1.9333333333333336,
+      "fires": 271,
+      "acres": 301504.58,
+      "acresPerFire": 1112.5630258302583
+    },
+    {
+      "year": 1982,
+      "avgTemp": 56.34166666666667,
+      "avgAnomaly": -1.025,
+      "fires": 145,
+      "acres": 142577.74,
+      "acresPerFire": 983.2947586206895
+    },
+    {
+      "year": 1983,
+      "avgTemp": 57.550000000000004,
+      "avgAnomaly": 0.18333333333333335,
+      "fires": 159,
+      "acres": 85898.31,
+      "acresPerFire": 540.2409433962264
+    },
+    {
+      "year": 1984,
+      "avgTemp": 58.21666666666667,
+      "avgAnomaly": 0.85,
+      "fires": 212,
+      "acres": 206511.53,
+      "acresPerFire": 974.1109905660377
+    },
+    {
+      "year": 1985,
+      "avgTemp": 57.324999999999996,
+      "avgAnomaly": -0.04166666666666654,
+      "fires": 210,
+      "acres": 566026.35,
+      "acresPerFire": 2695.3635714285715
+    },
+    {
+      "year": 1986,
+      "avgTemp": 58.87500000000001,
+      "avgAnomaly": 1.508333333333333,
+      "fires": 172,
+      "acres": 109078.95,
+      "acresPerFire": 634.1799418604651
+    },
+    {
+      "year": 1987,
+      "avgTemp": 58.275,
+      "avgAnomaly": 0.9083333333333332,
+      "fires": 285,
+      "acres": 851816.47,
+      "acresPerFire": 2988.8297192982454
+    },
+    {
+      "year": 1988,
+      "avgTemp": 58.75,
+      "avgAnomaly": 1.383333333333333,
+      "fires": 256,
+      "acres": 301179.5,
+      "acresPerFire": 1176.482421875
+    },
+    {
+      "year": 1989,
+      "avgTemp": 58.10833333333332,
+      "avgAnomaly": 0.7416666666666667,
+      "fires": 179,
+      "acres": 135295.26,
+      "acresPerFire": 755.8394413407822
+    },
+    {
+      "year": 1990,
+      "avgTemp": 57.96666666666667,
+      "avgAnomaly": 0.6,
+      "fires": 174,
+      "acres": 371773.86,
+      "acresPerFire": 2136.6313793103445
+    },
+    {
+      "year": 1991,
+      "avgTemp": 58.13333333333333,
+      "avgAnomaly": 0.7666666666666667,
+      "fires": 87,
+      "acres": 39935.72,
+      "acresPerFire": 459.0312643678161
+    },
+    {
+      "year": 1992,
+      "avgTemp": 59.26666666666666,
+      "avgAnomaly": 1.9000000000000004,
+      "fires": 195,
+      "acres": 224134.7,
+      "acresPerFire": 1149.408717948718
+    },
+    {
+      "year": 1993,
+      "avgTemp": 57.658333333333324,
+      "avgAnomaly": 0.2916666666666666,
+      "fires": 171,
+      "acres": 324394.29,
+      "acresPerFire": 1897.0426315789473
+    },
+    {
+      "year": 1994,
+      "avgTemp": 58.00833333333333,
+      "avgAnomaly": 0.6416666666666666,
+      "fires": 217,
+      "acres": 343088.99,
+      "acresPerFire": 1581.0552534562212
+    },
+    {
+      "year": 1995,
+      "avgTemp": 58.93333333333333,
+      "avgAnomaly": 1.5666666666666667,
+      "fires": 206,
+      "acres": 198306.83,
+      "acresPerFire": 962.6545145631068
+    },
+    {
+      "year": 1996,
+      "avgTemp": 59.558333333333344,
+      "avgAnomaly": 2.191666666666667,
+      "fires": 317,
+      "acres": 663595.23,
+      "acresPerFire": 2093.3603470031544
+    },
+    {
+      "year": 1997,
+      "avgTemp": 59.11666666666665,
+      "avgAnomaly": 1.7500000000000002,
+      "fires": 188,
+      "acres": 217849.63,
+      "acresPerFire": 1158.7746276595744
+    },
+    {
+      "year": 1998,
+      "avgTemp": 56.708333333333336,
+      "avgAnomaly": -0.6583333333333332,
+      "fires": 163,
+      "acres": 165354.68,
+      "acresPerFire": 1014.4458895705521
+    },
+    {
+      "year": 1999,
+      "avgTemp": 57.958333333333336,
+      "avgAnomaly": 0.5916666666666667,
+      "fires": 274,
+      "acres": 800410.03,
+      "acresPerFire": 2921.204489051095
+    },
+    {
+      "year": 2000,
+      "avgTemp": 58.79999999999999,
+      "avgAnomaly": 1.4333333333333333,
+      "fires": 180,
+      "acres": 245221.49,
+      "acresPerFire": 1362.341611111111
+    },
+    {
+      "year": 2001,
+      "avgTemp": 59.125,
+      "avgAnomaly": 1.758333333333333,
+      "fires": 207,
+      "acres": 246964.18,
+      "acresPerFire": 1193.0636714975844
+    },
+    {
+      "year": 2002,
+      "avgTemp": 58.849999999999994,
+      "avgAnomaly": 1.4833333333333334,
+      "fires": 244,
+      "acres": 963901.28,
+      "acresPerFire": 3950.415081967213
+    },
+    {
+      "year": 2003,
+      "avgTemp": 59.42499999999999,
+      "avgAnomaly": 2.058333333333333,
+      "fires": 339,
+      "acres": 968718.99,
+      "acresPerFire": 2857.5781415929205
+    },
+    {
+      "year": 2004,
+      "avgTemp": 58.85833333333335,
+      "avgAnomaly": 1.4916666666666665,
+      "fires": 277,
+      "acres": 274638.56,
+      "acresPerFire": 991.4749458483755
+    },
+    {
+      "year": 2005,
+      "avgTemp": 58.6,
+      "avgAnomaly": 1.2333333333333334,
+      "fires": 304,
+      "acres": 231112.47,
+      "acresPerFire": 760.2383881578947
+    },
+    {
+      "year": 2006,
+      "avgTemp": 58.64166666666666,
+      "avgAnomaly": 1.2750000000000001,
+      "fires": 314,
+      "acres": 748169.74,
+      "acresPerFire": 2382.706178343949
+    },
+    {
+      "year": 2007,
+      "avgTemp": 58.925000000000004,
+      "avgAnomaly": 1.5583333333333336,
+      "fires": 349,
+      "acres": 1031820.11,
+      "acresPerFire": 2956.5046131805157
+    },
+    {
+      "year": 2008,
+      "avgTemp": 58.91666666666666,
+      "avgAnomaly": 1.55,
+      "fires": 438,
+      "acres": 1382692.88,
+      "acresPerFire": 3156.83305936073
+    },
+    {
+      "year": 2009,
+      "avgTemp": 58.833333333333336,
+      "avgAnomaly": 1.4666666666666666,
+      "fires": 254,
+      "acres": 435825.44,
+      "acresPerFire": 1715.848188976378
+    },
+    {
+      "year": 2010,
+      "avgTemp": 57.724999999999994,
+      "avgAnomaly": 0.3583333333333334,
+      "fires": 207,
+      "acres": 101056.03,
+      "acresPerFire": 488.19338164251207
+    },
+    {
+      "year": 2011,
+      "avgTemp": 57.43333333333334,
+      "avgAnomaly": 0.06666666666666672,
+      "fires": 317,
+      "acres": 202452.95,
+      "acresPerFire": 638.6528391167193
+    },
+    {
+      "year": 2012,
+      "avgTemp": 59.50833333333333,
+      "avgAnomaly": 2.1416666666666666,
+      "fires": 351,
+      "acres": 848661.34,
+      "acresPerFire": 2417.838575498575
+    },
+    {
+      "year": 2013,
+      "avgTemp": 59.31666666666666,
+      "avgAnomaly": 1.95,
+      "fires": 296,
+      "acres": 569382.57,
+      "acresPerFire": 1923.5897635135134
+    },
+    {
+      "year": 2014,
+      "avgTemp": 61.449999999999996,
+      "avgAnomaly": 4.083333333333334,
+      "fires": 236,
+      "acres": 554656.14,
+      "acresPerFire": 2350.237881355932
+    },
+    {
+      "year": 2015,
+      "avgTemp": 60.75833333333333,
+      "avgAnomaly": 3.391666666666667,
+      "fires": 317,
+      "acres": 789221.8,
+      "acresPerFire": 2489.6586750788647
+    },
+    {
+      "year": 2016,
+      "avgTemp": 60.13333333333333,
+      "avgAnomaly": 2.766666666666666,
+      "fires": 361,
+      "acres": 546250.14,
+      "acresPerFire": 1513.1582825484766
+    },
+    {
+      "year": 2017,
+      "avgTemp": 60.34166666666666,
+      "avgAnomaly": 2.9749999999999996,
+      "fires": 611,
+      "acres": 1425473.99,
+      "acresPerFire": 2333.01798690671
+    },
+    {
+      "year": 2018,
+      "avgTemp": 60.125,
+      "avgAnomaly": 2.7583333333333333,
+      "fires": 414,
+      "acres": 1581916.4,
+      "acresPerFire": 3821.054106280193
+    },
+    {
+      "year": 2019,
+      "avgTemp": 58.40833333333333,
+      "avgAnomaly": 1.0416666666666667,
+      "fires": 317,
+      "acres": 279834.78,
+      "acresPerFire": 882.7595583596216
+    },
+    {
+      "year": 2020,
+      "avgTemp": 60.51666666666667,
+      "avgAnomaly": 3.15,
+      "fires": 504,
+      "acres": 4179282.83,
+      "acresPerFire": 8292.227837301587
+    },
+    {
+      "year": 2021,
+      "avgTemp": 60.35,
+      "avgAnomaly": 2.983333333333334,
+      "fires": 389,
+      "acres": 2515663.08,
+      "acresPerFire": 6467.000205655527
+    },
+    {
+      "year": 2022,
+      "avgTemp": 60.04999999999999,
+      "avgAnomaly": 2.6833333333333336,
+      "fires": 306,
+      "acres": 322528,
+      "acresPerFire": 1054.013071895425
+    },
+    {
+      "year": 2023,
+      "avgTemp": 58.25000000000001,
+      "avgAnomaly": 0.8833333333333333,
+      "fires": 284,
+      "acres": 342033.38,
+      "acresPerFire": 1204.3428873239436
+    }
+  ],
+  "normalizedData": [
+    {
+      "year": 1895,
+      "avgTemp": 56.458333333333336,
+      "avgAnomaly": -0.9083333333333332,
+      "fires": 1,
+      "acres": 628.11,
+      "acresPerFire": 628.11,
+      "normalizedTemp": 0.17832647462277143,
+      "normalizedAnomaly": 0.1783264746227709,
+      "normalizedFires": 0,
+      "normalizedAcres": 0.00009902206581182324
+    },
+    {
+      "year": 1896,
+      "avgTemp": 57.466666666666676,
+      "avgAnomaly": 0.10000000000000003,
+      "fires": 1,
+      "acres": 7531.72,
+      "acresPerFire": 7531.72,
+      "normalizedTemp": 0.3443072702331979,
+      "normalizedAnomaly": 0.34430727023319607,
+      "normalizedFires": 0,
+      "normalizedAcres": 0.0017509715215151748
+    },
+    {
+      "year": 1898,
+      "avgTemp": 56.699999999999996,
+      "avgAnomaly": -0.6666666666666666,
+      "fires": 5,
+      "acres": 28244.2,
+      "acresPerFire": 5648.84,
+      "normalizedTemp": 0.2181069958847731,
+      "normalizedAnomaly": 0.2181069958847736,
+      "normalizedFires": 0.006557377049180328,
+      "normalizedAcres": 0.006707214713449041
+    },
+    {
+      "year": 1900,
+      "avgTemp": 57.49166666666667,
+      "avgAnomaly": 0.12500000000000003,
+      "fires": 12,
+      "acres": 24528.51,
+      "acresPerFire": 2044.0424999999998,
+      "normalizedTemp": 0.34842249657064506,
+      "normalizedAnomaly": 0.3484224965706447,
+      "normalizedFires": 0.018032786885245903,
+      "normalizedAcres": 0.005818095531881369
+    },
+    {
+      "year": 1902,
+      "avgTemp": 56.166666666666664,
+      "avgAnomaly": -1.2,
+      "fires": 1,
+      "acres": 731.48,
+      "acresPerFire": 731.48,
+      "normalizedTemp": 0.13031550068587075,
+      "normalizedAnomaly": 0.13031550068587103,
+      "normalizedFires": 0,
+      "normalizedAcres": 0.00012375724280415848
+    },
+    {
+      "year": 1903,
+      "avgTemp": 56.208333333333336,
+      "avgAnomaly": -1.158333333333333,
+      "fires": 2,
+      "acres": 3649.34,
+      "acresPerFire": 1824.67,
+      "normalizedTemp": 0.1371742112482858,
+      "normalizedAnomaly": 0.13717421124828535,
+      "normalizedFires": 0.001639344262295082,
+      "normalizedAcres": 0.0008219654612317031
+    },
+    {
+      "year": 1905,
+      "avgTemp": 57.074999999999996,
+      "avgAnomaly": -0.2916666666666667,
+      "fires": 1,
+      "acres": 214.29,
+      "acresPerFire": 214.29,
+      "normalizedTemp": 0.27983539094650156,
+      "normalizedAnomaly": 0.279835390946502,
+      "normalizedFires": 0,
+      "normalizedAcres": 0
+    },
+    {
+      "year": 1906,
+      "avgTemp": 57.18333333333334,
+      "avgAnomaly": -0.18333333333333324,
+      "fires": 4,
+      "acres": 3964.89,
+      "acresPerFire": 991.2225,
+      "normalizedTemp": 0.29766803840878,
+      "normalizedAnomaly": 0.2976680384087791,
+      "normalizedFires": 0.004918032786885246,
+      "normalizedAcres": 0.0008974727176884254
+    },
+    {
+      "year": 1907,
+      "avgTemp": 56.525,
+      "avgAnomaly": -0.8416666666666667,
+      "fires": 10,
+      "acres": 1328.69,
+      "acresPerFire": 132.869,
+      "normalizedTemp": 0.18930041152263363,
+      "normalizedAnomaly": 0.18930041152263372,
+      "normalizedFires": 0.014754098360655738,
+      "normalizedAcres": 0.0002666622931242951
+    },
+    {
+      "year": 1908,
+      "avgTemp": 56.23333333333334,
+      "avgAnomaly": -1.1333333333333333,
+      "fires": 16,
+      "acres": 19751.94,
+      "acresPerFire": 1234.49625,
+      "normalizedTemp": 0.1412894375857353,
+      "normalizedAnomaly": 0.14128943758573384,
+      "normalizedFires": 0.02459016393442623,
+      "normalizedAcres": 0.004675120738747204
+    },
+    {
+      "year": 1909,
+      "avgTemp": 56.224999999999994,
+      "avgAnomaly": -1.1416666666666666,
+      "fires": 24,
+      "acres": 34955.33,
+      "acresPerFire": 1456.4720833333333,
+      "normalizedTemp": 0.1399176954732502,
+      "normalizedAnomaly": 0.139917695473251,
+      "normalizedFires": 0.03770491803278689,
+      "normalizedAcres": 0.008313106058796538
+    },
+    {
+      "year": 1910,
+      "avgTemp": 57.65833333333333,
+      "avgAnomaly": 0.2916666666666667,
+      "fires": 90,
+      "acres": 254816.95,
+      "acresPerFire": 2831.2994444444444,
+      "normalizedTemp": 0.37585733882030176,
+      "normalizedAnomaly": 0.37585733882030176,
+      "normalizedFires": 0.14590163934426228,
+      "normalizedAcres": 0.0609233032583859
+    },
+    {
+      "year": 1911,
+      "avgTemp": 55.375,
+      "avgAnomaly": -1.9916666666666665,
+      "fires": 166,
+      "acres": 123472.2,
+      "acresPerFire": 743.8084337349397,
+      "normalizedTemp": 0,
+      "normalizedAnomaly": 0,
+      "normalizedFires": 0.27049180327868855,
+      "normalizedAcres": 0.029494110666105515
+    },
+    {
+      "year": 1912,
+      "avgTemp": 55.541666666666664,
+      "avgAnomaly": -1.8250000000000002,
+      "fires": 56,
+      "acres": 40419.08,
+      "acresPerFire": 721.7692857142857,
+      "normalizedTemp": 0.027434842249656696,
+      "normalizedAnomaly": 0.027434842249657004,
+      "normalizedFires": 0.09016393442622951,
+      "normalizedAcres": 0.009620514623098285
+    },
+    {
+      "year": 1913,
+      "avgTemp": 56.449999999999996,
+      "avgAnomaly": -0.9166666666666666,
+      "fires": 84,
+      "acres": 161725.44,
+      "acresPerFire": 1925.3028571428572,
+      "normalizedTemp": 0.17695473251028748,
+      "normalizedAnomaly": 0.176954732510288,
+      "normalizedFires": 0.1360655737704918,
+      "normalizedAcres": 0.03864764323774407
+    },
+    {
+      "year": 1914,
+      "avgTemp": 57.375,
+      "avgAnomaly": 0.00833333333333323,
+      "fires": 105,
+      "acres": 73658.27,
+      "acresPerFire": 701.5073333333333,
+      "normalizedTemp": 0.329218106995885,
+      "normalizedAnomaly": 0.3292181069958847,
+      "normalizedFires": 0.17049180327868851,
+      "normalizedAcres": 0.017574246341506523
+    },
+    {
+      "year": 1915,
+      "avgTemp": 56.741666666666674,
+      "avgAnomaly": -0.625,
+      "fires": 132,
+      "acres": 55185.43,
+      "acresPerFire": 418.0714393939394,
+      "normalizedTemp": 0.22496570644718933,
+      "normalizedAnomaly": 0.22496570644718789,
+      "normalizedFires": 0.21475409836065573,
+      "normalizedAcres": 0.0131539216152698
+    },
+    {
+      "year": 1916,
+      "avgTemp": 55.58333333333332,
+      "avgAnomaly": -1.7833333333333334,
+      "fires": 131,
+      "acres": 88528.91,
+      "acresPerFire": 675.7932061068702,
+      "normalizedTemp": 0.0342935528120694,
+      "normalizedAnomaly": 0.03429355281207128,
+      "normalizedFires": 0.21311475409836064,
+      "normalizedAcres": 0.021132608655420618
+    },
+    {
+      "year": 1917,
+      "avgTemp": 56.62500000000001,
+      "avgAnomaly": -0.741666666666667,
+      "fires": 266,
+      "acres": 439018.26,
+      "acresPerFire": 1650.4445864661654,
+      "normalizedTemp": 0.2057613168724293,
+      "normalizedAnomaly": 0.2057613168724279,
+      "normalizedFires": 0.4344262295081967,
+      "normalizedAcres": 0.10500042432900611
+    },
+    {
+      "year": 1918,
+      "avgTemp": 56.84166666666667,
+      "avgAnomaly": -0.525,
+      "fires": 129,
+      "acres": 190458.53,
+      "acresPerFire": 1476.4227131782945,
+      "normalizedTemp": 0.24142661179698266,
+      "normalizedAnomaly": 0.2414266117969821,
+      "normalizedFires": 0.2098360655737705,
+      "normalizedAcres": 0.0455231203267128
+    },
+    {
+      "year": 1919,
+      "avgTemp": 56.275000000000006,
+      "avgAnomaly": -1.0916666666666668,
+      "fires": 165,
+      "acres": 244409.44,
+      "acresPerFire": 1481.2693333333334,
+      "normalizedTemp": 0.1481481481481492,
+      "normalizedAnomaly": 0.14814814814814808,
+      "normalizedFires": 0.26885245901639343,
+      "normalizedAcres": 0.05843291337834818
+    },
+    {
+      "year": 1920,
+      "avgTemp": 56.09166666666667,
+      "avgAnomaly": -1.275,
+      "fires": 131,
+      "acres": 139029.81,
+      "acresPerFire": 1061.2962595419847,
+      "normalizedTemp": 0.11796982167352577,
+      "normalizedAnomaly": 0.11796982167352536,
+      "normalizedFires": 0.21311475409836064,
+      "normalizedAcres": 0.033216856500755065
+    },
+    {
+      "year": 1921,
+      "avgTemp": 57.30833333333333,
+      "avgAnomaly": -0.05833333333333338,
+      "fires": 160,
+      "acres": 245682.31,
+      "acresPerFire": 1535.5144375,
+      "normalizedTemp": 0.31824417009602163,
+      "normalizedAnomaly": 0.3182441700960219,
+      "normalizedFires": 0.260655737704918,
+      "normalizedAcres": 0.05873749560470238
+    },
+    {
+      "year": 1922,
+      "avgTemp": 56.05833333333333,
+      "avgAnomaly": -1.3083333333333333,
+      "fires": 116,
+      "acres": 342731.43,
+      "acresPerFire": 2954.5812931034484,
+      "normalizedTemp": 0.1124828532235935,
+      "normalizedAnomaly": 0.11248285322359393,
+      "normalizedFires": 0.1885245901639344,
+      "normalizedAcres": 0.08196016330471574
+    },
+    {
+      "year": 1923,
+      "avgTemp": 56.36666666666665,
+      "avgAnomaly": -1,
+      "fires": 125,
+      "acres": 272381.8,
+      "acresPerFire": 2179.0544,
+      "normalizedTemp": 0.16323731138545738,
+      "normalizedAnomaly": 0.1632373113854595,
+      "normalizedFires": 0.20327868852459016,
+      "normalizedAcres": 0.06512635708051824
+    },
+    {
+      "year": 1924,
+      "avgTemp": 57.150000000000006,
+      "avgAnomaly": -0.21666666666666656,
+      "fires": 248,
+      "acres": 610545.22,
+      "acresPerFire": 2461.875887096774,
+      "normalizedTemp": 0.2921810699588489,
+      "normalizedAnomaly": 0.29218106995884774,
+      "normalizedFires": 0.40491803278688526,
+      "normalizedAcres": 0.14604472842649285
+    },
+    {
+      "year": 1925,
+      "avgTemp": 57.14166666666666,
+      "avgAnomaly": -0.22499999999999995,
+      "fires": 91,
+      "acres": 78507.23,
+      "acresPerFire": 862.7168131868132,
+      "normalizedTemp": 0.29080932784636376,
+      "normalizedAnomaly": 0.2908093278463649,
+      "normalizedFires": 0.14754098360655737,
+      "normalizedAcres": 0.018734543176456255
+    },
+    {
+      "year": 1926,
+      "avgTemp": 58.791666666666664,
+      "avgAnomaly": 1.4249999999999998,
+      "fires": 188,
+      "acres": 255028.6,
+      "acresPerFire": 1356.5351063829787,
+      "normalizedTemp": 0.5624142661179699,
+      "normalizedAnomaly": 0.5624142661179697,
+      "normalizedFires": 0.30655737704918035,
+      "normalizedAcres": 0.06097394851533112
+    },
+    {
+      "year": 1927,
+      "avgTemp": 56.875,
+      "avgAnomaly": -0.49166666666666664,
+      "fires": 99,
+      "acres": 178417.72,
+      "acresPerFire": 1802.199191919192,
+      "normalizedTemp": 0.24691358024691376,
+      "normalizedAnomaly": 0.24691358024691354,
+      "normalizedFires": 0.16065573770491803,
+      "normalizedAcres": 0.0426419017286565
+    },
+    {
+      "year": 1928,
+      "avgTemp": 57.67499999999999,
+      "avgAnomaly": 0.3083333333333333,
+      "fires": 167,
+      "acres": 550886.8,
+      "acresPerFire": 3298.7233532934133,
+      "normalizedTemp": 0.3786008230452661,
+      "normalizedAnomaly": 0.37860082304526743,
+      "normalizedFires": 0.2721311475409836,
+      "normalizedAcres": 0.13176919802325138
+    },
+    {
+      "year": 1929,
+      "avgTemp": 57.23333333333333,
+      "avgAnomaly": -0.13333333333333344,
+      "fires": 154,
+      "acres": 252561.17,
+      "acresPerFire": 1640.0075974025974,
+      "normalizedTemp": 0.30589849108367545,
+      "normalizedAnomaly": 0.30589849108367617,
+      "normalizedFires": 0.25081967213114753,
+      "normalizedAcres": 0.060383522688048565
+    },
+    {
+      "year": 1930,
+      "avgTemp": 56.94166666666666,
+      "avgAnomaly": -0.425,
+      "fires": 107,
+      "acres": 61643.72,
+      "acresPerFire": 576.1095327102804,
+      "normalizedTemp": 0.257887517146776,
+      "normalizedAnomaly": 0.2578875171467764,
+      "normalizedFires": 0.1737704918032787,
+      "normalizedAcres": 0.014699311440343116
+    },
+    {
+      "year": 1931,
+      "avgTemp": 58.28333333333334,
+      "avgAnomaly": 0.9166666666666665,
+      "fires": 215,
+      "acres": 349465.87,
+      "acresPerFire": 1625.4226511627908,
+      "normalizedTemp": 0.47873799725651695,
+      "normalizedAnomaly": 0.4787379972565157,
+      "normalizedFires": 0.35081967213114756,
+      "normalizedAcres": 0.08357163244802872
+    },
+    {
+      "year": 1932,
+      "avgTemp": 56.93333333333334,
+      "avgAnomaly": -0.4333333333333334,
+      "fires": 116,
+      "acres": 326915.95,
+      "acresPerFire": 2818.240948275862,
+      "normalizedTemp": 0.25651577503429435,
+      "normalizedAnomaly": 0.2565157750342935,
+      "normalizedFires": 0.1885245901639344,
+      "normalizedAcres": 0.07817571233229882
+    },
+    {
+      "year": 1933,
+      "avgTemp": 56.725,
+      "avgAnomaly": -0.6416666666666665,
+      "fires": 73,
+      "acres": 92087.91,
+      "acresPerFire": 1261.4782191780823,
+      "normalizedTemp": 0.2222222222222226,
+      "normalizedAnomaly": 0.22222222222222224,
+      "normalizedFires": 0.1180327868852459,
+      "normalizedAcres": 0.021984233835992555
+    },
+    {
+      "year": 1934,
+      "avgTemp": 59.70833333333334,
+      "avgAnomaly": 2.3416666666666663,
+      "fires": 132,
+      "acres": 112191.75,
+      "acresPerFire": 849.9375,
+      "normalizedTemp": 0.7133058984910857,
+      "normalizedAnomaly": 0.7133058984910836,
+      "normalizedFires": 0.21475409836065573,
+      "normalizedAcres": 0.026794836918372245
+    },
+    {
+      "year": 1935,
+      "avgTemp": 56.84166666666667,
+      "avgAnomaly": -0.525,
+      "fires": 81,
+      "acres": 65151.67,
+      "acresPerFire": 804.3416049382715,
+      "normalizedTemp": 0.24142661179698266,
+      "normalizedAnomaly": 0.2414266117969821,
+      "normalizedFires": 0.13114754098360656,
+      "normalizedAcres": 0.015538720980154108
+    },
+    {
+      "year": 1936,
+      "avgTemp": 58.616666666666674,
+      "avgAnomaly": 1.2499999999999998,
+      "fires": 123,
+      "acres": 213582.82,
+      "acresPerFire": 1736.4456910569106,
+      "normalizedTemp": 0.5336076817558315,
+      "normalizedAnomaly": 0.5336076817558298,
+      "normalizedFires": 0.2,
+      "normalizedAcres": 0.05105648016005021
+    },
+    {
+      "year": 1937,
+      "avgTemp": 57.15833333333333,
+      "avgAnomaly": -0.20833333333333315,
+      "fires": 59,
+      "acres": 21699.54,
+      "acresPerFire": 367.788813559322,
+      "normalizedTemp": 0.2935528120713305,
+      "normalizedAnomaly": 0.29355281207133055,
+      "normalizedFires": 0.09508196721311475,
+      "normalizedAcres": 0.005141157603507503
+    },
+    {
+      "year": 1938,
+      "avgTemp": 57.25,
+      "avgAnomaly": -0.11666666666666665,
+      "fires": 100,
+      "acres": 119209.36,
+      "acresPerFire": 1192.0936,
+      "normalizedTemp": 0.3086419753086422,
+      "normalizedAnomaly": 0.3086419753086419,
+      "normalizedFires": 0.16229508196721312,
+      "normalizedAcres": 0.028474065180084364
+    },
+    {
+      "year": 1939,
+      "avgTemp": 58.31666666666666,
+      "avgAnomaly": 0.9499999999999998,
+      "fires": 151,
+      "acres": 243282.98,
+      "acresPerFire": 1611.1455629139073,
+      "normalizedTemp": 0.4842249657064469,
+      "normalizedAnomaly": 0.48422496570644713,
+      "normalizedFires": 0.2459016393442623,
+      "normalizedAcres": 0.058163365274693485
+    },
+    {
+      "year": 1940,
+      "avgTemp": 58.833333333333336,
+      "avgAnomaly": 1.4666666666666668,
+      "fires": 88,
+      "acres": 128464.76,
+      "acresPerFire": 1459.8268181818182,
+      "normalizedTemp": 0.5692729766803849,
+      "normalizedAnomaly": 0.569272976680384,
+      "normalizedFires": 0.14262295081967213,
+      "normalizedAcres": 0.030688769225115414
+    },
+    {
+      "year": 1941,
+      "avgTemp": 57.05833333333333,
+      "avgAnomaly": -0.3083333333333334,
+      "fires": 111,
+      "acres": 87476.86,
+      "acresPerFire": 788.0798198198198,
+      "normalizedTemp": 0.277091906721536,
+      "normalizedAnomaly": 0.27709190672153633,
+      "normalizedFires": 0.18032786885245902,
+      "normalizedAcres": 0.020880865954880944
+    },
+    {
+      "year": 1942,
+      "avgTemp": 57.050000000000004,
+      "avgAnomaly": -0.31666666666666665,
+      "fires": 101,
+      "acres": 262391.77,
+      "acresPerFire": 2597.9383168316836,
+      "normalizedTemp": 0.2757201646090544,
+      "normalizedAnomaly": 0.27572016460905346,
+      "normalizedFires": 0.16393442622950818,
+      "normalizedAcres": 0.06273586505953789
+    },
+    {
+      "year": 1943,
+      "avgTemp": 57.83333333333332,
+      "avgAnomaly": 0.46666666666666673,
+      "fires": 114,
+      "acres": 248991.41,
+      "acresPerFire": 2184.1351754385964,
+      "normalizedTemp": 0.40466392318244004,
+      "normalizedAnomaly": 0.40466392318244165,
+      "normalizedFires": 0.18524590163934426,
+      "normalizedAcres": 0.05952932277104984
+    },
+    {
+      "year": 1944,
+      "avgTemp": 56.225,
+      "avgAnomaly": -1.1416666666666668,
+      "fires": 135,
+      "acres": 343786.75,
+      "acresPerFire": 2546.5685185185184,
+      "normalizedTemp": 0.13991769547325136,
+      "normalizedAnomaly": 0.13991769547325097,
+      "normalizedFires": 0.21967213114754097,
+      "normalizedAcres": 0.08221268847626989
+    },
+    {
+      "year": 1945,
+      "avgTemp": 57.09166666666666,
+      "avgAnomaly": -0.27500000000000013,
+      "fires": 148,
+      "acres": 248390.8,
+      "acresPerFire": 1678.3162162162162,
+      "normalizedTemp": 0.2825788751714671,
+      "normalizedAnomaly": 0.2825788751714677,
+      "normalizedFires": 0.24098360655737705,
+      "normalizedAcres": 0.05938560414230487
+    },
+    {
+      "year": 1946,
+      "avgTemp": 56.71666666666667,
+      "avgAnomaly": -0.65,
+      "fires": 102,
+      "acres": 106279.24,
+      "acresPerFire": 1041.9533333333334,
+      "normalizedTemp": 0.22085048010973984,
+      "normalizedAnomaly": 0.22085048010973932,
+      "normalizedFires": 0.16557377049180327,
+      "normalizedAcres": 0.02538004557350476
+    },
+    {
+      "year": 1947,
+      "avgTemp": 57.54999999999999,
+      "avgAnomaly": 0.18333333333333338,
+      "fires": 121,
+      "acres": 150451.67,
+      "acresPerFire": 1243.4022314049587,
+      "normalizedTemp": 0.3580246913580233,
+      "normalizedAnomaly": 0.35802469135802467,
+      "normalizedFires": 0.19672131147540983,
+      "normalizedAcres": 0.03594996793232781
+    },
+    {
+      "year": 1948,
+      "avgTemp": 55.649999999999984,
+      "avgAnomaly": -1.7166666666666666,
+      "fires": 65,
+      "acres": 176047.74,
+      "acresPerFire": 2708.426769230769,
+      "normalizedTemp": 0.04526748971193161,
+      "normalizedAnomaly": 0.04526748971193414,
+      "normalizedFires": 0.10491803278688525,
+      "normalizedAcres": 0.042074794494756
+    },
+    {
+      "year": 1949,
+      "avgTemp": 56.216666666666676,
+      "avgAnomaly": -1.1500000000000001,
+      "fires": 170,
+      "acres": 206849.35,
+      "acresPerFire": 1216.7608823529413,
+      "normalizedTemp": 0.13854595336076975,
+      "normalizedAnomaly": 0.1385459533607681,
+      "normalizedFires": 0.27704918032786885,
+      "normalizedAcres": 0.04944524312587608
+    },
+    {
+      "year": 1950,
+      "avgTemp": 58.12500000000001,
+      "avgAnomaly": 0.7583333333333332,
+      "fires": 226,
+      "acres": 536003.01,
+      "acresPerFire": 2371.6947345132744,
+      "normalizedTemp": 0.45267489711934306,
+      "normalizedAnomaly": 0.4526748971193415,
+      "normalizedFires": 0.36885245901639346,
+      "normalizedAcres": 0.12820768907513538
+    },
+    {
+      "year": 1951,
+      "avgTemp": 57.225,
+      "avgAnomaly": -0.14166666666666664,
+      "fires": 219,
+      "acres": 303257.82,
+      "acresPerFire": 1384.7389041095892,
+      "normalizedTemp": 0.30452674897119386,
+      "normalizedAnomaly": 0.30452674897119336,
+      "normalizedFires": 0.35737704918032787,
+      "normalizedAcres": 0.07251461111475334
+    },
+    {
+      "year": 1952,
+      "avgTemp": 56.75833333333335,
+      "avgAnomaly": -0.6083333333333335,
+      "fires": 172,
+      "acres": 133399.29,
+      "acresPerFire": 775.5772674418605,
+      "normalizedTemp": 0.22770919067215606,
+      "normalizedAnomaly": 0.22770919067215356,
+      "normalizedFires": 0.28032786885245903,
+      "normalizedAcres": 0.03186954191471576
+    },
+    {
+      "year": 1953,
+      "avgTemp": 57.175000000000004,
+      "avgAnomaly": -0.19166666666666654,
+      "fires": 217,
+      "acres": 335875.49,
+      "acresPerFire": 1547.8133179723502,
+      "normalizedTemp": 0.2962962962962972,
+      "normalizedAnomaly": 0.2962962962962963,
+      "normalizedFires": 0.3540983606557377,
+      "normalizedAcres": 0.08031962069710395
+    },
+    {
+      "year": 1954,
+      "avgTemp": 57.57499999999999,
+      "avgAnomaly": 0.20833333333333334,
+      "fires": 157,
+      "acres": 218268.98,
+      "acresPerFire": 1390.2482802547772,
+      "normalizedTemp": 0.36213991769547166,
+      "normalizedAnomaly": 0.3621399176954732,
+      "normalizedFires": 0.25573770491803277,
+      "normalizedAcres": 0.05217782094571725
+    },
+    {
+      "year": 1955,
+      "avgTemp": 56.208333333333336,
+      "avgAnomaly": -1.1583333333333334,
+      "fires": 171,
+      "acres": 386041.67,
+      "acresPerFire": 2257.553625730994,
+      "normalizedTemp": 0.1371742112482858,
+      "normalizedAnomaly": 0.13717421124828527,
+      "normalizedFires": 0.2786885245901639,
+      "normalizedAcres": 0.09232377413939231
+    },
+    {
+      "year": 1956,
+      "avgTemp": 56.96666666666666,
+      "avgAnomaly": -0.4000000000000001,
+      "fires": 133,
+      "acres": 178798.54,
+      "acresPerFire": 1344.3499248120302,
+      "normalizedTemp": 0.2620027434842243,
+      "normalizedAnomaly": 0.2620027434842249,
+      "normalizedFires": 0.21639344262295082,
+      "normalizedAcres": 0.0427330272979921
+    },
+    {
+      "year": 1957,
+      "avgTemp": 57.09166666666667,
+      "avgAnomaly": -0.27499999999999997,
+      "fires": 154,
+      "acres": 203080.61,
+      "acresPerFire": 1318.7052597402596,
+      "normalizedTemp": 0.2825788751714683,
+      "normalizedAnomaly": 0.28257887517146774,
+      "normalizedFires": 0.25081967213114753,
+      "normalizedAcres": 0.04854342972800345
+    },
+    {
+      "year": 1958,
+      "avgTemp": 58.89166666666667,
+      "avgAnomaly": 1.5250000000000001,
+      "fires": 166,
+      "acres": 252161.38,
+      "acresPerFire": 1519.0444578313254,
+      "normalizedTemp": 0.5788751714677655,
+      "normalizedAnomaly": 0.578875171467764,
+      "normalizedFires": 0.27049180327868855,
+      "normalizedAcres": 0.06028785782967799
+    },
+    {
+      "year": 1959,
+      "avgTemp": 58.95000000000001,
+      "avgAnomaly": 1.5833333333333333,
+      "fires": 204,
+      "acres": 298094.59,
+      "acresPerFire": 1461.2479901960785,
+      "normalizedTemp": 0.5884773662551461,
+      "normalizedAnomaly": 0.588477366255144,
+      "normalizedFires": 0.33278688524590166,
+      "normalizedAcres": 0.07127911331169506
+    },
+    {
+      "year": 1960,
+      "avgTemp": 58.04999999999999,
+      "avgAnomaly": 0.6833333333333335,
+      "fires": 142,
+      "acres": 346191.03,
+      "acresPerFire": 2437.965,
+      "normalizedTemp": 0.44032921810699455,
+      "normalizedAnomaly": 0.4403292181069958,
+      "normalizedFires": 0.23114754098360657,
+      "normalizedAcres": 0.08278800328075023
+    },
+    {
+      "year": 1961,
+      "avgTemp": 57.80833333333334,
+      "avgAnomaly": 0.4416666666666665,
+      "fires": 167,
+      "acres": 363230.44,
+      "acresPerFire": 2175.0325748502996,
+      "normalizedTemp": 0.40054869684499406,
+      "normalizedAnomaly": 0.4005486968449931,
+      "normalizedFires": 0.2721311475409836,
+      "normalizedAcres": 0.08686532573595934
+    },
+    {
+      "year": 1962,
+      "avgTemp": 57.375,
+      "avgAnomaly": 0.008333333333333267,
+      "fires": 109,
+      "acres": 132534.61,
+      "acresPerFire": 1215.9138532110092,
+      "normalizedTemp": 0.329218106995885,
+      "normalizedAnomaly": 0.3292181069958847,
+      "normalizedFires": 0.17704918032786884,
+      "normalizedAcres": 0.03166263456401698
+    },
+    {
+      "year": 1963,
+      "avgTemp": 57.08333333333334,
+      "avgAnomaly": -0.28333333333333327,
+      "fires": 78,
+      "acres": 32155.59,
+      "acresPerFire": 412.25115384615384,
+      "normalizedTemp": 0.28120713305898665,
+      "normalizedAnomaly": 0.28120713305898487,
+      "normalizedFires": 0.12622950819672132,
+      "normalizedAcres": 0.007643162511998427
+    },
+    {
+      "year": 1964,
+      "avgTemp": 56.56666666666666,
+      "avgAnomaly": -0.7999999999999998,
+      "fires": 137,
+      "acres": 296775.19,
+      "acresPerFire": 2166.242262773723,
+      "normalizedTemp": 0.19615912208504752,
+      "normalizedAnomaly": 0.19615912208504802,
+      "normalizedFires": 0.22295081967213115,
+      "normalizedAcres": 0.07096339702530938
+    },
+    {
+      "year": 1965,
+      "avgTemp": 56.70000000000001,
+      "avgAnomaly": -0.6666666666666666,
+      "fires": 59,
+      "acres": 82528.09,
+      "acresPerFire": 1398.7811864406779,
+      "normalizedTemp": 0.21810699588477545,
+      "normalizedAnomaly": 0.2181069958847736,
+      "normalizedFires": 0.09508196721311475,
+      "normalizedAcres": 0.019696685807407216
+    },
+    {
+      "year": 1966,
+      "avgTemp": 58.00833333333333,
+      "avgAnomaly": 0.6416666666666667,
+      "fires": 132,
+      "acres": 265318.66,
+      "acresPerFire": 2009.9898484848484,
+      "normalizedTemp": 0.43347050754458183,
+      "normalizedAnomaly": 0.4334705075445816,
+      "normalizedFires": 0.21475409836065573,
+      "normalizedAcres": 0.06343623404654665
+    },
+    {
+      "year": 1967,
+      "avgTemp": 57.49166666666667,
+      "avgAnomaly": 0.12499999999999993,
+      "fires": 111,
+      "acres": 237117.12,
+      "acresPerFire": 2136.19027027027,
+      "normalizedTemp": 0.34842249657064506,
+      "normalizedAnomaly": 0.3484224965706446,
+      "normalizedFires": 0.18032786885245902,
+      "normalizedAcres": 0.05668795037278809
+    },
+    {
+      "year": 1968,
+      "avgTemp": 57.59166666666667,
+      "avgAnomaly": 0.22499999999999998,
+      "fires": 210,
+      "acres": 222086.25,
+      "acresPerFire": 1057.5535714285713,
+      "normalizedTemp": 0.3648834019204395,
+      "normalizedAnomaly": 0.3648834019204389,
+      "normalizedFires": 0.34262295081967215,
+      "normalizedAcres": 0.05309124697916536
+    },
+    {
+      "year": 1969,
+      "avgTemp": 57.49166666666667,
+      "avgAnomaly": 0.12500000000000003,
+      "fires": 131,
+      "acres": 97125.55,
+      "acresPerFire": 741.4164122137405,
+      "normalizedTemp": 0.34842249657064506,
+      "normalizedAnomaly": 0.3484224965706447,
+      "normalizedFires": 0.21311475409836064,
+      "normalizedAcres": 0.023189679487764518
+    },
+    {
+      "year": 1970,
+      "avgTemp": 57.81666666666667,
+      "avgAnomaly": 0.4499999999999999,
+      "fires": 233,
+      "acres": 676019.52,
+      "acresPerFire": 2901.371330472103,
+      "normalizedTemp": 0.4019204389574768,
+      "normalizedAnomaly": 0.4019204389574759,
+      "normalizedFires": 0.380327868852459,
+      "normalizedAcres": 0.16171192779719282
+    },
+    {
+      "year": 1971,
+      "avgTemp": 56.208333333333336,
+      "avgAnomaly": -1.1583333333333334,
+      "fires": 109,
+      "acres": 60060.32,
+      "acresPerFire": 551.0121100917431,
+      "normalizedTemp": 0.1371742112482858,
+      "normalizedAnomaly": 0.13717421124828527,
+      "normalizedFires": 0.17704918032786884,
+      "normalizedAcres": 0.014320423182147666
+    },
+    {
+      "year": 1972,
+      "avgTemp": 57.25833333333333,
+      "avgAnomaly": -0.10833333333333324,
+      "fires": 154,
+      "acres": 92264,
+      "acresPerFire": 599.1168831168832,
+      "normalizedTemp": 0.310013717421125,
+      "normalizedAnomaly": 0.3100137174211248,
+      "normalizedFires": 0.25081967213114753,
+      "normalizedAcres": 0.02202637001976522
+    },
+    {
+      "year": 1973,
+      "avgTemp": 57.29999999999999,
+      "avgAnomaly": -0.06666666666666664,
+      "fires": 150,
+      "acres": 257044.74,
+      "acresPerFire": 1713.6316,
+      "normalizedTemp": 0.31687242798353765,
+      "normalizedAnomaly": 0.31687242798353904,
+      "normalizedFires": 0.2442622950819672,
+      "normalizedAcres": 0.06145638616398476
+    },
+    {
+      "year": 1974,
+      "avgTemp": 57.633333333333326,
+      "avgAnomaly": 0.26666666666666666,
+      "fires": 206,
+      "acres": 137296.7,
+      "acresPerFire": 666.4888349514564,
+      "normalizedTemp": 0.3717421124828522,
+      "normalizedAnomaly": 0.3717421124828532,
+      "normalizedFires": 0.3360655737704918,
+      "normalizedAcres": 0.03280214447021249
+    },
+    {
+      "year": 1975,
+      "avgTemp": 56.26666666666667,
+      "avgAnomaly": -1.1,
+      "fires": 210,
+      "acres": 215591.67,
+      "acresPerFire": 1026.627,
+      "normalizedTemp": 0.1467764060356664,
+      "normalizedAnomaly": 0.14677640603566525,
+      "normalizedFires": 0.34262295081967215,
+      "normalizedAcres": 0.051537173400845925
+    },
+    {
+      "year": 1976,
+      "avgTemp": 57.475,
+      "avgAnomaly": 0.10833333333333334,
+      "fires": 133,
+      "acres": 199015.02,
+      "acresPerFire": 1496.3535338345864,
+      "normalizedTemp": 0.3456790123456795,
+      "normalizedAnomaly": 0.34567901234567894,
+      "normalizedFires": 0.21639344262295082,
+      "normalizedAcres": 0.04757058375501063
+    },
+    {
+      "year": 1977,
+      "avgTemp": 57.974999999999994,
+      "avgAnomaly": 0.6083333333333333,
+      "fires": 167,
+      "acres": 465615.28,
+      "acresPerFire": 2788.1154491017965,
+      "normalizedTemp": 0.4279835390946496,
+      "normalizedAnomaly": 0.42798353909465014,
+      "normalizedFires": 0.2721311475409836,
+      "normalizedAcres": 0.11136476598682443
+    },
+    {
+      "year": 1978,
+      "avgTemp": 57.60833333333335,
+      "avgAnomaly": 0.24166666666666672,
+      "fires": 151,
+      "acres": 126036.01,
+      "acresPerFire": 834.6755629139072,
+      "normalizedTemp": 0.3676268861454074,
+      "normalizedAnomaly": 0.3676268861454047,
+      "normalizedFires": 0.2459016393442623,
+      "normalizedAcres": 0.03010759904885408
+    },
+    {
+      "year": 1979,
+      "avgTemp": 57.66666666666668,
+      "avgAnomaly": 0.30000000000000004,
+      "fires": 366,
+      "acres": 377351.13,
+      "acresPerFire": 1031.0140163934427,
+      "normalizedTemp": 0.37722908093278684,
+      "normalizedAnomaly": 0.3772290809327846,
+      "normalizedFires": 0.5983606557377049,
+      "normalizedAcres": 0.090244234185257
+    },
+    {
+      "year": 1980,
+      "avgTemp": 58.07500000000001,
+      "avgAnomaly": 0.7083333333333334,
+      "fires": 319,
+      "acres": 380629.76,
+      "acresPerFire": 1193.1967398119123,
+      "normalizedTemp": 0.4444444444444464,
+      "normalizedAnomaly": 0.44444444444444436,
+      "normalizedFires": 0.521311475409836,
+      "normalizedAcres": 0.09102877025319141
+    },
+    {
+      "year": 1981,
+      "avgTemp": 59.300000000000004,
+      "avgAnomaly": 1.9333333333333336,
+      "fires": 271,
+      "acres": 301504.58,
+      "acresPerFire": 1112.5630258302583,
+      "normalizedTemp": 0.646090534979425,
+      "normalizedAnomaly": 0.6460905349794238,
+      "normalizedFires": 0.4426229508196721,
+      "normalizedAcres": 0.07209508222136027
+    },
+    {
+      "year": 1982,
+      "avgTemp": 56.34166666666667,
+      "avgAnomaly": -1.025,
+      "fires": 145,
+      "acres": 142577.74,
+      "acresPerFire": 983.2947586206895,
+      "normalizedTemp": 0.1591220850480114,
+      "normalizedAnomaly": 0.15912208504801095,
+      "normalizedFires": 0.2360655737704918,
+      "normalizedAcres": 0.03406583276569089
+    },
+    {
+      "year": 1983,
+      "avgTemp": 57.550000000000004,
+      "avgAnomaly": 0.18333333333333335,
+      "fires": 159,
+      "acres": 85898.31,
+      "acresPerFire": 540.2409433962264,
+      "normalizedTemp": 0.35802469135802567,
+      "normalizedAnomaly": 0.35802469135802467,
+      "normalizedFires": 0.25901639344262295,
+      "normalizedAcres": 0.020503138242379725
+    },
+    {
+      "year": 1984,
+      "avgTemp": 58.21666666666667,
+      "avgAnomaly": 0.85,
+      "fires": 212,
+      "acres": 206511.53,
+      "acresPerFire": 974.1109905660377,
+      "normalizedTemp": 0.4677640603566536,
+      "normalizedAnomaly": 0.46776406035665286,
+      "normalizedFires": 0.34590163934426227,
+      "normalizedAcres": 0.04936440693073677
+    },
+    {
+      "year": 1985,
+      "avgTemp": 57.324999999999996,
+      "avgAnomaly": -0.04166666666666654,
+      "fires": 210,
+      "acres": 566026.35,
+      "acresPerFire": 2695.3635714285715,
+      "normalizedTemp": 0.3209876543209872,
+      "normalizedAnomaly": 0.32098765432098764,
+      "normalizedFires": 0.34262295081967215,
+      "normalizedAcres": 0.13539190721193578
+    },
+    {
+      "year": 1986,
+      "avgTemp": 58.87500000000001,
+      "avgAnomaly": 1.508333333333333,
+      "fires": 172,
+      "acres": 109078.95,
+      "acresPerFire": 634.1799418604651,
+      "normalizedTemp": 0.5761316872428,
+      "normalizedAnomaly": 0.5761316872427983,
+      "normalizedFires": 0.28032786885245903,
+      "normalizedAcres": 0.02604998194166971
+    },
+    {
+      "year": 1987,
+      "avgTemp": 58.275,
+      "avgAnomaly": 0.9083333333333332,
+      "fires": 285,
+      "acres": 851816.47,
+      "acresPerFire": 2988.8297192982454,
+      "normalizedTemp": 0.477366255144033,
+      "normalizedAnomaly": 0.4773662551440328,
+      "normalizedFires": 0.46557377049180326,
+      "normalizedAcres": 0.20377798828827057
+    },
+    {
+      "year": 1988,
+      "avgTemp": 58.75,
+      "avgAnomaly": 1.383333333333333,
+      "fires": 256,
+      "acres": 301179.5,
+      "acresPerFire": 1176.482421875,
+      "normalizedTemp": 0.5555555555555559,
+      "normalizedAnomaly": 0.5555555555555555,
+      "normalizedFires": 0.4180327868852459,
+      "normalizedAcres": 0.07201729455243633
+    },
+    {
+      "year": 1989,
+      "avgTemp": 58.10833333333332,
+      "avgAnomaly": 0.7416666666666667,
+      "fires": 179,
+      "acres": 135295.26,
+      "acresPerFire": 755.8394413407822,
+      "normalizedTemp": 0.449931412894374,
+      "normalizedAnomaly": 0.4499314128943758,
+      "normalizedFires": 0.29180327868852457,
+      "normalizedAcres": 0.03232322435180735
+    },
+    {
+      "year": 1990,
+      "avgTemp": 57.96666666666667,
+      "avgAnomaly": 0.6,
+      "fires": 174,
+      "acres": 371773.86,
+      "acresPerFire": 2136.6313793103445,
+      "normalizedTemp": 0.42661179698216795,
+      "normalizedAnomaly": 0.4266117969821673,
+      "normalizedFires": 0.2836065573770492,
+      "normalizedAcres": 0.08890966167307704
+    },
+    {
+      "year": 1991,
+      "avgTemp": 58.13333333333333,
+      "avgAnomaly": 0.7666666666666667,
+      "fires": 87,
+      "acres": 39935.72,
+      "acresPerFire": 459.0312643678161,
+      "normalizedTemp": 0.45404663923182464,
+      "normalizedAnomaly": 0.4540466392318244,
+      "normalizedFires": 0.14098360655737704,
+      "normalizedAcres": 0.009504852485621114
+    },
+    {
+      "year": 1992,
+      "avgTemp": 59.26666666666666,
+      "avgAnomaly": 1.9000000000000004,
+      "fires": 195,
+      "acres": 224134.7,
+      "acresPerFire": 1149.408717948718,
+      "normalizedTemp": 0.6406035665294916,
+      "normalizedAnomaly": 0.6406035665294925,
+      "normalizedFires": 0.3180327868852459,
+      "normalizedAcres": 0.05358141601573254
+    },
+    {
+      "year": 1993,
+      "avgTemp": 57.658333333333324,
+      "avgAnomaly": 0.2916666666666666,
+      "fires": 171,
+      "acres": 324394.29,
+      "acresPerFire": 1897.0426315789473,
+      "normalizedTemp": 0.3758573388203006,
+      "normalizedAnomaly": 0.37585733882030176,
+      "normalizedFires": 0.2786885245901639,
+      "normalizedAcres": 0.07757230992914034
+    },
+    {
+      "year": 1994,
+      "avgTemp": 58.00833333333333,
+      "avgAnomaly": 0.6416666666666666,
+      "fires": 217,
+      "acres": 343088.99,
+      "acresPerFire": 1581.0552534562212,
+      "normalizedTemp": 0.43347050754458183,
+      "normalizedAnomaly": 0.43347050754458155,
+      "normalizedFires": 0.3540983606557377,
+      "normalizedAcres": 0.08204572304047447
+    },
+    {
+      "year": 1995,
+      "avgTemp": 58.93333333333333,
+      "avgAnomaly": 1.5666666666666667,
+      "fires": 206,
+      "acres": 198306.83,
+      "acresPerFire": 962.6545145631068,
+      "normalizedTemp": 0.5857338820301782,
+      "normalizedAnomaly": 0.5857338820301783,
+      "normalizedFires": 0.3360655737704918,
+      "normalizedAcres": 0.04740112254775319
+    },
+    {
+      "year": 1996,
+      "avgTemp": 59.558333333333344,
+      "avgAnomaly": 2.191666666666667,
+      "fires": 317,
+      "acres": 663595.23,
+      "acresPerFire": 2093.3603470031544,
+      "normalizedTemp": 0.6886145404663946,
+      "normalizedAnomaly": 0.6886145404663924,
+      "normalizedFires": 0.5180327868852459,
+      "normalizedAcres": 0.15873894712432737
+    },
+    {
+      "year": 1997,
+      "avgTemp": 59.11666666666665,
+      "avgAnomaly": 1.7500000000000002,
+      "fires": 188,
+      "acres": 217849.63,
+      "acresPerFire": 1158.7746276595744,
+      "normalizedTemp": 0.6159122085047992,
+      "normalizedAnomaly": 0.6159122085048011,
+      "normalizedFires": 0.30655737704918035,
+      "normalizedAcres": 0.05207747561852623
+    },
+    {
+      "year": 1998,
+      "avgTemp": 56.708333333333336,
+      "avgAnomaly": -0.6583333333333332,
+      "fires": 163,
+      "acres": 165354.68,
+      "acresPerFire": 1014.4458895705521,
+      "normalizedTemp": 0.21947873799725706,
+      "normalizedAnomaly": 0.2194787379972565,
+      "normalizedFires": 0.26557377049180325,
+      "normalizedAcres": 0.03951607599142176
+    },
+    {
+      "year": 1999,
+      "avgTemp": 57.958333333333336,
+      "avgAnomaly": 0.5916666666666667,
+      "fires": 274,
+      "acres": 800410.03,
+      "acresPerFire": 2921.204489051095,
+      "normalizedTemp": 0.4252400548696852,
+      "normalizedAnomaly": 0.4252400548696844,
+      "normalizedFires": 0.44754098360655736,
+      "normalizedAcres": 0.19147705579387314
+    },
+    {
+      "year": 2000,
+      "avgTemp": 58.79999999999999,
+      "avgAnomaly": 1.4333333333333333,
+      "fires": 180,
+      "acres": 245221.49,
+      "acresPerFire": 1362.341611111111,
+      "normalizedTemp": 0.5637860082304514,
+      "normalizedAnomaly": 0.5637860082304527,
+      "normalizedFires": 0.2934426229508197,
+      "normalizedAcres": 0.05862722701360624
+    },
+    {
+      "year": 2001,
+      "avgTemp": 59.125,
+      "avgAnomaly": 1.758333333333333,
+      "fires": 207,
+      "acres": 246964.18,
+      "acresPerFire": 1193.0636714975844,
+      "normalizedTemp": 0.6172839506172844,
+      "normalizedAnomaly": 0.6172839506172838,
+      "normalizedFires": 0.3377049180327869,
+      "normalizedAcres": 0.059044231421004637
+    },
+    {
+      "year": 2002,
+      "avgTemp": 58.849999999999994,
+      "avgAnomaly": 1.4833333333333334,
+      "fires": 244,
+      "acres": 963901.28,
+      "acresPerFire": 3950.415081967213,
+      "normalizedTemp": 0.5720164609053493,
+      "normalizedAnomaly": 0.5720164609053497,
+      "normalizedFires": 0.3983606557377049,
+      "normalizedAcres": 0.23059851274896773
+    },
+    {
+      "year": 2003,
+      "avgTemp": 59.42499999999999,
+      "avgAnomaly": 2.058333333333333,
+      "fires": 339,
+      "acres": 968718.99,
+      "acresPerFire": 2857.5781415929205,
+      "normalizedTemp": 0.6666666666666655,
+      "normalizedAnomaly": 0.6666666666666666,
+      "normalizedFires": 0.5540983606557377,
+      "normalizedAcres": 0.23175133184104224
+    },
+    {
+      "year": 2004,
+      "avgTemp": 58.85833333333335,
+      "avgAnomaly": 1.4916666666666665,
+      "fires": 277,
+      "acres": 274638.56,
+      "acresPerFire": 991.4749458483755,
+      "normalizedTemp": 0.5733882030178356,
+      "normalizedAnomaly": 0.5733882030178326,
+      "normalizedFires": 0.4524590163934426,
+      "normalizedAcres": 0.06566637215287213
+    },
+    {
+      "year": 2005,
+      "avgTemp": 58.6,
+      "avgAnomaly": 1.2333333333333334,
+      "fires": 304,
+      "acres": 231112.47,
+      "acresPerFire": 760.2383881578947,
+      "normalizedTemp": 0.5308641975308648,
+      "normalizedAnomaly": 0.5308641975308641,
+      "normalizedFires": 0.4967213114754098,
+      "normalizedAcres": 0.05525111105260791
+    },
+    {
+      "year": 2006,
+      "avgTemp": 58.64166666666666,
+      "avgAnomaly": 1.2750000000000001,
+      "fires": 314,
+      "acres": 748169.74,
+      "acresPerFire": 2382.706178343949,
+      "normalizedTemp": 0.5377229080932775,
+      "normalizedAnomaly": 0.5377229080932784,
+      "normalizedFires": 0.5131147540983606,
+      "normalizedAcres": 0.1789765931907879
+    },
+    {
+      "year": 2007,
+      "avgTemp": 58.925000000000004,
+      "avgAnomaly": 1.5583333333333336,
+      "fires": 349,
+      "acres": 1031820.11,
+      "acresPerFire": 2956.5046131805157,
+      "normalizedTemp": 0.5843621399176966,
+      "normalizedAnomaly": 0.5843621399176955,
+      "normalizedFires": 0.5704918032786885,
+      "normalizedAcres": 0.24685065825697128
+    },
+    {
+      "year": 2008,
+      "avgTemp": 58.91666666666666,
+      "avgAnomaly": 1.55,
+      "fires": 438,
+      "acres": 1382692.88,
+      "acresPerFire": 3156.83305936073,
+      "normalizedTemp": 0.5829903978052114,
+      "normalizedAnomaly": 0.5829903978052126,
+      "normalizedFires": 0.7163934426229508,
+      "normalizedAcres": 0.3308102216480996
+    },
+    {
+      "year": 2009,
+      "avgTemp": 58.833333333333336,
+      "avgAnomaly": 1.4666666666666666,
+      "fires": 254,
+      "acres": 435825.44,
+      "acresPerFire": 1715.848188976378,
+      "normalizedTemp": 0.5692729766803849,
+      "normalizedAnomaly": 0.569272976680384,
+      "normalizedFires": 0.41475409836065574,
+      "normalizedAcres": 0.10423642154478759
+    },
+    {
+      "year": 2010,
+      "avgTemp": 57.724999999999994,
+      "avgAnomaly": 0.3583333333333334,
+      "fires": 207,
+      "acres": 101056.03,
+      "acresPerFire": 488.19338164251207,
+      "normalizedTemp": 0.38683127572016396,
+      "normalizedAnomaly": 0.3868312757201645,
+      "normalizedFires": 0.3377049180327869,
+      "normalizedAcres": 0.02413019528988151
+    },
+    {
+      "year": 2011,
+      "avgTemp": 57.43333333333334,
+      "avgAnomaly": 0.06666666666666672,
+      "fires": 317,
+      "acres": 202452.95,
+      "acresPerFire": 638.6528391167193,
+      "normalizedTemp": 0.3388203017832656,
+      "normalizedAnomaly": 0.3388203017832647,
+      "normalizedFires": 0.5180327868852459,
+      "normalizedAcres": 0.048393238365025716
+    },
+    {
+      "year": 2012,
+      "avgTemp": 59.50833333333333,
+      "avgAnomaly": 2.1416666666666666,
+      "fires": 351,
+      "acres": 848661.34,
+      "acresPerFire": 2417.838575498575,
+      "normalizedTemp": 0.6803840877914956,
+      "normalizedAnomaly": 0.6803840877914951,
+      "normalizedFires": 0.5737704918032787,
+      "normalizedAcres": 0.20302300426017897
+    },
+    {
+      "year": 2013,
+      "avgTemp": 59.31666666666666,
+      "avgAnomaly": 1.95,
+      "fires": 296,
+      "acres": 569382.57,
+      "acresPerFire": 1923.5897635135134,
+      "normalizedTemp": 0.6488340192043894,
+      "normalizedAnomaly": 0.6488340192043895,
+      "normalizedFires": 0.48360655737704916,
+      "normalizedAcres": 0.1361950096181002
+    },
+    {
+      "year": 2014,
+      "avgTemp": 61.449999999999996,
+      "avgAnomaly": 4.083333333333334,
+      "fires": 236,
+      "acres": 554656.14,
+      "acresPerFire": 2350.237881355932,
+      "normalizedTemp": 1,
+      "normalizedAnomaly": 1,
+      "normalizedFires": 0.38524590163934425,
+      "normalizedAcres": 0.1326711549937872
+    },
+    {
+      "year": 2015,
+      "avgTemp": 60.75833333333333,
+      "avgAnomaly": 3.391666666666667,
+      "fires": 317,
+      "acres": 789221.8,
+      "acresPerFire": 2489.6586750788647,
+      "normalizedTemp": 0.8861454046639238,
+      "normalizedAnomaly": 0.8861454046639232,
+      "normalizedFires": 0.5180327868852459,
+      "normalizedAcres": 0.18879984916447434
+    },
+    {
+      "year": 2016,
+      "avgTemp": 60.13333333333333,
+      "avgAnomaly": 2.766666666666666,
+      "fires": 361,
+      "acres": 546250.14,
+      "acresPerFire": 1513.1582825484766,
+      "normalizedTemp": 0.7832647462277097,
+      "normalizedAnomaly": 0.7832647462277091,
+      "normalizedFires": 0.5901639344262295,
+      "normalizedAcres": 0.13065970198229865
+    },
+    {
+      "year": 2017,
+      "avgTemp": 60.34166666666666,
+      "avgAnomaly": 2.9749999999999996,
+      "fires": 611,
+      "acres": 1425473.99,
+      "acresPerFire": 2333.01798690671,
+      "normalizedTemp": 0.8175582990397803,
+      "normalizedAnomaly": 0.8175582990397804,
+      "normalizedFires": 1,
+      "normalizedAcres": 0.34104721814397426
+    },
+    {
+      "year": 2018,
+      "avgTemp": 60.125,
+      "avgAnomaly": 2.7583333333333333,
+      "fires": 414,
+      "acres": 1581916.4,
+      "acresPerFire": 3821.054106280193,
+      "normalizedTemp": 0.7818930041152269,
+      "normalizedAnomaly": 0.7818930041152263,
+      "normalizedFires": 0.6770491803278689,
+      "normalizedAcres": 0.3784819738802369
+    },
+    {
+      "year": 2019,
+      "avgTemp": 58.40833333333333,
+      "avgAnomaly": 1.0416666666666667,
+      "fires": 317,
+      "acres": 279834.78,
+      "acresPerFire": 882.7595583596216,
+      "normalizedTemp": 0.4993141289437586,
+      "normalizedAnomaly": 0.49931412894375854,
+      "normalizedFires": 0.5180327868852459,
+      "normalizedAcres": 0.06690976405952893
+    },
+    {
+      "year": 2020,
+      "avgTemp": 60.51666666666667,
+      "avgAnomaly": 3.15,
+      "fires": 504,
+      "acres": 4179282.83,
+      "acresPerFire": 8292.227837301587,
+      "normalizedTemp": 0.8463648834019221,
+      "normalizedAnomaly": 0.8463648834019204,
+      "normalizedFires": 0.8245901639344262,
+      "normalizedAcres": 1
+    },
+    {
+      "year": 2021,
+      "avgTemp": 60.35,
+      "avgAnomaly": 2.983333333333334,
+      "fires": 389,
+      "acres": 2515663.08,
+      "acresPerFire": 6467.000205655527,
+      "normalizedTemp": 0.8189300411522642,
+      "normalizedAnomaly": 0.8189300411522634,
+      "normalizedFires": 0.6360655737704918,
+      "normalizedAcres": 0.601916136556114
+    },
+    {
+      "year": 2022,
+      "avgTemp": 60.04999999999999,
+      "avgAnomaly": 2.6833333333333336,
+      "fires": 306,
+      "acres": 322528,
+      "acresPerFire": 1054.013071895425,
+      "normalizedTemp": 0.7695473251028796,
+      "normalizedAnomaly": 0.7695473251028806,
+      "normalizedFires": 0.5,
+      "normalizedAcres": 0.07712572955312191
+    },
+    {
+      "year": 2023,
+      "avgTemp": 58.25000000000001,
+      "avgAnomaly": 0.8833333333333333,
+      "fires": 284,
+      "acres": 342033.38,
+      "acresPerFire": 1204.3428873239436,
+      "normalizedTemp": 0.47325102880658587,
+      "normalizedAnomaly": 0.4732510288065844,
+      "normalizedFires": 0.4639344262295082,
+      "normalizedAcres": 0.08179312847546645
+    }
+  ],
+  "years": [
+    1895,
+    1896,
+    1898,
+    1900,
+    1902,
+    1903,
+    1905,
+    1906,
+    1907,
+    1908,
+    1909,
+    1910,
+    1911,
+    1912,
+    1913,
+    1914,
+    1915,
+    1916,
+    1917,
+    1918,
+    1919,
+    1920,
+    1921,
+    1922,
+    1923,
+    1924,
+    1925,
+    1926,
+    1927,
+    1928,
+    1929,
+    1930,
+    1931,
+    1932,
+    1933,
+    1934,
+    1935,
+    1936,
+    1937,
+    1938,
+    1939,
+    1940,
+    1941,
+    1942,
+    1943,
+    1944,
+    1945,
+    1946,
+    1947,
+    1948,
+    1949,
+    1950,
+    1951,
+    1952,
+    1953,
+    1954,
+    1955,
+    1956,
+    1957,
+    1958,
+    1959,
+    1960,
+    1961,
+    1962,
+    1963,
+    1964,
+    1965,
+    1966,
+    1967,
+    1968,
+    1969,
+    1970,
+    1971,
+    1972,
+    1973,
+    1974,
+    1975,
+    1976,
+    1977,
+    1978,
+    1979,
+    1980,
+    1981,
+    1982,
+    1983,
+    1984,
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "scatterplotData": [
+    {
+      "year": 1895,
+      "tempValue": 0.17832647462277143,
+      "fireCount": 0,
+      "acres": 0.00009902206581182324,
+      "anomaly": 0.1783264746227709
+    },
+    {
+      "year": 1896,
+      "tempValue": 0.3443072702331979,
+      "fireCount": 0,
+      "acres": 0.0017509715215151748,
+      "anomaly": 0.34430727023319607
+    },
+    {
+      "year": 1898,
+      "tempValue": 0.2181069958847731,
+      "fireCount": 0.006557377049180328,
+      "acres": 0.006707214713449041,
+      "anomaly": 0.2181069958847736
+    },
+    {
+      "year": 1900,
+      "tempValue": 0.34842249657064506,
+      "fireCount": 0.018032786885245903,
+      "acres": 0.005818095531881369,
+      "anomaly": 0.3484224965706447
+    },
+    {
+      "year": 1902,
+      "tempValue": 0.13031550068587075,
+      "fireCount": 0,
+      "acres": 0.00012375724280415848,
+      "anomaly": 0.13031550068587103
+    },
+    {
+      "year": 1903,
+      "tempValue": 0.1371742112482858,
+      "fireCount": 0.001639344262295082,
+      "acres": 0.0008219654612317031,
+      "anomaly": 0.13717421124828535
+    },
+    {
+      "year": 1905,
+      "tempValue": 0.27983539094650156,
+      "fireCount": 0,
+      "acres": 0,
+      "anomaly": 0.279835390946502
+    },
+    {
+      "year": 1906,
+      "tempValue": 0.29766803840878,
+      "fireCount": 0.004918032786885246,
+      "acres": 0.0008974727176884254,
+      "anomaly": 0.2976680384087791
+    },
+    {
+      "year": 1907,
+      "tempValue": 0.18930041152263363,
+      "fireCount": 0.014754098360655738,
+      "acres": 0.0002666622931242951,
+      "anomaly": 0.18930041152263372
+    },
+    {
+      "year": 1908,
+      "tempValue": 0.1412894375857353,
+      "fireCount": 0.02459016393442623,
+      "acres": 0.004675120738747204,
+      "anomaly": 0.14128943758573384
+    },
+    {
+      "year": 1909,
+      "tempValue": 0.1399176954732502,
+      "fireCount": 0.03770491803278689,
+      "acres": 0.008313106058796538,
+      "anomaly": 0.139917695473251
+    },
+    {
+      "year": 1910,
+      "tempValue": 0.37585733882030176,
+      "fireCount": 0.14590163934426228,
+      "acres": 0.0609233032583859,
+      "anomaly": 0.37585733882030176
+    },
+    {
+      "year": 1911,
+      "tempValue": 0,
+      "fireCount": 0.27049180327868855,
+      "acres": 0.029494110666105515,
+      "anomaly": 0
+    },
+    {
+      "year": 1912,
+      "tempValue": 0.027434842249656696,
+      "fireCount": 0.09016393442622951,
+      "acres": 0.009620514623098285,
+      "anomaly": 0.027434842249657004
+    },
+    {
+      "year": 1913,
+      "tempValue": 0.17695473251028748,
+      "fireCount": 0.1360655737704918,
+      "acres": 0.03864764323774407,
+      "anomaly": 0.176954732510288
+    },
+    {
+      "year": 1914,
+      "tempValue": 0.329218106995885,
+      "fireCount": 0.17049180327868851,
+      "acres": 0.017574246341506523,
+      "anomaly": 0.3292181069958847
+    },
+    {
+      "year": 1915,
+      "tempValue": 0.22496570644718933,
+      "fireCount": 0.21475409836065573,
+      "acres": 0.0131539216152698,
+      "anomaly": 0.22496570644718789
+    },
+    {
+      "year": 1916,
+      "tempValue": 0.0342935528120694,
+      "fireCount": 0.21311475409836064,
+      "acres": 0.021132608655420618,
+      "anomaly": 0.03429355281207128
+    },
+    {
+      "year": 1917,
+      "tempValue": 0.2057613168724293,
+      "fireCount": 0.4344262295081967,
+      "acres": 0.10500042432900611,
+      "anomaly": 0.2057613168724279
+    },
+    {
+      "year": 1918,
+      "tempValue": 0.24142661179698266,
+      "fireCount": 0.2098360655737705,
+      "acres": 0.0455231203267128,
+      "anomaly": 0.2414266117969821
+    },
+    {
+      "year": 1919,
+      "tempValue": 0.1481481481481492,
+      "fireCount": 0.26885245901639343,
+      "acres": 0.05843291337834818,
+      "anomaly": 0.14814814814814808
+    },
+    {
+      "year": 1920,
+      "tempValue": 0.11796982167352577,
+      "fireCount": 0.21311475409836064,
+      "acres": 0.033216856500755065,
+      "anomaly": 0.11796982167352536
+    },
+    {
+      "year": 1921,
+      "tempValue": 0.31824417009602163,
+      "fireCount": 0.260655737704918,
+      "acres": 0.05873749560470238,
+      "anomaly": 0.3182441700960219
+    },
+    {
+      "year": 1922,
+      "tempValue": 0.1124828532235935,
+      "fireCount": 0.1885245901639344,
+      "acres": 0.08196016330471574,
+      "anomaly": 0.11248285322359393
+    },
+    {
+      "year": 1923,
+      "tempValue": 0.16323731138545738,
+      "fireCount": 0.20327868852459016,
+      "acres": 0.06512635708051824,
+      "anomaly": 0.1632373113854595
+    },
+    {
+      "year": 1924,
+      "tempValue": 0.2921810699588489,
+      "fireCount": 0.40491803278688526,
+      "acres": 0.14604472842649285,
+      "anomaly": 0.29218106995884774
+    },
+    {
+      "year": 1925,
+      "tempValue": 0.29080932784636376,
+      "fireCount": 0.14754098360655737,
+      "acres": 0.018734543176456255,
+      "anomaly": 0.2908093278463649
+    },
+    {
+      "year": 1926,
+      "tempValue": 0.5624142661179699,
+      "fireCount": 0.30655737704918035,
+      "acres": 0.06097394851533112,
+      "anomaly": 0.5624142661179697
+    },
+    {
+      "year": 1927,
+      "tempValue": 0.24691358024691376,
+      "fireCount": 0.16065573770491803,
+      "acres": 0.0426419017286565,
+      "anomaly": 0.24691358024691354
+    },
+    {
+      "year": 1928,
+      "tempValue": 0.3786008230452661,
+      "fireCount": 0.2721311475409836,
+      "acres": 0.13176919802325138,
+      "anomaly": 0.37860082304526743
+    },
+    {
+      "year": 1929,
+      "tempValue": 0.30589849108367545,
+      "fireCount": 0.25081967213114753,
+      "acres": 0.060383522688048565,
+      "anomaly": 0.30589849108367617
+    },
+    {
+      "year": 1930,
+      "tempValue": 0.257887517146776,
+      "fireCount": 0.1737704918032787,
+      "acres": 0.014699311440343116,
+      "anomaly": 0.2578875171467764
+    },
+    {
+      "year": 1931,
+      "tempValue": 0.47873799725651695,
+      "fireCount": 0.35081967213114756,
+      "acres": 0.08357163244802872,
+      "anomaly": 0.4787379972565157
+    },
+    {
+      "year": 1932,
+      "tempValue": 0.25651577503429435,
+      "fireCount": 0.1885245901639344,
+      "acres": 0.07817571233229882,
+      "anomaly": 0.2565157750342935
+    },
+    {
+      "year": 1933,
+      "tempValue": 0.2222222222222226,
+      "fireCount": 0.1180327868852459,
+      "acres": 0.021984233835992555,
+      "anomaly": 0.22222222222222224
+    },
+    {
+      "year": 1934,
+      "tempValue": 0.7133058984910857,
+      "fireCount": 0.21475409836065573,
+      "acres": 0.026794836918372245,
+      "anomaly": 0.7133058984910836
+    },
+    {
+      "year": 1935,
+      "tempValue": 0.24142661179698266,
+      "fireCount": 0.13114754098360656,
+      "acres": 0.015538720980154108,
+      "anomaly": 0.2414266117969821
+    },
+    {
+      "year": 1936,
+      "tempValue": 0.5336076817558315,
+      "fireCount": 0.2,
+      "acres": 0.05105648016005021,
+      "anomaly": 0.5336076817558298
+    },
+    {
+      "year": 1937,
+      "tempValue": 0.2935528120713305,
+      "fireCount": 0.09508196721311475,
+      "acres": 0.005141157603507503,
+      "anomaly": 0.29355281207133055
+    },
+    {
+      "year": 1938,
+      "tempValue": 0.3086419753086422,
+      "fireCount": 0.16229508196721312,
+      "acres": 0.028474065180084364,
+      "anomaly": 0.3086419753086419
+    },
+    {
+      "year": 1939,
+      "tempValue": 0.4842249657064469,
+      "fireCount": 0.2459016393442623,
+      "acres": 0.058163365274693485,
+      "anomaly": 0.48422496570644713
+    },
+    {
+      "year": 1940,
+      "tempValue": 0.5692729766803849,
+      "fireCount": 0.14262295081967213,
+      "acres": 0.030688769225115414,
+      "anomaly": 0.569272976680384
+    },
+    {
+      "year": 1941,
+      "tempValue": 0.277091906721536,
+      "fireCount": 0.18032786885245902,
+      "acres": 0.020880865954880944,
+      "anomaly": 0.27709190672153633
+    },
+    {
+      "year": 1942,
+      "tempValue": 0.2757201646090544,
+      "fireCount": 0.16393442622950818,
+      "acres": 0.06273586505953789,
+      "anomaly": 0.27572016460905346
+    },
+    {
+      "year": 1943,
+      "tempValue": 0.40466392318244004,
+      "fireCount": 0.18524590163934426,
+      "acres": 0.05952932277104984,
+      "anomaly": 0.40466392318244165
+    },
+    {
+      "year": 1944,
+      "tempValue": 0.13991769547325136,
+      "fireCount": 0.21967213114754097,
+      "acres": 0.08221268847626989,
+      "anomaly": 0.13991769547325097
+    },
+    {
+      "year": 1945,
+      "tempValue": 0.2825788751714671,
+      "fireCount": 0.24098360655737705,
+      "acres": 0.05938560414230487,
+      "anomaly": 0.2825788751714677
+    },
+    {
+      "year": 1946,
+      "tempValue": 0.22085048010973984,
+      "fireCount": 0.16557377049180327,
+      "acres": 0.02538004557350476,
+      "anomaly": 0.22085048010973932
+    },
+    {
+      "year": 1947,
+      "tempValue": 0.3580246913580233,
+      "fireCount": 0.19672131147540983,
+      "acres": 0.03594996793232781,
+      "anomaly": 0.35802469135802467
+    },
+    {
+      "year": 1948,
+      "tempValue": 0.04526748971193161,
+      "fireCount": 0.10491803278688525,
+      "acres": 0.042074794494756,
+      "anomaly": 0.04526748971193414
+    },
+    {
+      "year": 1949,
+      "tempValue": 0.13854595336076975,
+      "fireCount": 0.27704918032786885,
+      "acres": 0.04944524312587608,
+      "anomaly": 0.1385459533607681
+    },
+    {
+      "year": 1950,
+      "tempValue": 0.45267489711934306,
+      "fireCount": 0.36885245901639346,
+      "acres": 0.12820768907513538,
+      "anomaly": 0.4526748971193415
+    },
+    {
+      "year": 1951,
+      "tempValue": 0.30452674897119386,
+      "fireCount": 0.35737704918032787,
+      "acres": 0.07251461111475334,
+      "anomaly": 0.30452674897119336
+    },
+    {
+      "year": 1952,
+      "tempValue": 0.22770919067215606,
+      "fireCount": 0.28032786885245903,
+      "acres": 0.03186954191471576,
+      "anomaly": 0.22770919067215356
+    },
+    {
+      "year": 1953,
+      "tempValue": 0.2962962962962972,
+      "fireCount": 0.3540983606557377,
+      "acres": 0.08031962069710395,
+      "anomaly": 0.2962962962962963
+    },
+    {
+      "year": 1954,
+      "tempValue": 0.36213991769547166,
+      "fireCount": 0.25573770491803277,
+      "acres": 0.05217782094571725,
+      "anomaly": 0.3621399176954732
+    },
+    {
+      "year": 1955,
+      "tempValue": 0.1371742112482858,
+      "fireCount": 0.2786885245901639,
+      "acres": 0.09232377413939231,
+      "anomaly": 0.13717421124828527
+    },
+    {
+      "year": 1956,
+      "tempValue": 0.2620027434842243,
+      "fireCount": 0.21639344262295082,
+      "acres": 0.0427330272979921,
+      "anomaly": 0.2620027434842249
+    },
+    {
+      "year": 1957,
+      "tempValue": 0.2825788751714683,
+      "fireCount": 0.25081967213114753,
+      "acres": 0.04854342972800345,
+      "anomaly": 0.28257887517146774
+    },
+    {
+      "year": 1958,
+      "tempValue": 0.5788751714677655,
+      "fireCount": 0.27049180327868855,
+      "acres": 0.06028785782967799,
+      "anomaly": 0.578875171467764
+    },
+    {
+      "year": 1959,
+      "tempValue": 0.5884773662551461,
+      "fireCount": 0.33278688524590166,
+      "acres": 0.07127911331169506,
+      "anomaly": 0.588477366255144
+    },
+    {
+      "year": 1960,
+      "tempValue": 0.44032921810699455,
+      "fireCount": 0.23114754098360657,
+      "acres": 0.08278800328075023,
+      "anomaly": 0.4403292181069958
+    },
+    {
+      "year": 1961,
+      "tempValue": 0.40054869684499406,
+      "fireCount": 0.2721311475409836,
+      "acres": 0.08686532573595934,
+      "anomaly": 0.4005486968449931
+    },
+    {
+      "year": 1962,
+      "tempValue": 0.329218106995885,
+      "fireCount": 0.17704918032786884,
+      "acres": 0.03166263456401698,
+      "anomaly": 0.3292181069958847
+    },
+    {
+      "year": 1963,
+      "tempValue": 0.28120713305898665,
+      "fireCount": 0.12622950819672132,
+      "acres": 0.007643162511998427,
+      "anomaly": 0.28120713305898487
+    },
+    {
+      "year": 1964,
+      "tempValue": 0.19615912208504752,
+      "fireCount": 0.22295081967213115,
+      "acres": 0.07096339702530938,
+      "anomaly": 0.19615912208504802
+    },
+    {
+      "year": 1965,
+      "tempValue": 0.21810699588477545,
+      "fireCount": 0.09508196721311475,
+      "acres": 0.019696685807407216,
+      "anomaly": 0.2181069958847736
+    },
+    {
+      "year": 1966,
+      "tempValue": 0.43347050754458183,
+      "fireCount": 0.21475409836065573,
+      "acres": 0.06343623404654665,
+      "anomaly": 0.4334705075445816
+    },
+    {
+      "year": 1967,
+      "tempValue": 0.34842249657064506,
+      "fireCount": 0.18032786885245902,
+      "acres": 0.05668795037278809,
+      "anomaly": 0.3484224965706446
+    },
+    {
+      "year": 1968,
+      "tempValue": 0.3648834019204395,
+      "fireCount": 0.34262295081967215,
+      "acres": 0.05309124697916536,
+      "anomaly": 0.3648834019204389
+    },
+    {
+      "year": 1969,
+      "tempValue": 0.34842249657064506,
+      "fireCount": 0.21311475409836064,
+      "acres": 0.023189679487764518,
+      "anomaly": 0.3484224965706447
+    },
+    {
+      "year": 1970,
+      "tempValue": 0.4019204389574768,
+      "fireCount": 0.380327868852459,
+      "acres": 0.16171192779719282,
+      "anomaly": 0.4019204389574759
+    },
+    {
+      "year": 1971,
+      "tempValue": 0.1371742112482858,
+      "fireCount": 0.17704918032786884,
+      "acres": 0.014320423182147666,
+      "anomaly": 0.13717421124828527
+    },
+    {
+      "year": 1972,
+      "tempValue": 0.310013717421125,
+      "fireCount": 0.25081967213114753,
+      "acres": 0.02202637001976522,
+      "anomaly": 0.3100137174211248
+    },
+    {
+      "year": 1973,
+      "tempValue": 0.31687242798353765,
+      "fireCount": 0.2442622950819672,
+      "acres": 0.06145638616398476,
+      "anomaly": 0.31687242798353904
+    },
+    {
+      "year": 1974,
+      "tempValue": 0.3717421124828522,
+      "fireCount": 0.3360655737704918,
+      "acres": 0.03280214447021249,
+      "anomaly": 0.3717421124828532
+    },
+    {
+      "year": 1975,
+      "tempValue": 0.1467764060356664,
+      "fireCount": 0.34262295081967215,
+      "acres": 0.051537173400845925,
+      "anomaly": 0.14677640603566525
+    },
+    {
+      "year": 1976,
+      "tempValue": 0.3456790123456795,
+      "fireCount": 0.21639344262295082,
+      "acres": 0.04757058375501063,
+      "anomaly": 0.34567901234567894
+    },
+    {
+      "year": 1977,
+      "tempValue": 0.4279835390946496,
+      "fireCount": 0.2721311475409836,
+      "acres": 0.11136476598682443,
+      "anomaly": 0.42798353909465014
+    },
+    {
+      "year": 1978,
+      "tempValue": 0.3676268861454074,
+      "fireCount": 0.2459016393442623,
+      "acres": 0.03010759904885408,
+      "anomaly": 0.3676268861454047
+    },
+    {
+      "year": 1979,
+      "tempValue": 0.37722908093278684,
+      "fireCount": 0.5983606557377049,
+      "acres": 0.090244234185257,
+      "anomaly": 0.3772290809327846
+    },
+    {
+      "year": 1980,
+      "tempValue": 0.4444444444444464,
+      "fireCount": 0.521311475409836,
+      "acres": 0.09102877025319141,
+      "anomaly": 0.44444444444444436
+    },
+    {
+      "year": 1981,
+      "tempValue": 0.646090534979425,
+      "fireCount": 0.4426229508196721,
+      "acres": 0.07209508222136027,
+      "anomaly": 0.6460905349794238
+    },
+    {
+      "year": 1982,
+      "tempValue": 0.1591220850480114,
+      "fireCount": 0.2360655737704918,
+      "acres": 0.03406583276569089,
+      "anomaly": 0.15912208504801095
+    },
+    {
+      "year": 1983,
+      "tempValue": 0.35802469135802567,
+      "fireCount": 0.25901639344262295,
+      "acres": 0.020503138242379725,
+      "anomaly": 0.35802469135802467
+    },
+    {
+      "year": 1984,
+      "tempValue": 0.4677640603566536,
+      "fireCount": 0.34590163934426227,
+      "acres": 0.04936440693073677,
+      "anomaly": 0.46776406035665286
+    },
+    {
+      "year": 1985,
+      "tempValue": 0.3209876543209872,
+      "fireCount": 0.34262295081967215,
+      "acres": 0.13539190721193578,
+      "anomaly": 0.32098765432098764
+    },
+    {
+      "year": 1986,
+      "tempValue": 0.5761316872428,
+      "fireCount": 0.28032786885245903,
+      "acres": 0.02604998194166971,
+      "anomaly": 0.5761316872427983
+    },
+    {
+      "year": 1987,
+      "tempValue": 0.477366255144033,
+      "fireCount": 0.46557377049180326,
+      "acres": 0.20377798828827057,
+      "anomaly": 0.4773662551440328
+    },
+    {
+      "year": 1988,
+      "tempValue": 0.5555555555555559,
+      "fireCount": 0.4180327868852459,
+      "acres": 0.07201729455243633,
+      "anomaly": 0.5555555555555555
+    },
+    {
+      "year": 1989,
+      "tempValue": 0.449931412894374,
+      "fireCount": 0.29180327868852457,
+      "acres": 0.03232322435180735,
+      "anomaly": 0.4499314128943758
+    },
+    {
+      "year": 1990,
+      "tempValue": 0.42661179698216795,
+      "fireCount": 0.2836065573770492,
+      "acres": 0.08890966167307704,
+      "anomaly": 0.4266117969821673
+    },
+    {
+      "year": 1991,
+      "tempValue": 0.45404663923182464,
+      "fireCount": 0.14098360655737704,
+      "acres": 0.009504852485621114,
+      "anomaly": 0.4540466392318244
+    },
+    {
+      "year": 1992,
+      "tempValue": 0.6406035665294916,
+      "fireCount": 0.3180327868852459,
+      "acres": 0.05358141601573254,
+      "anomaly": 0.6406035665294925
+    },
+    {
+      "year": 1993,
+      "tempValue": 0.3758573388203006,
+      "fireCount": 0.2786885245901639,
+      "acres": 0.07757230992914034,
+      "anomaly": 0.37585733882030176
+    },
+    {
+      "year": 1994,
+      "tempValue": 0.43347050754458183,
+      "fireCount": 0.3540983606557377,
+      "acres": 0.08204572304047447,
+      "anomaly": 0.43347050754458155
+    },
+    {
+      "year": 1995,
+      "tempValue": 0.5857338820301782,
+      "fireCount": 0.3360655737704918,
+      "acres": 0.04740112254775319,
+      "anomaly": 0.5857338820301783
+    },
+    {
+      "year": 1996,
+      "tempValue": 0.6886145404663946,
+      "fireCount": 0.5180327868852459,
+      "acres": 0.15873894712432737,
+      "anomaly": 0.6886145404663924
+    },
+    {
+      "year": 1997,
+      "tempValue": 0.6159122085047992,
+      "fireCount": 0.30655737704918035,
+      "acres": 0.05207747561852623,
+      "anomaly": 0.6159122085048011
+    },
+    {
+      "year": 1998,
+      "tempValue": 0.21947873799725706,
+      "fireCount": 0.26557377049180325,
+      "acres": 0.03951607599142176,
+      "anomaly": 0.2194787379972565
+    },
+    {
+      "year": 1999,
+      "tempValue": 0.4252400548696852,
+      "fireCount": 0.44754098360655736,
+      "acres": 0.19147705579387314,
+      "anomaly": 0.4252400548696844
+    },
+    {
+      "year": 2000,
+      "tempValue": 0.5637860082304514,
+      "fireCount": 0.2934426229508197,
+      "acres": 0.05862722701360624,
+      "anomaly": 0.5637860082304527
+    },
+    {
+      "year": 2001,
+      "tempValue": 0.6172839506172844,
+      "fireCount": 0.3377049180327869,
+      "acres": 0.059044231421004637,
+      "anomaly": 0.6172839506172838
+    },
+    {
+      "year": 2002,
+      "tempValue": 0.5720164609053493,
+      "fireCount": 0.3983606557377049,
+      "acres": 0.23059851274896773,
+      "anomaly": 0.5720164609053497
+    },
+    {
+      "year": 2003,
+      "tempValue": 0.6666666666666655,
+      "fireCount": 0.5540983606557377,
+      "acres": 0.23175133184104224,
+      "anomaly": 0.6666666666666666
+    },
+    {
+      "year": 2004,
+      "tempValue": 0.5733882030178356,
+      "fireCount": 0.4524590163934426,
+      "acres": 0.06566637215287213,
+      "anomaly": 0.5733882030178326
+    },
+    {
+      "year": 2005,
+      "tempValue": 0.5308641975308648,
+      "fireCount": 0.4967213114754098,
+      "acres": 0.05525111105260791,
+      "anomaly": 0.5308641975308641
+    },
+    {
+      "year": 2006,
+      "tempValue": 0.5377229080932775,
+      "fireCount": 0.5131147540983606,
+      "acres": 0.1789765931907879,
+      "anomaly": 0.5377229080932784
+    },
+    {
+      "year": 2007,
+      "tempValue": 0.5843621399176966,
+      "fireCount": 0.5704918032786885,
+      "acres": 0.24685065825697128,
+      "anomaly": 0.5843621399176955
+    },
+    {
+      "year": 2008,
+      "tempValue": 0.5829903978052114,
+      "fireCount": 0.7163934426229508,
+      "acres": 0.3308102216480996,
+      "anomaly": 0.5829903978052126
+    },
+    {
+      "year": 2009,
+      "tempValue": 0.5692729766803849,
+      "fireCount": 0.41475409836065574,
+      "acres": 0.10423642154478759,
+      "anomaly": 0.569272976680384
+    },
+    {
+      "year": 2010,
+      "tempValue": 0.38683127572016396,
+      "fireCount": 0.3377049180327869,
+      "acres": 0.02413019528988151,
+      "anomaly": 0.3868312757201645
+    },
+    {
+      "year": 2011,
+      "tempValue": 0.3388203017832656,
+      "fireCount": 0.5180327868852459,
+      "acres": 0.048393238365025716,
+      "anomaly": 0.3388203017832647
+    },
+    {
+      "year": 2012,
+      "tempValue": 0.6803840877914956,
+      "fireCount": 0.5737704918032787,
+      "acres": 0.20302300426017897,
+      "anomaly": 0.6803840877914951
+    },
+    {
+      "year": 2013,
+      "tempValue": 0.6488340192043894,
+      "fireCount": 0.48360655737704916,
+      "acres": 0.1361950096181002,
+      "anomaly": 0.6488340192043895
+    },
+    {
+      "year": 2014,
+      "tempValue": 1,
+      "fireCount": 0.38524590163934425,
+      "acres": 0.1326711549937872,
+      "anomaly": 1
+    },
+    {
+      "year": 2015,
+      "tempValue": 0.8861454046639238,
+      "fireCount": 0.5180327868852459,
+      "acres": 0.18879984916447434,
+      "anomaly": 0.8861454046639232
+    },
+    {
+      "year": 2016,
+      "tempValue": 0.7832647462277097,
+      "fireCount": 0.5901639344262295,
+      "acres": 0.13065970198229865,
+      "anomaly": 0.7832647462277091
+    },
+    {
+      "year": 2017,
+      "tempValue": 0.8175582990397803,
+      "fireCount": 1,
+      "acres": 0.34104721814397426,
+      "anomaly": 0.8175582990397804
+    },
+    {
+      "year": 2018,
+      "tempValue": 0.7818930041152269,
+      "fireCount": 0.6770491803278689,
+      "acres": 0.3784819738802369,
+      "anomaly": 0.7818930041152263
+    },
+    {
+      "year": 2019,
+      "tempValue": 0.4993141289437586,
+      "fireCount": 0.5180327868852459,
+      "acres": 0.06690976405952893,
+      "anomaly": 0.49931412894375854
+    },
+    {
+      "year": 2020,
+      "tempValue": 0.8463648834019221,
+      "fireCount": 0.8245901639344262,
+      "acres": 1,
+      "anomaly": 0.8463648834019204
+    },
+    {
+      "year": 2021,
+      "tempValue": 0.8189300411522642,
+      "fireCount": 0.6360655737704918,
+      "acres": 0.601916136556114,
+      "anomaly": 0.8189300411522634
+    },
+    {
+      "year": 2022,
+      "tempValue": 0.7695473251028796,
+      "fireCount": 0.5,
+      "acres": 0.07712572955312191,
+      "anomaly": 0.7695473251028806
+    },
+    {
+      "year": 2023,
+      "tempValue": 0.47325102880658587,
+      "fireCount": 0.4639344262295082,
+      "acres": 0.08179312847546645,
+      "anomaly": 0.4732510288065844
+    }
+  ],
+  "regressionData": {
+    "tempToFires": {
+      "slope": 0.6006811912666156,
+      "intercept": 0.05685053309135865,
+      "equation": "y = 0.6007x + 0.0569",
+      "points": [
+        {
+          "x": 0,
+          "y": 0.05685053309135865
+        },
+        {
+          "x": 1,
+          "y": 0.6575317243579742
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "temperatureSource": "temperature-data.csv",
+    "fireDataSource": "firep23_1-stats.json",
+    "processedAt": "2025-04-01T04:56:20.749Z",
+    "yearsAnalyzed": 125,
+    "yearRange": "1895-2023"
+  }
+}
