@@ -44,7 +44,6 @@ WORKDIR /app
 
 # Make sure processed_stats directory exists
 RUN mkdir -p processed_stats
-RUN mkdir -p uploads
 
 # Expose the port that the server uses
 EXPOSE 8000
