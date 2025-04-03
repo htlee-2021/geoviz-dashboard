@@ -1,24 +1,27 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
+import { RadialBarChart } from './RadialBarChart';
 
-export const YearlyAnalysisDashboard = ({ 
-  yearlyData, 
-  monthlyData, 
-  selectedYear, 
-  availableYears, 
-  summaryStats, 
-  onYearChange, 
-  onRefresh 
+export const EnhancedYearlyAnalysisDashboard = ({
+  yearlyData,
+  monthlyData,
+  monthlyDataByYear,
+  selectedYear,
+  availableYears,
+  summaryStats,
+  onYearChange,
+  onRefresh
 }) => {
   const monthlyAcresChartRef = useRef(null);
   const monthlyFiresChartRef = useRef(null);
-  
+  const [selectedMetric, setSelectedMetric] = useState('fires'); // 'fires' or 'acres'
+
   useEffect(() => {
     if (monthlyData.length > 0) {
       createCharts();
     }
   }, [monthlyData, selectedYear]);
-  
+
   // Format large numbers
   const formatLargeNumber = (num) => {
     if (num >= 1000000) {
@@ -28,25 +31,25 @@ export const YearlyAnalysisDashboard = ({
     }
     return num;
   };
-  
+
   // Get the data for the selected year
   const getSelectedYearData = () => {
     if (!yearlyData || yearlyData.length === 0 || !selectedYear) return null;
     return yearlyData.find(data => data.year === selectedYear);
   };
-  
+
   // Get monthly data
   const getMonthByYearData = () => {
     if (!monthlyData || monthlyData.length === 0) return [];
-    
+
     const months = [
       'January', 'February', 'March', 'April', 'May', 'June',
       'July', 'August', 'September', 'October', 'November', 'December'
     ];
-    
+
     // For each month, find the highest acre value from all available years
     const data = [];
-    
+
     months.forEach((month) => {
       const monthData = monthlyData.find(m => m.month === month);
       data.push({
@@ -55,56 +58,56 @@ export const YearlyAnalysisDashboard = ({
         fires: monthData ? monthData.fires : 0
       });
     });
-    
+
     return data;
   };
 
   function getResponsiveWidth(svgElement) {
     // Get the width of the container, not the SVG element itself
-    const containerWidth = svgElement.parentNode.clientWidth || 
-                           svgElement.parentNode.getBoundingClientRect().width || 
-                           window.innerWidth - 60;
-                           
+    const containerWidth = svgElement.parentNode.clientWidth ||
+      svgElement.parentNode.getBoundingClientRect().width ||
+      window.innerWidth - 60;
+
     // Return the container width with a little padding
     return containerWidth - 40; // 20px padding on each side
   }
-  
+
   const createCharts = () => {
     createMonthlyAcresChart();
     createMonthlyFiresChart();
   };
-  
+
   const createMonthlyAcresChart = () => {
     const data = getMonthByYearData();
     if (data.length === 0 || !monthlyAcresChartRef.current) return;
-    
+
     const margin = { top: 40, right: 30, bottom: 100, left: 60 };
     const svgElement = monthlyAcresChartRef.current;
     const width = getResponsiveWidth(svgElement);
     const height = 400;
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
-    
+
     // Clear any existing SVG
     d3.select(svgElement).selectAll('*').remove();
-    
+
     // Create SVG
     const svg = d3.select(svgElement)
       .attr('width', width)
       .attr('height', height)
       .append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
-    
+
     // Define scales
     const xScale = d3.scaleBand()
       .domain(data.map(d => d.month))
       .range([0, chartWidth])
       .padding(0.2);
-    
+
     const yScale = d3.scaleLinear()
       .domain([0, d3.max(data, d => d.acres) * 1.1])
       .range([chartHeight, 0]);
-    
+
     // Create axes
     svg.append('g')
       .attr('transform', `translate(0,${chartHeight})`)
@@ -114,10 +117,10 @@ export const YearlyAnalysisDashboard = ({
       .style('text-anchor', 'end')
       .attr('dx', '-.8em')
       .attr('dy', '.15em');
-    
+
     svg.append('g')
       .call(d3.axisLeft(yScale).tickFormat(d => formatLargeNumber(d)));
-    
+
     // Add grid lines
     svg.append('g')
       .attr('class', 'grid-lines')
@@ -131,7 +134,7 @@ export const YearlyAnalysisDashboard = ({
       .attr('y2', d => yScale(d))
       .attr('stroke', '#e5e7eb')
       .attr('stroke-dasharray', '3,3');
-    
+
     // Add bars
     svg.selectAll('bars')
       .data(data)
@@ -144,7 +147,7 @@ export const YearlyAnalysisDashboard = ({
       .attr('fill', '#DC2626')
       .attr('rx', 4)
       .attr('ry', 4);
-    
+
     // Add labels for high values
     svg.selectAll('value-labels')
       .data(data.filter(d => d.acres > 10000)) // Only label high values
@@ -156,7 +159,7 @@ export const YearlyAnalysisDashboard = ({
       .text(d => formatLargeNumber(d.acres))
       .style('font-size', '12px')
       .style('fill', '#6B7280');
-    
+
     // Add title
     svg.append('text')
       .attr('x', chartWidth / 2)
@@ -165,7 +168,7 @@ export const YearlyAnalysisDashboard = ({
       .style('font-size', '16px')
       .style('font-weight', 'bold')
       .text(`Acres Burned by Month in ${selectedYear}`);
-    
+
     // Create tooltip
     const tooltip = d3.select('body')
       .selectAll('.tooltip')
@@ -173,19 +176,19 @@ export const YearlyAnalysisDashboard = ({
       .join('div')
       .attr('class', 'tooltip')
       .style('opacity', 0);
-    
+
     // Add hover effects
     svg.selectAll('rect')
-      .on('mouseover', function(event, d) {
+      .on('mouseover', function (event, d) {
         d3.select(this)
           .transition()
           .duration(200)
           .attr('opacity', 0.8);
-        
+
         tooltip.transition()
           .duration(200)
           .style('opacity', 0.9);
-        
+
         tooltip.html(`
           <strong>${d.month} ${selectedYear}</strong><br/>
           Acres Burned: ${d.acres.toLocaleString()}<br/>
@@ -195,49 +198,49 @@ export const YearlyAnalysisDashboard = ({
           .style('left', (event.pageX + 10) + 'px')
           .style('top', (event.pageY - 28) + 'px');
       })
-      .on('mouseout', function() {
+      .on('mouseout', function () {
         d3.select(this)
           .transition()
           .duration(200)
           .attr('opacity', 1);
-        
+
         tooltip.transition()
           .duration(500)
           .style('opacity', 0);
       });
   };
-  
+
   const createMonthlyFiresChart = () => {
     const data = getMonthByYearData();
     if (data.length === 0 || !monthlyFiresChartRef.current) return;
-    
+
     const margin = { top: 40, right: 30, bottom: 100, left: 60 };
     const svgElement = monthlyFiresChartRef.current;
     const width = getResponsiveWidth(svgElement);
     const height = 400;
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
-    
+
     // Clear any existing SVG
     d3.select(svgElement).selectAll('*').remove();
-    
+
     // Create SVG
     const svg = d3.select(svgElement)
       .attr('width', width)
       .attr('height', height)
       .append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
-    
+
     // Define scales
     const xScale = d3.scaleBand()
       .domain(data.map(d => d.month))
       .range([0, chartWidth])
       .padding(0.4);
-    
+
     const yScale = d3.scaleLinear()
       .domain([0, d3.max(data, d => d.fires) * 1.1])
       .range([chartHeight, 0]);
-    
+
     // Create axes
     svg.append('g')
       .attr('transform', `translate(0,${chartHeight})`)
@@ -247,10 +250,10 @@ export const YearlyAnalysisDashboard = ({
       .style('text-anchor', 'end')
       .attr('dx', '-.8em')
       .attr('dy', '.15em');
-    
+
     svg.append('g')
       .call(d3.axisLeft(yScale));
-    
+
     // Add grid lines
     svg.append('g')
       .attr('class', 'grid-lines')
@@ -264,12 +267,12 @@ export const YearlyAnalysisDashboard = ({
       .attr('y2', d => yScale(d))
       .attr('stroke', '#e5e7eb')
       .attr('stroke-dasharray', '3,3');
-    
+
     // Create line generator
     const lineGenerator = d3.line()
       .x(d => xScale(d.month) + xScale.bandwidth() / 2)
       .y(d => yScale(d.fires));
-    
+
     // Add the line
     svg.append('path')
       .datum(data)
@@ -277,7 +280,7 @@ export const YearlyAnalysisDashboard = ({
       .attr('stroke', '#3B82F6')
       .attr('stroke-width', 3)
       .attr('d', lineGenerator);
-    
+
     // Add dots
     svg.selectAll('dots')
       .data(data)
@@ -287,7 +290,7 @@ export const YearlyAnalysisDashboard = ({
       .attr('cy', d => yScale(d.fires))
       .attr('r', 5)
       .attr('fill', '#3B82F6');
-    
+
     // Add title
     svg.append('text')
       .attr('x', chartWidth / 2)
@@ -296,7 +299,7 @@ export const YearlyAnalysisDashboard = ({
       .style('font-size', '16px')
       .style('font-weight', 'bold')
       .text(`Fire Counts by Month in ${selectedYear}`);
-    
+
     // Create tooltip
     const tooltip = d3.select('body')
       .selectAll('.tooltip')
@@ -304,19 +307,19 @@ export const YearlyAnalysisDashboard = ({
       .join('div')
       .attr('class', 'tooltip')
       .style('opacity', 0);
-    
+
     // Add hover effects
     svg.selectAll('circle')
-      .on('mouseover', function(event, d) {
+      .on('mouseover', function (event, d) {
         d3.select(this)
           .transition()
           .duration(200)
           .attr('r', 7);
-        
+
         tooltip.transition()
           .duration(200)
           .style('opacity', 0.9);
-        
+
         tooltip.html(`
           <strong>${d.month} ${selectedYear}</strong><br/>
           Fires: ${d.fires.toLocaleString()}<br/>
@@ -326,29 +329,29 @@ export const YearlyAnalysisDashboard = ({
           .style('left', (event.pageX + 10) + 'px')
           .style('top', (event.pageY - 28) + 'px');
       })
-      .on('mouseout', function() {
+      .on('mouseout', function () {
         d3.select(this)
           .transition()
           .duration(200)
           .attr('r', 5);
-        
+
         tooltip.transition()
           .duration(500)
           .style('opacity', 0);
       });
   };
-  
+
   const selectedYearData = getSelectedYearData();
-  
+
   return (
     <div className="yearly-analysis-dashboard">
       <div className="dashboard-header">
         <h2 className="dashboard-title">Yearly Fire Analysis Dashboard</h2>
         <p className="dashboard-description">
-          Detailed analysis of wildfire data for a specific year, showing monthly patterns
+          Detailed analysis of wildfire data for a specific year, showing monthly patterns and multi-year seasonal trends
         </p>
       </div>
-      
+
       {/* Year selector and summary */}
       <div className="year-selection-container">
         <div className="year-selector">
@@ -367,7 +370,7 @@ export const YearlyAnalysisDashboard = ({
             ))}
           </select>
         </div>
-        
+
         {selectedYearData && (
           <div className="year-summary">
             <div className="year-summary-item">
@@ -385,7 +388,83 @@ export const YearlyAnalysisDashboard = ({
           </div>
         )}
       </div>
-      
+
+      {/* NEW: Radial Chart for multi-year view */}
+      <div className="chart-section">
+        <div className="chart-container">
+          <div className="metric-toggle-container" style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+            margin: '0 auto',
+            padding: '15px 0',
+            marginBottom: '20px'
+          }}>
+            <div className="metric-toggle-wrapper" style={{
+              display: 'flex',
+              borderRadius: '8px',
+              overflow: 'hidden',
+              border: '1px solid #d1d5db',
+              boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)'
+            }}>
+              <button
+                className={`metric-toggle-button ${selectedMetric === 'fires' ? 'active' : ''}`}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  border: 'none',
+                  outline: 'none',
+                  background: selectedMetric === 'fires' ? '#3b82f6' : '#f9fafb',
+                  color: selectedMetric === 'fires' ? 'white' : '#4b5563',
+                  fontWeight: selectedMetric === 'fires' ? 'bold' : 'normal',
+                  cursor: 'pointer',
+                  padding: '10px 20px',
+                  minWidth: '120px',
+                  height: '40px',
+                  textAlign: 'center',
+                  transition: 'all 0.2s ease'
+                }}
+                onClick={() => setSelectedMetric('fires')}
+              >
+                Fire Counts
+              </button>
+              <button
+                className={`metric-toggle-button ${selectedMetric === 'acres' ? 'active' : ''}`}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  border: 'none',
+                  outline: 'none',
+                  background: selectedMetric === 'acres' ? '#3b82f6' : '#f9fafb',
+                  color: selectedMetric === 'acres' ? 'white' : '#4b5563',
+                  fontWeight: selectedMetric === 'acres' ? 'bold' : 'normal',
+                  cursor: 'pointer',
+                  padding: '10px 20px',
+                  minWidth: '120px',
+                  height: '40px',
+                  textAlign: 'center',
+                  transition: 'all 0.2s ease'
+                }}
+                onClick={() => setSelectedMetric('acres')}
+              >
+                Acres Burned
+              </button>
+            </div>
+          </div>
+
+          {/* Render the RadialFireChart component */}
+          <RadialBarChart
+            yearlyData={yearlyData}
+            monthlyDataByYear={monthlyDataByYear}
+            availableYears={availableYears}
+            selectedMetric={selectedMetric}
+          />
+        </div>
+      </div>
+
       {/* Main content area with monthly visualization */}
       <div className="chart-section">
         <div className="chart-container">
@@ -403,7 +482,7 @@ export const YearlyAnalysisDashboard = ({
           </div>
         </div>
       </div>
-      
+
       {/* Second visualization */}
       <div className="chart-section">
         <div className="chart-container">
@@ -421,7 +500,7 @@ export const YearlyAnalysisDashboard = ({
           </div>
         </div>
       </div>
-      
+
       {/* Monthly data table */}
       <div className="monthly-data-table-container">
         <h3 className="section-title">
@@ -456,8 +535,8 @@ export const YearlyAnalysisDashboard = ({
                 <th>{selectedYearData ? selectedYearData.fires.toLocaleString() : 0}</th>
                 <th>{selectedYearData ? selectedYearData.acres.toLocaleString() : 0}</th>
                 <th>
-                  {selectedYearData && selectedYearData.fires > 0 
-                    ? Math.round(selectedYearData.acres / selectedYearData.fires).toLocaleString() 
+                  {selectedYearData && selectedYearData.fires > 0
+                    ? Math.round(selectedYearData.acres / selectedYearData.fires).toLocaleString()
                     : 'N/A'}
                 </th>
               </tr>
@@ -465,8 +544,8 @@ export const YearlyAnalysisDashboard = ({
           </table>
         </div>
       </div>
-      
-      {/* Data Source Info - Updated to reflect new data through 2025 */}
+
+      {/* Data Source Info */}
       <div className="data-source-container">
         <h3 className="data-source-title">
           <svg xmlns="http://www.w3.org/2000/svg" className="data-source-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -479,12 +558,15 @@ export const YearlyAnalysisDashboard = ({
             This visualization shows detailed monthly data for the selected year from the California wildfire records.
             The dashboard includes data through 2025, with the monthly breakdown helping to identify fire patterns throughout the year and peak fire season.
           </p>
+          <p>
+            The radial chart at the top shows seasonal patterns across multiple years, making it easy to identify recurring patterns and anomalies.
+          </p>
           <p className="data-source-note">
             Return to the "Dashboard Overview" tab to see trends across multiple years.
           </p>
         </div>
       </div>
-      
+
       <div className="refresh-button-container">
         <button className="refresh-button" onClick={onRefresh}>
           <svg xmlns="http://www.w3.org/2000/svg" className="refresh-icon" viewBox="0 0 20 20" fill="currentColor">

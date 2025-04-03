@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 8000;
 
 // Directory where pre-processed statistics are stored
 const STATS_DIR = path.join(__dirname, 'processed_stats');
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Function to merge statistics from multiple files
 const mergeStatistics = async (statsData, newStatsData) => {
@@ -283,20 +284,9 @@ app.get('/api/stats/yearly', async (req, res) => {
     // Check if pre-processed stats exist
     if (!fs.existsSync(statsFilePath)) {
       console.error(`Statistics file not found: ${statsFilePath}`);
-      
-      // Return sample data instead of failing
-      return res.json({
-        yearlyData: getSampleYearlyData(),
-        years: ["2020", "2021", "2022", "2023", "2024", "2025"],
-        summary: {
-          totalFires: 42500,
-          totalAcres: 2850000,
-          worstYear: "2023",
-          worstYearAcres: 850000
-        },
-        causesDataByYear: getSampleCausesData(),
-        topCauses: getSampleTopCauses(),
-        causeDefinitions: getSampleCauseDefinitions()
+      return res.status(404).json({ 
+        error: 'Statistics file not found',
+        message: 'The pre-processed statistics for this dataset are not available. Run the preprocessor first.'
       });
     }
     
@@ -363,17 +353,9 @@ app.get('/api/stats/monthly', async (req, res) => {
     // Check if pre-processed stats exist
     if (!fs.existsSync(statsFilePath)) {
       console.error(`Statistics file not found: ${statsFilePath}`);
-      
-      // Return sample monthly data
-      return res.json({
-        monthlyData: getSampleMonthlyData(),
-        year,
-        summary: {
-          totalFires: 7800,
-          totalAcres: 485000,
-          peakMonth: "August",
-          peakMonthAcres: 150000
-        }
+      return res.status(404).json({ 
+        error: 'Statistics file not found',
+        message: 'The pre-processed statistics for this dataset are not available. Run the preprocessor first.'
       });
     }
     
@@ -403,16 +385,16 @@ app.get('/api/stats/monthly', async (req, res) => {
       // Get monthly data for the requested year
       const monthlyData = combinedStats.monthlyDataByYear[year] || [];
       
-      // If no data for this year, return sample results
+      // If no data for this year, return empty results
       if (monthlyData.length === 0) {
         return res.json({
-          monthlyData: getSampleMonthlyData(),
+          monthlyData: [],
           year,
           summary: {
-            totalFires: 7800,
-            totalAcres: 485000,
-            peakMonth: "August",
-            peakMonthAcres: 150000
+            totalFires: 0,
+            totalAcres: 0,
+            peakMonth: null,
+            peakMonthAcres: 0
           }
         });
       }
@@ -457,10 +439,11 @@ app.get('/api/temperature-fire', (req, res) => {
     const statsFilePath = path.join(STATS_DIR, 'temperature-fire-correlation.json');
     
     if (!fs.existsSync(statsFilePath)) {
-      console.log('Temperature-fire correlation data not found, returning sample data');
-      
-      // Return sample temperature data
-      return res.json(getSampleTemperatureFireData());
+      console.error(`Temperature-fire correlation data not found: ${statsFilePath}`);
+      return res.status(404).json({
+        error: 'Temperature-fire correlation data not found',
+        message: 'Please run the temperature-fire-processor.js script first'
+      });
     }
     
     const statsData = JSON.parse(fs.readFileSync(statsFilePath, 'utf8'));
@@ -468,188 +451,19 @@ app.get('/api/temperature-fire', (req, res) => {
   } catch (err) {
     console.error('Error retrieving temperature-fire correlation data:', err);
     
-    // Return sample temperature data on error
-    return res.json(getSampleTemperatureFireData());
+    res.status(500).json({
+      error: 'Server error',
+      message: err.message
+    });
   }
 });
+
+
 
 // Catch-all handler for the React app
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
-
-// Generate sample yearly data
-function getSampleYearlyData() {
-  const years = ["2020", "2021", "2022", "2023", "2024", "2025"];
-  const yearlyData = [];
-  
-  years.forEach(year => {
-    yearlyData.push({
-      year,
-      fires: 5000 + Math.floor(Math.random() * 3000),
-      acres: 350000 + Math.floor(Math.random() * 500000)
-    });
-  });
-  
-  return yearlyData;
-}
-
-// Generate sample monthly data
-function getSampleMonthlyData() {
-  const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-  
-  // Use a realistic fire season pattern with peak in summer months
-  const firePattern = [0.05, 0.05, 0.07, 0.08, 0.1, 0.12, 0.15, 0.2, 0.1, 0.05, 0.02, 0.01];
-  const totalFires = 7800;
-  const totalAcres = 485000;
-  
-  return months.map((month, index) => {
-    const monthFires = Math.floor(totalFires * firePattern[index]);
-    const monthAcres = Math.floor(totalAcres * firePattern[index]);
-    
-    return {
-      month,
-      fires: monthFires,
-      acres: monthAcres
-    };
-  });
-}
-
-// Generate sample causes data
-function getSampleCausesData() {
-  const years = ["2020", "2021", "2022", "2023", "2024", "2025"];
-  const causesDataByYear = {};
-  
-  // Define common cause IDs
-  const causeIds = [1, 2, 3, 4, 5, 6, 7, 10, 11, 14];
-  
-  years.forEach(year => {
-    const causes = causeIds.map(causeId => {
-      return {
-        causeId,
-        causeName: getSampleCauseDefinitions()[causeId],
-        fires: 100 + Math.floor(Math.random() * 1000),
-        acres: 5000 + Math.floor(Math.random() * 100000)
-      };
-    });
-    
-    // Sort by fires in descending order
-    causes.sort((a, b) => b.fires - a.fires);
-    
-    // Generate monthly breakdown
-    const months = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
-    
-    const monthlyBreakdown = {};
-    
-    months.forEach(month => {
-      monthlyBreakdown[month] = causeIds.map(causeId => {
-        return {
-          causeId,
-          fires: 5 + Math.floor(Math.random() * 100),
-          acres: 100 + Math.floor(Math.random() * 10000)
-        };
-      });
-    });
-    
-    causesDataByYear[year] = {
-      causes,
-      monthlyBreakdown
-    };
-  });
-  
-  return causesDataByYear;
-}
-
-// Generate sample top causes
-function getSampleTopCauses() {
-  const causeIds = [2, 10, 11, 1, 14, 5, 3, 4, 6, 7];
-  const totalFires = 42500;
-  
-  const totalFiresPerCause = {};
-  causeIds.forEach(causeId => {
-    totalFiresPerCause[causeId] = Math.floor(Math.random() * 10000) + 1000;
-  });
-  
-  return causeIds.map(causeId => {
-    const fires = totalFiresPerCause[causeId];
-    const percentage = Math.round((fires / totalFires) * 1000) / 10;
-    
-    return {
-      causeId,
-      causeName: getSampleCauseDefinitions()[causeId],
-      fires,
-      acres: fires * (20 + Math.floor(Math.random() * 80)),
-      percentage
-    };
-  }).sort((a, b) => b.fires - a.fires);
-}
-
-// Sample cause definitions
-function getSampleCauseDefinitions() {
-  return {
-    1: "Lightning",
-    2: "Equipment Use",
-    3: "Smoking",
-    4: "Campfire",
-    5: "Debris Burning",
-    6: "Railroad",
-    7: "Arson",
-    8: "Playing with Fire",
-    9: "Miscellaneous",
-    10: "Vehicle",
-    11: "Power Line",
-    12: "Firefighter Training",
-    13: "Non-Firefighter Training",
-    14: "Unknown/Unidentified",
-    15: "Structure",
-    16: "Aircraft",
-    17: "Volcanic",
-    18: "Escaped Prescribed Burn",
-    19: "Illegal Alien Campfire"
-  };
-}
-
-// Sample temperature-fire correlation data
-function getSampleTemperatureFireData() {
-  const years = ["2020", "2021", "2022", "2023", "2024", "2025"];
-  const scatterplotData = [];
-  
-  years.forEach(year => {
-    scatterplotData.push({
-      year: parseInt(year),
-      tempValue: 0.5 + Math.random() * 2,
-      fireCount: 0.5 + Math.random() * 2,
-      fires: 5000 + Math.floor(Math.random() * 3000),
-      acres: 350000 + Math.floor(Math.random() * 500000)
-    });
-  });
-  
-  return {
-    scatterplotData,
-    correlations: {
-      temperatureToFires: {
-        value: 0.72,
-        description: "Strong positive correlation"
-      },
-      temperatureToAcres: {
-        value: 0.68,
-        description: "Moderate positive correlation"
-      }
-    },
-    summary: {
-      totalYears: years.length,
-      avgTemperature: 1.5,
-      avgFires: 6500,
-      avgAcres: 550000
-    }
-  };
-}
 
 // Start server
 app.listen(PORT, () => {

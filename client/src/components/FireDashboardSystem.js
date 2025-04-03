@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { MainDashboard } from './MainDashboard';
-import { YearlyAnalysisDashboard } from './YearlyAnalysisDashboard';
+import { EnhancedYearlyAnalysisDashboard } from './YearlyAnalysisDashboard';
 import { FireCauseAnalysisDashboard } from './FireCauseAnalysisDashboard';
 import { TemperatureFireCorrelation } from './TemperatureFireCorrelation';
+import TableauDashboard from './TableauDashboard';
 import './FireDashboard.css';
+import './TableauDashboard.css';
 
 const FireDashboardSystem = ({ containerId }) => {
   const [container, setContainer] = useState(null);
   const [activeTab, setActiveTab] = useState('main');
   const [yearlyData, setYearlyData] = useState([]);
   const [monthlyData, setMonthlyData] = useState([]);
+  const [monthlyDataByYear, setMonthlyDataByYear] = useState({});
   const [causesData, setCausesData] = useState({});
   const [topCauses, setTopCauses] = useState([]);
   const [causeDefinitions, setCauseDefinitions] = useState({});
@@ -30,27 +33,26 @@ const FireDashboardSystem = ({ containerId }) => {
     avgAnnualFires: 0,
     avgAnnualAcres: 0
   });
-  
-  const backendBaseUrl = 'http://localhost:8000';
 
-  
-  
+  // In FireDashboardSystem.js
+  const backendBaseUrl = 'http://localhost:8000'; // Instead of 8000
+
   useEffect(() => {
     setContainer(document.getElementById(containerId));
     fetchYearlyData();
   }, [containerId]);
-  
+
   const handleTabChange = (tabName) => {
     setActiveTab(tabName);
   };
-  
+
   const fetchYearlyData = async () => {
     setLoading(true);
     setError(null);
-    
+
     try {
       const response = await fetch(`${backendBaseUrl}/api/stats/yearly?dataset=firep23_1`);
-      
+
       if (!response.ok) {
         // If we get a 404, it means the statistics file isn't available
         if (response.status === 404) {
@@ -60,33 +62,33 @@ const FireDashboardSystem = ({ containerId }) => {
         }
         throw new Error(`Failed to fetch yearly data: ${response.statusText}`);
       }
-      
+
       const data = await response.json();
-      
+
       setYearlyData(data.yearlyData);
       setAvailableYears(data.years);
-      
+
       // Set fire cause data if available
       if (data.causesDataByYear) {
         setCausesData(data.causesDataByYear);
       }
-      
+
       if (data.topCauses) {
         setTopCauses(data.topCauses);
       }
-      
+
       if (data.causeDefinitions) {
         setCauseDefinitions(data.causeDefinitions);
       }
-      
+
       // Calculate additional statistics
       const sortedYears = [...data.yearlyData].sort((a, b) => parseInt(b.year) - parseInt(a.year));
       const recentYearData = sortedYears.length > 0 ? sortedYears[0] : null;
-      
+
       const totalFires = data.summary.totalFires;
       const totalAcres = data.summary.totalAcres;
       const yearCount = data.years.length;
-      
+
       // Update summary stats
       setSummaryStats({
         totalFires: totalFires,
@@ -99,24 +101,53 @@ const FireDashboardSystem = ({ containerId }) => {
         avgAnnualFires: yearCount > 0 ? Math.round(totalFires / yearCount) : 0,
         avgAnnualAcres: yearCount > 0 ? Math.round(totalAcres / yearCount) : 0
       });
-      
+
       // Set the most recent year as the default selected year
       if (data.years.length > 0) {
         const maxYear = Math.max(...data.years.map(y => parseInt(y)));
         setSelectedYear(maxYear.toString());
-        
+
         // Fetch monthly data for the selected year
         fetchMonthlyData(maxYear.toString());
       }
-      
+
+      // NEW: Fetch monthly data for all available years (for radial chart)
+      await fetchAllMonthlyData(data.years);
+
       setLoading(false);
-      
+
     } catch (err) {
       console.error("Error fetching yearly fire data:", err);
       handleDataError("Failed to load fire data. Please check server connection and run the preprocessor script.");
     }
   };
-  
+
+  // NEW: Function to fetch monthly data for all years
+  const fetchAllMonthlyData = async (years) => {
+    if (!years || years.length === 0) return;
+
+    const allMonthlyData = {};
+
+    // Fetch data for each year
+    for (const year of years) {
+      try {
+        const response = await fetch(`${backendBaseUrl}/api/stats/monthly?dataset=firep23_1&year=${year}`);
+
+        if (response.ok) {
+          const data = await response.json();
+          if (data.monthlyData && data.monthlyData.length > 0) {
+            allMonthlyData[year] = data.monthlyData;
+          }
+        }
+      } catch (err) {
+        console.warn(`Error fetching monthly data for year ${year}:`, err);
+        // Continue with other years even if one fails
+      }
+    }
+
+    setMonthlyDataByYear(allMonthlyData);
+  };
+
   const fetchMonthlyData = async (year) => {
     if (error || !year) {
       setEmptyMonthlyData();
@@ -129,7 +160,7 @@ const FireDashboardSystem = ({ containerId }) => {
       if (wasEmpty) {
         setLoading(true);
       }
-      
+
       const response = await fetch(`${backendBaseUrl}/api/stats/monthly?dataset=firep23_1&year=${year}`);
       if (!response.ok) {
         if (response.status === 404) {
@@ -140,22 +171,22 @@ const FireDashboardSystem = ({ containerId }) => {
         }
         throw new Error(`Failed to fetch monthly data: ${response.statusText}`);
       }
-      
+
       const data = await response.json();
-      
+
       setMonthlyData(data.monthlyData);
-      
+
       // Update summary stats for the selected year
       setSummaryStats(prevStats => ({
         ...prevStats,
         yearlyAcres: data.summary.totalAcres,
         peakMonth: data.summary.peakMonth
       }));
-      
+
       if (wasEmpty) {
         setLoading(false);
       }
-      
+
     } catch (err) {
       console.error(`Error fetching monthly fire data for year ${year}:`, err);
       setError(`Failed to load monthly data for ${year}. Please check server connection.`);
@@ -165,12 +196,12 @@ const FireDashboardSystem = ({ containerId }) => {
       }
     }
   };
-  
+
   const handleYearChange = (year) => {
     setSelectedYear(year);
     fetchMonthlyData(year);
   };
-  
+
   const handleDataError = (errorMessage) => {
     setYearlyData([]);
     setAvailableYears([]);
@@ -180,7 +211,7 @@ const FireDashboardSystem = ({ containerId }) => {
     setError(errorMessage || "Failed to load fire data. Please run the preprocessor script first.");
     setLoading(false);
   };
-  
+
   const setEmptyMonthlyData = () => {
     setMonthlyData([]);
     setSummaryStats(prevStats => ({
@@ -189,7 +220,7 @@ const FireDashboardSystem = ({ containerId }) => {
       peakMonth: 'N/A'
     }));
   };
-  
+
   // Render loading state
   if (loading) {
     return (
@@ -203,7 +234,7 @@ const FireDashboardSystem = ({ containerId }) => {
       </div>
     );
   }
-  
+
   // Render error state
   if (error) {
     return (
@@ -212,7 +243,7 @@ const FireDashboardSystem = ({ containerId }) => {
           <div className="dashboard-header">
             <h2 className="dashboard-title">California Wildfire Dashboard</h2>
           </div>
-          
+
           <div className="error-message">
             <div className="flex">
               <div className="flex-shrink-0">
@@ -239,7 +270,7 @@ const FireDashboardSystem = ({ containerId }) => {
               </div>
             </div>
           </div>
-          
+
           <div className="text-center">
             <button onClick={fetchYearlyData} className="error-retry-button">
               Try Again
@@ -249,12 +280,12 @@ const FireDashboardSystem = ({ containerId }) => {
       </div>
     );
   }
-  
+
   return (
     <div className="dashboard-system-container">
       <div className="dashboard-tabs">
-        <button 
-          className={`dashboard-tab ${activeTab === 'main' ? 'active' : ''}`} 
+        <button
+          className={`dashboard-tab ${activeTab === 'main' ? 'active' : ''}`}
           onClick={() => handleTabChange('main')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -262,8 +293,8 @@ const FireDashboardSystem = ({ containerId }) => {
           </svg>
           Dashboard Overview
         </button>
-        <button 
-          className={`dashboard-tab ${activeTab === 'yearly' ? 'active' : ''}`} 
+        <button
+          className={`dashboard-tab ${activeTab === 'yearly' ? 'active' : ''}`}
           onClick={() => handleTabChange('yearly')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -271,8 +302,8 @@ const FireDashboardSystem = ({ containerId }) => {
           </svg>
           Yearly Analysis
         </button>
-        <button 
-          className={`dashboard-tab ${activeTab === 'causes' ? 'active' : ''}`} 
+        <button
+          className={`dashboard-tab ${activeTab === 'causes' ? 'active' : ''}`}
           onClick={() => handleTabChange('causes')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -280,17 +311,8 @@ const FireDashboardSystem = ({ containerId }) => {
           </svg>
           Fire Causes
         </button>
-        {/* <button 
-          className={`dashboard-tab ${activeTab === 'map' ? 'active' : ''}`} 
-          onClick={() => handleTabChange('map')}
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clipRule="evenodd" />
-          </svg>
-          Fire Map
-        </button> */}
-        <button 
-          className={`dashboard-tab ${activeTab === 'temperature' ? 'active' : ''}`} 
+        <button
+          className={`dashboard-tab ${activeTab === 'temperature' ? 'active' : ''}`}
           onClick={() => handleTabChange('temperature')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -298,12 +320,22 @@ const FireDashboardSystem = ({ containerId }) => {
           </svg>
           Temperature-Fire Analysis
         </button>
+        {/* Tableau Dashboard tab */}
+        <button
+          className={`dashboard-tab ${activeTab === 'tableau' ? 'active' : ''}`}
+          onClick={() => handleTabChange('tableau')}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
+          </svg>
+          Tableau Dashboard
+        </button>
       </div>
-      
+
       <div className="dashboard-content">
         <div id="main-dashboard" className={`dashboard-tab-content ${activeTab === 'main' ? 'active' : ''}`}>
           {activeTab === 'main' && (
-            <MainDashboard 
+            <MainDashboard
               summaryStats={summaryStats}
               yearlyData={yearlyData}
               onRefresh={fetchYearlyData}
@@ -312,9 +344,10 @@ const FireDashboardSystem = ({ containerId }) => {
         </div>
         <div id="yearly-dashboard" className={`dashboard-tab-content ${activeTab === 'yearly' ? 'active' : ''}`}>
           {activeTab === 'yearly' && (
-            <YearlyAnalysisDashboard
+            <EnhancedYearlyAnalysisDashboard
               yearlyData={yearlyData}
               monthlyData={monthlyData}
+              monthlyDataByYear={monthlyDataByYear}
               selectedYear={selectedYear}
               availableYears={availableYears}
               summaryStats={summaryStats}
@@ -336,19 +369,19 @@ const FireDashboardSystem = ({ containerId }) => {
             />
           )}
         </div>
-        <div id="map-dashboard" className={`dashboard-tab-content ${activeTab === 'map' ? 'active' : ''}`}>
-          {activeTab === 'map' && (
-            <div className="map-placeholder">
-              <h3>California Fire Map</h3>
-              <p>Map component would be loaded here.</p>
-              <p>This tab would contain your existing CaliforniaFireMap component.</p>
-            </div>
-          )}
-        </div>
         <div id="temperature-dashboard" className={`dashboard-tab-content ${activeTab === 'temperature' ? 'active' : ''}`}>
           {activeTab === 'temperature' && (
             <TemperatureFireCorrelation
               onRefresh={fetchYearlyData}
+            />
+          )}
+        </div>
+        {/* Tableau Dashboard tab content */}
+        <div id="tableau-dashboard" className={`dashboard-tab-content ${activeTab === 'tableau' ? 'active' : ''}`}>
+          {activeTab === 'tableau' && (
+            <TableauDashboard
+              title="California Wildfire Tableau Dashboard"
+              description="Interactive visualization of California wildfire data using Tableau, providing in-depth analysis and insights."
             />
           )}
         </div>
