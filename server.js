@@ -9,7 +9,39 @@ const PORT = process.env.PORT || 8000;
 
 // Directory where pre-processed statistics are stored
 const STATS_DIR = path.join(__dirname, 'processed_stats');
-app.use(express.static(path.join(__dirname, 'client/build')));
+
+const CLIENT_BUILD_DIR = path.join(__dirname, 'client/build');
+
+// Debugging information
+console.log('==== Server Configuration ====');
+console.log('Current directory:', __dirname);
+console.log('Stats directory:', STATS_DIR);
+console.log('Client build directory:', CLIENT_BUILD_DIR);
+console.log('Stats directory exists:', fs.existsSync(STATS_DIR));
+console.log('Client build directory exists:', fs.existsSync(CLIENT_BUILD_DIR));
+
+if (fs.existsSync(CLIENT_BUILD_DIR)) {
+  console.log('Client build directory contents:', fs.readdirSync(CLIENT_BUILD_DIR));
+}
+
+// Ensure processed_stats directory exists
+if (!fs.existsSync(STATS_DIR)) {
+  fs.mkdirSync(STATS_DIR, { recursive: true });
+  console.log('Created processed_stats directory');
+}
+
+// CORS middleware - allow all origins for development
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+// Middleware for parsing JSON and URL-encoded data
+app.use(express.json({ limit: '2gb' }));
+app.use(express.urlencoded({ extended: true, limit: '2gb' }));
+
+app.use(express.static(CLIENT_BUILD_DIR));
 
 // Function to merge statistics from multiple files
 const mergeStatistics = async (statsData, newStatsData) => {
@@ -458,7 +490,60 @@ app.get('/api/temperature-fire', (req, res) => {
   }
 });
 
+app.get('/api/test', (req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'Server is running',
+    timestamp: new Date().toISOString(),
+    config: {
+      nodeEnv: process.env.NODE_ENV,
+      clientBuildExists: fs.existsSync(CLIENT_BUILD_DIR)
+    }
+  });
+});
 
+
+app.get('/api/diagnose', (req, res) => {
+  try {
+    const statsFiles = fs.existsSync(STATS_DIR) 
+      ? fs.readdirSync(STATS_DIR) 
+      : 'Directory does not exist';
+    
+    const clientBuildFiles = fs.existsSync(CLIENT_BUILD_DIR)
+      ? fs.readdirSync(CLIENT_BUILD_DIR)
+      : 'Directory does not exist';
+    
+    let indexHtmlContent = 'File not found';
+    const indexHtmlPath = path.join(CLIENT_BUILD_DIR, 'index.html');
+    
+    if (fs.existsSync(indexHtmlPath)) {
+      indexHtmlContent = fs.readFileSync(indexHtmlPath, 'utf8').slice(0, 1000) + '...';
+    }
+    
+    res.json({
+      directories: {
+        currentDir: __dirname,
+        statsDir: STATS_DIR,
+        clientBuildDir: CLIENT_BUILD_DIR
+      },
+      exists: {
+        statsDir: fs.existsSync(STATS_DIR),
+        clientBuildDir: fs.existsSync(CLIENT_BUILD_DIR),
+        indexHtml: fs.existsSync(indexHtmlPath)
+      },
+      contents: {
+        statsFiles,
+        clientBuildFiles,
+        indexHtmlPreview: indexHtmlContent
+      }
+    });
+  } catch (error) {
+    res.status(500).json({
+      error: error.message,
+      stack: error.stack
+    });
+  }
+});
 
 // Catch-all handler for the React app
 app.get('*', (req, res) => {

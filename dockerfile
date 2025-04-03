@@ -6,12 +6,21 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json for both server and client
 COPY package*.json ./
-COPY client/package*.json ./client/
 
-# Install dependencies for server
+# Install server dependencies
 RUN npm install
 
-# Install dependencies for client
+# Copy client package files and update homepage
+COPY client/package*.json ./client/
+
+# Modify client package.json to include homepage
+RUN node -e "const fs = require('fs'); \
+    const pkgPath = './client/package.json'; \
+    const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8')); \
+    pkg.homepage = '/'; \
+    fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));"
+
+# Install client dependencies
 WORKDIR /app/client
 RUN npm install
 
@@ -21,20 +30,20 @@ WORKDIR /app
 # Copy the rest of the application
 COPY . .
 
-# Set the base URL environment variable for the client build
-ENV REACT_APP_BASE_URL=/wildfire-dashboard
-
 # Build the React client
 WORKDIR /app/client
 RUN npm run build
+
+# Verify the build output
+RUN ls -la build
+RUN cat build/index.html | grep -o "src=\"[^\"]*\"" || echo "No src attributes found"
+RUN cat build/index.html | grep -o "href=\"[^\"]*\"" || echo "No href attributes found"
 
 # Go back to the root directory
 WORKDIR /app
 
 # Make sure processed_stats directory exists
 RUN mkdir -p processed_stats
-
-# Make sure uploads directory exists
 RUN mkdir -p uploads
 
 # Expose the port that the server uses

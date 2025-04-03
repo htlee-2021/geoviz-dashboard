@@ -35,7 +35,7 @@ const FireDashboardSystem = ({ containerId }) => {
   });
 
   // In FireDashboardSystem.js
-  const backendBaseUrl = 'http://localhost:8000'; // Instead of 8000
+  const backendBaseUrl = ''; // Instead of 8000
 
   useEffect(() => {
     setContainer(document.getElementById(containerId));
