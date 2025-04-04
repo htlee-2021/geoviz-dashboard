@@ -4,49 +4,32 @@ FROM node:18
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json for both server and client
+# Copy package.json and package-lock.json for the server
 COPY package*.json ./
 
-# Install server dependencies
-RUN npm install
+# Install server dependencies with error checking
+RUN npm install || (echo "Server dependency installation failed" && exit 1)
 
-# Copy client package files and update homepage
-COPY client/package*.json ./client/
+# Create necessary directories
+RUN mkdir -p processed_stats uploads
 
-# Modify client package.json to include homepage
-RUN node -e "const fs = require('fs'); \
-    const pkgPath = './client/package.json'; \
-    const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8')); \
-    pkg.homepage = '/'; \
-    fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));"
+# Create client/build directory if not building the client
+RUN mkdir -p client/build
 
-# Install client dependencies
-WORKDIR /app/client
-RUN npm install
+# Copy application files
+COPY server.js .
+COPY processed_stats ./processed_stats/
 
-# Go back to the root directory
-WORKDIR /app
-
-# Copy the rest of the application
-COPY . .
-
-# Build the React client
-WORKDIR /app/client
-RUN npm run build
-
-# Verify the build output
-RUN ls -la build
-RUN cat build/index.html | grep -o "src=\"[^\"]*\"" || echo "No src attributes found"
-RUN cat build/index.html | grep -o "href=\"[^\"]*\"" || echo "No href attributes found"
-
-# Go back to the root directory
-WORKDIR /app
-
-# Make sure processed_stats directory exists
-RUN mkdir -p processed_stats
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=8000
 
 # Expose the port that the server uses
 EXPOSE 8000
+
+# Health check to ensure the server is running properly
+HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:8000/api/test || exit 1
 
 # Start the server
 CMD ["node", "server.js"]
