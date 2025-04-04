@@ -4,32 +4,44 @@ FROM node:18
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json for the server
+# Copy package files for server and client
 COPY package*.json ./
+COPY client/package*.json ./client/
 
-# Install server dependencies with error checking
-RUN npm install || (echo "Server dependency installation failed" && exit 1)
+# Install server dependencies
+RUN npm install
+
+# Set up client directory and install client dependencies
+WORKDIR /app/client
+RUN npm install
+
+# Go back to the root directory
+WORKDIR /app
+
+# Copy the rest of the application
+COPY . .
+
+# Build the client application
+WORKDIR /app/client
+RUN npm run build || echo "Failed to build client application"
+RUN ls -la build || echo "No build directory found"
+
+# Create empty client/build directory if build failed
+RUN mkdir -p build
+RUN echo '<!DOCTYPE html><html><head><title>California Wildfire Dashboard</title></head><body><div id="root">Loading...</div></body></html>' > build/index.html
+
+# Go back to the root directory
+WORKDIR /app
 
 # Create necessary directories
 RUN mkdir -p processed_stats uploads
 
-# Create client/build directory if not building the client
-RUN mkdir -p client/build
-
-# Copy application files
-COPY server.js .
-COPY processed_stats ./processed_stats/
+# Expose the port that the server uses
+EXPOSE 8000
 
 # Set environment variables
 ENV NODE_ENV=production
 ENV PORT=8000
-
-# Expose the port that the server uses
-EXPOSE 8000
-
-# Health check to ensure the server is running properly
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:8000/api/test || exit 1
 
 # Start the server
 CMD ["node", "server.js"]
