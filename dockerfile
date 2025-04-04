@@ -4,14 +4,23 @@ FROM node:18
 # Set working directory
 WORKDIR /app
 
-# Copy package files for server and client
+# Copy package.json and package-lock.json for both server and client
 COPY package*.json ./
-COPY client/package*.json ./client/
 
 # Install server dependencies
 RUN npm install
 
-# Set up client directory and install client dependencies
+# Copy client package files and update homepage
+COPY client/package*.json ./client/
+
+# Modify client package.json to include homepage
+RUN node -e "const fs = require('fs'); \
+    const pkgPath = './client/package.json'; \
+    const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8')); \
+    pkg.homepage = '/'; \
+    fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));"
+
+# Install client dependencies
 WORKDIR /app/client
 RUN npm install
 
@@ -21,27 +30,23 @@ WORKDIR /app
 # Copy the rest of the application
 COPY . .
 
-# Build the client application
+# Build the React client
 WORKDIR /app/client
-RUN npm run build || echo "Failed to build client application"
-RUN ls -la build || echo "No build directory found"
+RUN npm run build
 
-# Create empty client/build directory if build failed
-RUN mkdir -p build
-RUN echo '<!DOCTYPE html><html><head><title>California Wildfire Dashboard</title></head><body><div id="root">Loading...</div></body></html>' > build/index.html
+# Verify the build output
+RUN ls -la build
+RUN cat build/index.html | grep -o "src=\"[^\"]*\"" || echo "No src attributes found"
+RUN cat build/index.html | grep -o "href=\"[^\"]*\"" || echo "No href attributes found"
 
 # Go back to the root directory
 WORKDIR /app
 
-# Create necessary directories
-RUN mkdir -p processed_stats uploads
+# Make sure processed_stats directory exists
+RUN mkdir -p processed_stats
 
 # Expose the port that the server uses
 EXPOSE 8000
-
-# Set environment variables
-ENV NODE_ENV=production
-ENV PORT=8000
 
 # Start the server
 CMD ["node", "server.js"]
