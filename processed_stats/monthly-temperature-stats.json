@@ -1,0 +1,110 @@
+[
+  {
+    "month": "January",
+    "min": 32,
+    "q1": 41.3,
+    "median": 43,
+    "q3": 45.1,
+    "max": 50.1,
+    "outlierCount": 2
+  },
+  {
+    "month": "February",
+    "min": 38.4,
+    "q1": 43.5,
+    "median": 45.9,
+    "q3": 47.4,
+    "max": 53.2,
+    "outlierCount": 0
+  },
+  {
+    "month": "March",
+    "min": 43.1,
+    "q1": 47.1,
+    "median": 48.8,
+    "q3": 51.3,
+    "max": 57.2,
+    "outlierCount": 0
+  },
+  {
+    "month": "April",
+    "min": 44.9,
+    "q1": 52.5,
+    "median": 54.4,
+    "q3": 56.3,
+    "max": 60,
+    "outlierCount": 1
+  },
+  {
+    "month": "May",
+    "min": 54.8,
+    "q1": 58.9,
+    "median": 61.3,
+    "q3": 63.1,
+    "max": 68.6,
+    "outlierCount": 0
+  },
+  {
+    "month": "June",
+    "min": 63.2,
+    "q1": 67,
+    "median": 68.6,
+    "q3": 70.8,
+    "max": 74.9,
+    "outlierCount": 0
+  },
+  {
+    "month": "July",
+    "min": 70.9,
+    "q1": 73.8,
+    "median": 75.1,
+    "q3": 76.5,
+    "max": 81.6,
+    "outlierCount": 1
+  },
+  {
+    "month": "August",
+    "min": 68.9,
+    "q1": 73,
+    "median": 74,
+    "q3": 75.2,
+    "max": 78.9,
+    "outlierCount": 2
+  },
+  {
+    "month": "September",
+    "min": 63.5,
+    "q1": 67.2,
+    "median": 69.1,
+    "q3": 70.7,
+    "max": 74,
+    "outlierCount": 0
+  },
+  {
+    "month": "October",
+    "min": 53.8,
+    "q1": 58.1,
+    "median": 59.7,
+    "q3": 61.4,
+    "max": 66.2,
+    "outlierCount": 0
+  },
+  {
+    "month": "November",
+    "min": 42.9,
+    "q1": 48,
+    "median": 50,
+    "q3": 51.7,
+    "max": 55.9,
+    "outlierCount": 0
+  },
+  {
+    "month": "December",
+    "min": 38.4,
+    "q1": 41.6,
+    "median": 43.4,
+    "q3": 44.9,
+    "max": 48.5,
+    "outlierCount": 0
+  }
+]

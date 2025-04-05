@@ -35,11 +35,13 @@ export const MainDashboard = ({ summaryStats, yearlyData, onRefresh }) => {
   const getRecentYearsData = () => {
     if (!yearlyData || yearlyData.length === 0) return [];
 
+    const filteredData = yearlyData.filter(d => parseInt(d.year) !== 2025);
+
     // Sort years in ascending order
-    const sortedData = [...yearlyData].sort((a, b) => parseInt(a.year) - parseInt(b.year));
+    const sortedData = [...filteredData].sort((a, b) => parseInt(a.year) - parseInt(b.year));
 
     // Take the last 10 years or all if less than 10
-    return sortedData.slice(Math.max(0, sortedData.length - 10));
+    return sortedData.slice(Math.max(1, sortedData.length - 10));
   };
 
   // Data for acres by fire ratio pie chart

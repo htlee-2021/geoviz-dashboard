@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { RadialBarChart } from './RadialBarChart';
+import { MonthlyTemperatureBoxplot } from './MonthlyTemperatureBoxPlot';
 
 export const EnhancedYearlyAnalysisDashboard = ({
   yearlyData,
@@ -352,43 +353,6 @@ export const EnhancedYearlyAnalysisDashboard = ({
         </p>
       </div>
 
-      {/* Year selector and summary */}
-      <div className="year-selection-container">
-        <div className="year-selector">
-          <label htmlFor="year-select" className="year-selector-label">Select Year for Analysis:</label>
-          <select
-            id="year-select"
-            className="year-selector-dropdown"
-            value={selectedYear || ''}
-            onChange={(e) => onYearChange(e.target.value)}
-            disabled={availableYears.length === 0}
-          >
-            {availableYears.map(year => (
-              <option key={year} value={year}>
-                {year}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {selectedYearData && (
-          <div className="year-summary">
-            <div className="year-summary-item">
-              <div className="summary-label">Fires:</div>
-              <div className="summary-value">{selectedYearData.fires.toLocaleString()}</div>
-            </div>
-            <div className="year-summary-item">
-              <div className="summary-label">Acres Burned:</div>
-              <div className="summary-value">{selectedYearData.acres.toLocaleString()}</div>
-            </div>
-            <div className="year-summary-item">
-              <div className="summary-label">Peak Month:</div>
-              <div className="summary-value">{summaryStats.peakMonth || 'N/A'}</div>
-            </div>
-          </div>
-        )}
-      </div>
-
       {/* NEW: Radial Chart for multi-year view */}
       <div className="chart-section">
         <div className="chart-container">
@@ -463,6 +427,48 @@ export const EnhancedYearlyAnalysisDashboard = ({
             selectedMetric={selectedMetric}
           />
         </div>
+      </div>
+      {/* NEW: Monthly Temperature Boxplot */}
+      <div className="chart-section">
+        <MonthlyTemperatureBoxplot>
+        </MonthlyTemperatureBoxplot>
+        </div>
+
+      {/* Year selector and summary */}
+      <div className="year-selection-container">
+        <div className="year-selector">
+          <label htmlFor="year-select" className="year-selector-label">Select Year for Analysis:</label>
+          <select
+            id="year-select"
+            className="year-selector-dropdown"
+            value={selectedYear || ''}
+            onChange={(e) => onYearChange(e.target.value)}
+            disabled={availableYears.length === 0}
+          >
+            {availableYears.map(year => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {selectedYearData && (
+          <div className="year-summary">
+            <div className="year-summary-item">
+              <div className="summary-label">Fires:</div>
+              <div className="summary-value">{selectedYearData.fires.toLocaleString()}</div>
+            </div>
+            <div className="year-summary-item">
+              <div className="summary-label">Acres Burned:</div>
+              <div className="summary-value">{selectedYearData.acres.toLocaleString()}</div>
+            </div>
+            <div className="year-summary-item">
+              <div className="summary-label">Peak Month:</div>
+              <div className="summary-value">{summaryStats.peakMonth || 'N/A'}</div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Main content area with monthly visualization */}

@@ -1,0 +1,522 @@
+[
+  {
+    "temperature": 60,
+    "year": 1895
+  },
+  {
+    "temperature": 60,
+    "year": 1896
+  },
+  {
+    "temperature": 56.3,
+    "year": 1897
+  },
+  {
+    "temperature": 59,
+    "year": 1898
+  },
+  {
+    "temperature": 55.8,
+    "year": 1899
+  },
+  {
+    "temperature": 57.6,
+    "year": 1900
+  },
+  {
+    "temperature": 60.9,
+    "year": 1901
+  },
+  {
+    "temperature": 58.1,
+    "year": 1902
+  },
+  {
+    "temperature": 60.8,
+    "year": 1903
+  },
+  {
+    "temperature": 58.3,
+    "year": 1904
+  },
+  {
+    "temperature": 58.3,
+    "year": 1905
+  },
+  {
+    "temperature": 60.4,
+    "year": 1906
+  },
+  {
+    "temperature": 59.8,
+    "year": 1907
+  },
+  {
+    "temperature": 55.9,
+    "year": 1908
+  },
+  {
+    "temperature": 57.9,
+    "year": 1909
+  },
+  {
+    "temperature": 59.9,
+    "year": 1910
+  },
+  {
+    "temperature": 57.1,
+    "year": 1911
+  },
+  {
+    "temperature": 55,
+    "year": 1912
+  },
+  {
+    "temperature": 59.7,
+    "year": 1913
+  },
+  {
+    "temperature": 59.1,
+    "year": 1914
+  },
+  {
+    "temperature": 60.2,
+    "year": 1915
+  },
+  {
+    "temperature": 53.8,
+    "year": 1916
+  },
+  {
+    "temperature": 62.6,
+    "year": 1917
+  },
+  {
+    "temperature": 60.8,
+    "year": 1918
+  },
+  {
+    "temperature": 54.6,
+    "year": 1919
+  },
+  {
+    "temperature": 54.5,
+    "year": 1920
+  },
+  {
+    "temperature": 60.8,
+    "year": 1921
+  },
+  {
+    "temperature": 58,
+    "year": 1922
+  },
+  {
+    "temperature": 57.3,
+    "year": 1923
+  },
+  {
+    "temperature": 55.6,
+    "year": 1924
+  },
+  {
+    "temperature": 56.8,
+    "year": 1925
+  },
+  {
+    "temperature": 60.6,
+    "year": 1926
+  },
+  {
+    "temperature": 59.9,
+    "year": 1927
+  },
+  {
+    "temperature": 58.1,
+    "year": 1928
+  },
+  {
+    "temperature": 61.4,
+    "year": 1929
+  },
+  {
+    "temperature": 58.1,
+    "year": 1930
+  },
+  {
+    "temperature": 58.9,
+    "year": 1931
+  },
+  {
+    "temperature": 59.1,
+    "year": 1932
+  },
+  {
+    "temperature": 64.1,
+    "year": 1933
+  },
+  {
+    "temperature": 60.2,
+    "year": 1934
+  },
+  {
+    "temperature": 57.6,
+    "year": 1935
+  },
+  {
+    "temperature": 60.5,
+    "year": 1936
+  },
+  {
+    "temperature": 61,
+    "year": 1937
+  },
+  {
+    "temperature": 57.9,
+    "year": 1938
+  },
+  {
+    "temperature": 59.1,
+    "year": 1939
+  },
+  {
+    "temperature": 60.3,
+    "year": 1940
+  },
+  {
+    "temperature": 56.4,
+    "year": 1941
+  },
+  {
+    "temperature": 60.5,
+    "year": 1942
+  },
+  {
+    "temperature": 59.4,
+    "year": 1943
+  },
+  {
+    "temperature": 61,
+    "year": 1944
+  },
+  {
+    "temperature": 61,
+    "year": 1945
+  },
+  {
+    "temperature": 55.3,
+    "year": 1946
+  },
+  {
+    "temperature": 59.4,
+    "year": 1947
+  },
+  {
+    "temperature": 59.3,
+    "year": 1948
+  },
+  {
+    "temperature": 57.4,
+    "year": 1949
+  },
+  {
+    "temperature": 61.4,
+    "year": 1950
+  },
+  {
+    "temperature": 58.6,
+    "year": 1951
+  },
+  {
+    "temperature": 63.7,
+    "year": 1952
+  },
+  {
+    "temperature": 58.9,
+    "year": 1953
+  },
+  {
+    "temperature": 59.3,
+    "year": 1954
+  },
+  {
+    "temperature": 61,
+    "year": 1955
+  },
+  {
+    "temperature": 57.4,
+    "year": 1956
+  },
+  {
+    "temperature": 56.7,
+    "year": 1957
+  },
+  {
+    "temperature": 63.6,
+    "year": 1958
+  },
+  {
+    "temperature": 62.1,
+    "year": 1959
+  },
+  {
+    "temperature": 59.3,
+    "year": 1960
+  },
+  {
+    "temperature": 59.4,
+    "year": 1961
+  },
+  {
+    "temperature": 59.8,
+    "year": 1962
+  },
+  {
+    "temperature": 61,
+    "year": 1963
+  },
+  {
+    "temperature": 63.8,
+    "year": 1964
+  },
+  {
+    "temperature": 63,
+    "year": 1965
+  },
+  {
+    "temperature": 60.4,
+    "year": 1966
+  },
+  {
+    "temperature": 61.6,
+    "year": 1967
+  },
+  {
+    "temperature": 59.4,
+    "year": 1968
+  },
+  {
+    "temperature": 56.4,
+    "year": 1969
+  },
+  {
+    "temperature": 58,
+    "year": 1970
+  },
+  {
+    "temperature": 55.9,
+    "year": 1971
+  },
+  {
+    "temperature": 57.3,
+    "year": 1972
+  },
+  {
+    "temperature": 58.9,
+    "year": 1973
+  },
+  {
+    "temperature": 60.5,
+    "year": 1974
+  },
+  {
+    "temperature": 57.5,
+    "year": 1975
+  },
+  {
+    "temperature": 60.6,
+    "year": 1976
+  },
+  {
+    "temperature": 61.2,
+    "year": 1977
+  },
+  {
+    "temperature": 63.7,
+    "year": 1978
+  },
+  {
+    "temperature": 61.1,
+    "year": 1979
+  },
+  {
+    "temperature": 61.4,
+    "year": 1980
+  },
+  {
+    "temperature": 56.7,
+    "year": 1981
+  },
+  {
+    "temperature": 58.4,
+    "year": 1982
+  },
+  {
+    "temperature": 61.4,
+    "year": 1983
+  },
+  {
+    "temperature": 56.2,
+    "year": 1984
+  },
+  {
+    "temperature": 58.9,
+    "year": 1985
+  },
+  {
+    "temperature": 59.1,
+    "year": 1986
+  },
+  {
+    "temperature": 64,
+    "year": 1987
+  },
+  {
+    "temperature": 64.6,
+    "year": 1988
+  },
+  {
+    "temperature": 58.9,
+    "year": 1989
+  },
+  {
+    "temperature": 62,
+    "year": 1990
+  },
+  {
+    "temperature": 64.5,
+    "year": 1991
+  },
+  {
+    "temperature": 62.6,
+    "year": 1992
+  },
+  {
+    "temperature": 61.4,
+    "year": 1993
+  },
+  {
+    "temperature": 58.6,
+    "year": 1994
+  },
+  {
+    "temperature": 62.2,
+    "year": 1995
+  },
+  {
+    "temperature": 59.2,
+    "year": 1996
+  },
+  {
+    "temperature": 59,
+    "year": 1997
+  },
+  {
+    "temperature": 57.7,
+    "year": 1998
+  },
+  {
+    "temperature": 63.7,
+    "year": 1999
+  },
+  {
+    "temperature": 58.4,
+    "year": 2000
+  },
+  {
+    "temperature": 63.6,
+    "year": 2001
+  },
+  {
+    "temperature": 59.4,
+    "year": 2002
+  },
+  {
+    "temperature": 65.4,
+    "year": 2003
+  },
+  {
+    "temperature": 58.2,
+    "year": 2004
+  },
+  {
+    "temperature": 59.9,
+    "year": 2005
+  },
+  {
+    "temperature": 58.8,
+    "year": 2006
+  },
+  {
+    "temperature": 58.6,
+    "year": 2007
+  },
+  {
+    "temperature": 61.8,
+    "year": 2008
+  },
+  {
+    "temperature": 58.1,
+    "year": 2009
+  },
+  {
+    "temperature": 60.5,
+    "year": 2010
+  },
+  {
+    "temperature": 61.4,
+    "year": 2011
+  },
+  {
+    "temperature": 62.2,
+    "year": 2012
+  },
+  {
+    "temperature": 58.5,
+    "year": 2013
+  },
+  {
+    "temperature": 64.4,
+    "year": 2014
+  },
+  {
+    "temperature": 65,
+    "year": 2015
+  },
+  {
+    "temperature": 60.5,
+    "year": 2016
+  },
+  {
+    "temperature": 62,
+    "year": 2017
+  },
+  {
+    "temperature": 60.9,
+    "year": 2018
+  },
+  {
+    "temperature": 58.8,
+    "year": 2019
+  },
+  {
+    "temperature": 66.2,
+    "year": 2020
+  },
+  {
+    "temperature": 58.2,
+    "year": 2021
+  },
+  {
+    "temperature": 63.7,
+    "year": 2022
+  },
+  {
+    "temperature": 62.2,
+    "year": 2023
+  },
+  {
+    "temperature": 65.6,
+    "year": 2024
+  }
+]

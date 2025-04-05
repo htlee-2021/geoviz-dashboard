@@ -490,6 +490,62 @@ app.get('/api/temperature-fire', (req, res) => {
   }
 });
 
+// API endpoint to get monthly temperature statistics
+app.get('/api/temperature/monthly-stats', (req, res) => {
+  try {
+    const statsFilePath = path.join(STATS_DIR, 'monthly-temperature-stats.json');
+    
+    if (!fs.existsSync(statsFilePath)) {
+      console.error(`Monthly temperature statistics not found: ${statsFilePath}`);
+      return res.status(404).json({
+        error: 'Monthly temperature statistics not found',
+        message: 'Please run the monthly-temperature-processor.js script first'
+      });
+    }
+    
+    const monthlyTempStats = JSON.parse(fs.readFileSync(statsFilePath, 'utf8'));
+    res.json(monthlyTempStats);
+  } catch (err) {
+    console.error('Error retrieving monthly temperature statistics:', err);
+    
+    res.status(500).json({
+      error: 'Server error',
+      message: err.message
+    });
+  }
+});
+
+// Add this endpoint to your server.js file:
+
+// API endpoint to serve CA_Weather_Fire_Dataset CSV data
+app.get('/api/weather-csv', (req, res) => {
+  try {
+    const csvFilePath = path.join(__dirname, 'processed_stats', 'CA_Weather_Fire_Dataset_1984-2025.csv');
+    
+    if (!fs.existsSync(csvFilePath)) {
+      console.error(`Weather CSV file not found: ${csvFilePath}`);
+      return res.status(404).json({
+        error: 'Weather CSV file not found',
+        message: 'The CA Weather Fire Dataset is not available.'
+      });
+    }
+    
+    // Read the CSV file
+    const csvData = fs.readFileSync(csvFilePath, 'utf8');
+    
+    // Send the CSV data as a text response
+    res.setHeader('Content-Type', 'text/csv');
+    res.send(csvData);
+  } catch (err) {
+    console.error('Error retrieving weather CSV data:', err);
+    
+    res.status(500).json({
+      error: 'Server error',
+      message: err.message
+    });
+  }
+});
+
 app.get('/api/test', (req, res) => {
   res.json({
     status: 'ok',
@@ -544,6 +600,66 @@ app.get('/api/diagnose', (req, res) => {
     });
   }
 });
+
+// Add these lines to your server.js file
+// Place them just after your existing '/api/temperature/monthly-stats' endpoint
+
+// API endpoint to get detailed temperature data points with year information for a specific month
+app.get('/api/temperature/points/:month', (req, res) => {
+  try {
+    const month = req.params.month;
+    
+    // Normalize the month name to lowercase for consistent file lookup
+    const normalizedMonth = month.toLowerCase();
+    
+    // Build the path to the monthly detail file
+    const dataPath = path.join(STATS_DIR, 'monthly_detail', `${normalizedMonth}.json`);
+    
+    if (!fs.existsSync(dataPath)) {
+      console.error(`Temperature points data not found for ${month}: ${dataPath}`);
+      return res.status(404).json({
+        error: `Temperature data points for ${month} not found`,
+        message: 'Please run the monthly-temperature-processor.js script first'
+      });
+    }
+    
+    // Read the data points file
+    const pointsData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    
+    // Optional: limit number of points returned for better performance
+    const limit = req.query.limit ? parseInt(req.query.limit) : 100;
+    
+    // If there are too many points, sample them evenly
+    let result = pointsData;
+    if (pointsData.length > limit) {
+      result = sampleDataPoints(pointsData, limit);
+    }
+    
+    res.json(result);
+  } catch (err) {
+    console.error(`Error retrieving temperature points for ${req.params.month}:`, err);
+    
+    res.status(500).json({
+      error: 'Server error',
+      message: err.message
+    });
+  }
+});
+
+// Helper function to sample data points evenly to reduce payload size
+function sampleDataPoints(dataPoints, sampleSize) {
+  const totalPoints = dataPoints.length;
+  if (totalPoints <= sampleSize) return dataPoints;
+  
+  const step = Math.floor(totalPoints / sampleSize);
+  const result = [];
+  
+  for (let i = 0; i < totalPoints && result.length < sampleSize; i += step) {
+    result.push(dataPoints[i]);
+  }
+  
+  return result;
+}
 
 // Catch-all handler for the React app
 app.get('*', (req, res) => {
