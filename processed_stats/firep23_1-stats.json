@@ -762,72 +762,9 @@
     "2020",
     "2021",
     "2022",
-    "2023",
-    "219"
+    "2023"
   ],
   "monthlyDataByYear": {
-    "219": [
-      {
-        "month": "January",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "February",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "March",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "April",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "May",
-        "fires": 1,
-        "acres": 2.3
-      },
-      {
-        "month": "June",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "July",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "August",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "September",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "October",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "November",
-        "fires": 0,
-        "acres": 0
-      },
-      {
-        "month": "December",
-        "fires": 0,
-        "acres": 0
-      }
-    ],
     "1898": [
       {
         "month": "January",
@@ -8270,37 +8207,6 @@
     ]
   },
   "causesDataByYear": {
-    "219": {
-      "causes": [
-        {
-          "causeId": 16,
-          "causeName": "Aircraft",
-          "fires": 1,
-          "acres": 2.3
-        }
-      ],
-      "monthlyBreakdown": {
-        "January": [],
-        "February": [],
-        "March": [],
-        "April": [],
-        "May": [
-          {
-            "causeId": 16,
-            "causeName": "Aircraft",
-            "fires": 1,
-            "acres": 2.3
-          }
-        ],
-        "June": [],
-        "July": [],
-        "August": [],
-        "September": [],
-        "October": [],
-        "November": [],
-        "December": []
-      }
-    },
     "1878": {
       "causes": [
         {
