@@ -5,7 +5,7 @@ export const FireCauseAnalysisDashboard = ({
     causesData,
     topCauses,
     causeDefinitions,
-    selectedYear,
+    selectedYear='2023',
     availableYears,
     onYearChange,
     onRefresh
@@ -56,13 +56,13 @@ export const FireCauseAnalysisDashboard = ({
 
     function getResponsiveWidth(svgElement) {
         // Get the width of the container, not the SVG element itself
-        const containerWidth = svgElement.parentNode.clientWidth || 
-                               svgElement.parentNode.getBoundingClientRect().width || 
-                               window.innerWidth - 60;
-                               
+        const containerWidth = svgElement.parentNode.clientWidth ||
+            svgElement.parentNode.getBoundingClientRect().width ||
+            window.innerWidth - 60;
+
         // Return the container width with a little padding
         return containerWidth - 40; // 20px padding on each side
-      }
+    }
 
     const createTopCausesChart = () => {
         if (!topCausesChartRef.current) return;
@@ -754,22 +754,24 @@ export const FireCauseAnalysisDashboard = ({
                     <svg ref={topCausesChartRef} className="chart-svg"></svg>
                 </div>
             </div>
-{/* Year selector and summary */}
-<div className="year-selection-container">
+            {/* Year selector and summary */}
+            <div className="year-selection-container">
                 <div className="year-selector">
                     <label htmlFor="cause-year-select" className="year-selector-label">Select Year for Analysis:</label>
                     <select
                         id="cause-year-select"
                         className="year-selector-dropdown"
-                        value={selectedYear || ''}
+                        value={selectedYear || '2023'}
                         onChange={(e) => onYearChange(e.target.value)}
                         disabled={availableYears.length === 0}
                     >
-                        {availableYears.map(year => (
-                            <option key={year} value={year}>
-                                {year}
-                            </option>
-                        ))}
+                        {availableYears
+                            .filter(year => year !== '2024' && year !== '2025')
+                            .map(year => (
+                                <option key={year} value={year}>
+                                    {year}
+                                </option>
+                            ))}
                     </select>
                 </div>
 

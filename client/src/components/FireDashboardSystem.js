@@ -19,7 +19,7 @@ const FireDashboardSystem = ({ containerId }) => {
   const [causeDefinitions, setCauseDefinitions] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [selectedYear, setSelectedYear] = useState(null);
+  const [selectedYear, setSelectedYear] = useState('2023');
   const [availableYears, setAvailableYears] = useState([]);
   const [summaryStats, setSummaryStats] = useState({
     totalFires: 0,
@@ -41,6 +41,8 @@ const FireDashboardSystem = ({ containerId }) => {
   useEffect(() => {
     setContainer(document.getElementById(containerId));
     fetchYearlyData();
+    setSelectedYear('2023');
+    fetchMonthlyData('2023');
   }, [containerId]);
 
   const handleTabChange = (tabName) => {
@@ -104,13 +106,13 @@ const FireDashboardSystem = ({ containerId }) => {
       });
 
       // Set the most recent year as the default selected year
-      if (data.years.length > 0) {
-        const maxYear = Math.max(...data.years.map(y => parseInt(y)));
-        setSelectedYear(maxYear.toString());
+      // if (data.years.length > 0) {
+      //   const maxYear = Math.max(...data.years.map(y => parseInt(y)));
+      //   setSelectedYear(maxYear.toString());
 
-        // Fetch monthly data for the selected year
-        fetchMonthlyData(maxYear.toString());
-      }
+      //   // Fetch monthly data for the selected year
+      //   fetchMonthlyData(maxYear.toString());
+      // }
 
       // NEW: Fetch monthly data for all available years (for radial chart)
       await fetchAllMonthlyData(data.years);
@@ -326,9 +328,9 @@ const FireDashboardSystem = ({ containerId }) => {
           onClick={() => handleTabChange('weather')}>
           <svg xmlns="http://www.w3.org/2000/svg" className="tab-icon" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M10 2a4 4 0 00-4 4v1.586A3.5 3.5 0 001.5 11h-.5a1 1 0 000 2h.5a3.5 3.5 0 003.5-3.5V6a2 2 0 114 0v1.586A3.5 3.5 0 0011.5 11h-.5a1 1 0 000 2h.5a3.5 3.5 0 003.5-3.5V6a4 4 0 00-4-4z" clipRule="evenodd" />
-            </svg>
-            Weather Dashboard
-          </button>
+          </svg>
+          Weather Dashboard
+        </button>
         {/* Tableau Dashboard tab */}
         <button
           className={`dashboard-tab ${activeTab === 'tableau' ? 'active' : ''}`}
@@ -357,7 +359,7 @@ const FireDashboardSystem = ({ containerId }) => {
               causesData={causesData}
               topCauses={topCauses}
               causeDefinitions={causeDefinitions}
-              selectedYear={selectedYear}
+              selectedYear={selectedYear || '2023'}
               availableYears={availableYears}
               onYearChange={handleYearChange}
               onRefresh={fetchYearlyData}
@@ -370,7 +372,7 @@ const FireDashboardSystem = ({ containerId }) => {
               yearlyData={yearlyData}
               monthlyData={monthlyData}
               monthlyDataByYear={monthlyDataByYear}
-              selectedYear={selectedYear}
+              selectedYear={selectedYear || '2023'}
               availableYears={availableYears}
               summaryStats={summaryStats}
               onYearChange={handleYearChange}
@@ -378,7 +380,7 @@ const FireDashboardSystem = ({ containerId }) => {
             />
           )}
         </div>
-        
+
         <div id="temperature-dashboard" className={`dashboard-tab-content ${activeTab === 'temperature' ? 'active' : ''}`}>
           {activeTab === 'temperature' && (
             <TemperatureFireCorrelation
@@ -392,7 +394,7 @@ const FireDashboardSystem = ({ containerId }) => {
               onRefresh={fetchYearlyData}
             />
           )}
-          </div>
+        </div>
         {/* Tableau Dashboard tab content */}
         <div id="tableau-dashboard" className={`dashboard-tab-content ${activeTab === 'tableau' ? 'active' : ''}`}>
           {activeTab === 'tableau' && (
@@ -402,7 +404,7 @@ const FireDashboardSystem = ({ containerId }) => {
             />
           )}
         </div>
-        
+
       </div>
     </div>
   );

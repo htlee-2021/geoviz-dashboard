@@ -7,7 +7,7 @@ export const EnhancedYearlyAnalysisDashboard = ({
   yearlyData,
   monthlyData,
   monthlyDataByYear,
-  selectedYear,
+  selectedYear='2023',
   availableYears,
   summaryStats,
   onYearChange,
@@ -441,7 +441,7 @@ export const EnhancedYearlyAnalysisDashboard = ({
           <select
             id="year-select"
             className="year-selector-dropdown"
-            value={selectedYear || ''}
+            value={selectedYear || '2023'}
             onChange={(e) => onYearChange(e.target.value)}
             disabled={availableYears.length === 0}
           >
@@ -478,7 +478,7 @@ export const EnhancedYearlyAnalysisDashboard = ({
             <svg xmlns="http://www.w3.org/2000/svg" className="section-icon" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z" clipRule="evenodd" />
             </svg>
-            Monthly Acres Burned in {selectedYear || '...'}
+            Monthly Acres Burned in {selectedYear || '2023'}
           </h3>
           <div className="chart-description">
             Shows acres burned by month for the selected year, highlighting peak fire season.
@@ -496,7 +496,7 @@ export const EnhancedYearlyAnalysisDashboard = ({
             <svg xmlns="http://www.w3.org/2000/svg" className="section-icon" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clipRule="evenodd" />
             </svg>
-            Fire Counts by Month in {selectedYear || '...'}
+            Fire Counts by Month in {selectedYear || '2023'}
           </h3>
           <div className="chart-description">
             Shows the number of fires recorded each month for the selected year.

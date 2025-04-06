@@ -35,7 +35,7 @@ const TableauDashboard = ({
         // Create the placeholder div
         const placeholderDiv = document.createElement('div');
         placeholderDiv.className = 'tableauPlaceholder';
-        placeholderDiv.id = 'wildfire-tableau-viz';
+        placeholderDiv.id = 'viz1743923919106'; // Updated ID to match the new embed code
         placeholderDiv.style.position = 'relative';
         placeholderDiv.style.border = '2px dashed #999'; // Visual indicator
         placeholderDiv.style.minHeight = '400px';
@@ -51,15 +51,15 @@ const TableauDashboard = ({
         vizObject.style.width = '100%';
         vizObject.style.height = '827px';
         
-        // Add parameters
+        // Add parameters - updated to match new parameters
         const params = [
           { name: 'host_url', value: 'https%3A%2F%2Fpublic.tableau.com%2F' },
           { name: 'embed_code_version', value: '3' },
           { name: 'site_root', value: '' },
-          { name: 'name', value: 'DataConsolidation_FinalDraft_2/WildFireDashboardOverview' },
+          { name: 'name', value: 'DataConsolidation_FinalFinalDraft/WildFireDashboardOverview' }, // Updated name
           { name: 'tabs', value: 'no' },
           { name: 'toolbar', value: 'yes' },
-          { name: 'static_image', value: 'https://public.tableau.com/static/images/Da/DataConsolidation_FinalDraft_2/WildFireDashboardOverview/1.png' },
+          { name: 'static_image', value: 'https://public.tableau.com/static/images/Da/DataConsolidation_FinalFinalDraft/WildFireDashboardOverview/1.png' }, // Updated image
           { name: 'animate_transition', value: 'yes' },
           { name: 'display_static_image', value: 'yes' },
           { name: 'display_spinner', value: 'yes' },
@@ -88,10 +88,28 @@ const TableauDashboard = ({
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         scriptElement.async = true;
         
-        // This is a simpler approach - inject script and let it handle the viz
+        // Add responsive sizing based on the new embed code's approach
         scriptElement.onload = () => {
           debugElement.innerHTML = 'Tableau API loaded successfully!';
           setDebugInfo(prev => ({...prev, apiLoaded: true}));
+          
+          // Add responsive sizing logic similar to what's in the embed code
+          const divElement = document.getElementById('viz1743923919106');
+          if (divElement) {
+            const vizElement = divElement.getElementsByTagName('object')[0];
+            if (vizElement) {
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '877px';
+              }
+            }
+          }
           
           // Give it a moment to initialize
           setTimeout(() => {
@@ -107,8 +125,12 @@ const TableauDashboard = ({
           setLoading(false);
         };
         
-        // Add the script to the document
-        document.body.appendChild(scriptElement);
+        // Add the script to the document - similar to the embed code approach
+        if (vizObject.parentNode) {
+          vizObject.parentNode.insertBefore(scriptElement, vizObject);
+        } else {
+          document.body.appendChild(scriptElement);
+        }
         
       } catch (err) {
         console.error('Error initializing Tableau:', err);
