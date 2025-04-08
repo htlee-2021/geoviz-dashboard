@@ -4,7 +4,6 @@ A full-stack web application for visualizing geographic and tabular data using D
 
 ## Features
 
-- Upload and process CSV, GeoJSON, and Shapefile data
 - Visualize geographic data with interactive maps
 - Create charts and graphs from tabular data
 - Responsive design for desktop and mobile
