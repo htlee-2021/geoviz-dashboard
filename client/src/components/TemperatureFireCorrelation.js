@@ -62,7 +62,7 @@ export const TemperatureFireCorrelation = ({ onRefresh }) => {
       createScatterplot();
       createHeatmap();
     }
-  }, [data]);
+  }, [data, createScatterplot, createHeatmap]);
   
   const createScatterplot = () => {
     if (!scatterplotRef.current) return;

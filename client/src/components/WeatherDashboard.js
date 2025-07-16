@@ -6,7 +6,7 @@ export const WeatherMetricsBoxplot = ({ metric = 'precipitation' }) => {
     const containerRef = useRef(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [data, setData] = useState(null);
+    const [, setData] = useState(null);
 
     const processData = (rawData) => {
         // Extract month from date
@@ -107,7 +107,7 @@ export const WeatherMetricsBoxplot = ({ metric = 'precipitation' }) => {
         };
 
         fetchAndProcessData();
-    }, [metric]);
+    }, [metric, processData, createBoxplot]);
 
     const createBoxplot = (monthlyStats) => {
         console.log('Creating boxplot with data:', monthlyStats);

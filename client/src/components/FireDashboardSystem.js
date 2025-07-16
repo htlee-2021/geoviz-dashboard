@@ -9,7 +9,7 @@ import './FireDashboard.css';
 import './TableauDashboard.css';
 
 const FireDashboardSystem = ({ containerId }) => {
-  const [container, setContainer] = useState(null);
+  const [, setContainer] = useState(null);
   const [activeTab, setActiveTab] = useState('main');
   const [yearlyData, setYearlyData] = useState([]);
   const [monthlyData, setMonthlyData] = useState([]);
@@ -43,7 +43,7 @@ const FireDashboardSystem = ({ containerId }) => {
     fetchYearlyData();
     setSelectedYear('2023');
     fetchMonthlyData('2023');
-  }, [containerId]);
+  }, [containerId, fetchYearlyData, fetchMonthlyData]);
 
   const handleTabChange = (tabName) => {
     setActiveTab(tabName);

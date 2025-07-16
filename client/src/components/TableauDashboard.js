@@ -158,7 +158,7 @@ const TableauDashboard = ({
   useEffect(() => {
     const checkTableauAPIAccess = async () => {
       try {
-        const response = await fetch('https://public.tableau.com/javascripts/api/viz_v1.js', {
+        await fetch('https://public.tableau.com/javascripts/api/viz_v1.js', {
           method: 'HEAD',
           mode: 'no-cors' // This allows us to at least try the request
         });
