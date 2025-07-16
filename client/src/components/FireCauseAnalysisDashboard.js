@@ -20,6 +20,7 @@ export const FireCauseAnalysisDashboard = ({
         if (topCauses && topCauses.length > 0) {
             createTopCausesChart();
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [topCauses, showAllCauses]);
 
     useEffect(() => {
@@ -27,6 +28,7 @@ export const FireCauseAnalysisDashboard = ({
             createCausesByYearChart();
             createMonthlyCausesChart();
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [causesData, selectedYear, selectedCause]);
 
     // Format large numbers

@@ -107,6 +107,7 @@ export const WeatherMetricsBoxplot = ({ metric = 'precipitation' }) => {
         };
 
         fetchAndProcessData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [metric]);
 
     const createBoxplot = (monthlyStats) => {

@@ -14,6 +14,7 @@ export const RadialBarChart = ({
     if (monthlyDataByYear && Object.keys(monthlyDataByYear).length > 0) {
       createRadialBarChart();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [monthlyDataByYear, selectedMetric, availableYears, focusYears]);
   
   const formatLargeNumber = (num) => {

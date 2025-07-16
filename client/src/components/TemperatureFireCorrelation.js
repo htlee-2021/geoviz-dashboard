@@ -62,6 +62,7 @@ export const TemperatureFireCorrelation = ({ onRefresh }) => {
       createScatterplot();
       createHeatmap();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   
   const createScatterplot = () => {

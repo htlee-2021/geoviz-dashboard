@@ -473,6 +473,7 @@ export const MainDashboard = ({ summaryStats, yearlyData, onRefresh }) => {
     if (yearlyData.length > 0) {
       createCharts();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [yearlyData]);
 
   return (

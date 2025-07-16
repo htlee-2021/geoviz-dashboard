@@ -21,6 +21,7 @@ export const EnhancedYearlyAnalysisDashboard = ({
     if (monthlyData.length > 0) {
       createCharts();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [monthlyData, selectedYear]);
 
   // Format large numbers

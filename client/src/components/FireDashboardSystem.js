@@ -43,6 +43,7 @@ const FireDashboardSystem = ({ containerId }) => {
     fetchYearlyData();
     setSelectedYear('2023');
     fetchMonthlyData('2023');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [containerId]);
 
   const handleTabChange = (tabName) => {
