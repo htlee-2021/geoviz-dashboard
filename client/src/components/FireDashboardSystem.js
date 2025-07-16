@@ -43,7 +43,7 @@ const FireDashboardSystem = ({ containerId }) => {
     fetchYearlyData();
     setSelectedYear('2023');
     fetchMonthlyData('2023');
-  }, [containerId, fetchYearlyData, fetchMonthlyData]);
+  }, [containerId]);
 
   const handleTabChange = (tabName) => {
     setActiveTab(tabName);

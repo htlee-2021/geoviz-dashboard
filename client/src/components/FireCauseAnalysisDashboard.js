@@ -20,14 +20,14 @@ export const FireCauseAnalysisDashboard = ({
         if (topCauses && topCauses.length > 0) {
             createTopCausesChart();
         }
-    }, [topCauses, showAllCauses, createTopCausesChart]);
+    }, [topCauses, showAllCauses]);
 
     useEffect(() => {
         if (causesData && selectedYear && causesData[selectedYear]) {
             createCausesByYearChart();
             createMonthlyCausesChart();
         }
-    }, [causesData, selectedYear, selectedCause, createCausesByYearChart, createMonthlyCausesChart]);
+    }, [causesData, selectedYear, selectedCause]);
 
     // Format large numbers
     const formatLargeNumber = (num) => {

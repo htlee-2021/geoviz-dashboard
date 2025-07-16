@@ -107,7 +107,7 @@ export const WeatherMetricsBoxplot = ({ metric = 'precipitation' }) => {
         };
 
         fetchAndProcessData();
-    }, [metric, processData, createBoxplot]);
+    }, [metric]);
 
     const createBoxplot = (monthlyStats) => {
         console.log('Creating boxplot with data:', monthlyStats);

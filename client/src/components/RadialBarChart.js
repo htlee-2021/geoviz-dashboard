@@ -14,7 +14,7 @@ export const RadialBarChart = ({
     if (monthlyDataByYear && Object.keys(monthlyDataByYear).length > 0) {
       createRadialBarChart();
     }
-  }, [monthlyDataByYear, selectedMetric, availableYears, focusYears, createRadialBarChart]);
+  }, [monthlyDataByYear, selectedMetric, availableYears, focusYears]);
   
   const formatLargeNumber = (num) => {
     if (num >= 1000000) {

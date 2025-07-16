@@ -21,7 +21,7 @@ export const EnhancedYearlyAnalysisDashboard = ({
     if (monthlyData.length > 0) {
       createCharts();
     }
-  }, [monthlyData, selectedYear, createCharts]);
+  }, [monthlyData, selectedYear]);
 
   // Format large numbers
   const formatLargeNumber = (num) => {
